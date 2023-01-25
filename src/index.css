@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+    * {
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    .btn {
+        @apply px-12 rounded-md py-2 font-semibold text-sm m-2 hover:scale-[1.02] transition-all ease-linear 
+    }
+}
