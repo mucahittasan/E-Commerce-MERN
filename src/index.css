@@ -3,13 +3,32 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 @layer base {
     * {
         font-family: 'Kumbh Sans', sans-serif;
     }
 
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .btn {
         @apply px-12 rounded-md py-2 font-semibold text-sm m-2 hover:scale-[1.02] transition-all ease-linear 
+    }
+
+    .logo {
+        font-family: 'Righteous', cursive;
+    }
+
+    .nav-item {
+        @apply text-darkGrayishBlue font-medium p-3 hover:text-primaryOrange transition-colors
+    }
+
+    .hover-information {
+        @apply opacity-0 invisible delay-75 bg-slate-800 p-2 text-sm top-10 text-white rounded-md left-[50%] absolute translate-x-[-50%] before:absolute before:w-0 before:h-0 before:border-l-8 before:border-r-8 before:border-b-8 before:border-transparent before:border-b-slate-800 before:left-[50%] before:translate-x-[-50%] before:top-[-7px]
     }
 }
