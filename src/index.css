@@ -10,14 +10,18 @@
         font-family: 'Kumbh Sans', sans-serif;
     }
 
-    .container {
-        max-width: 1200px;
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .content {
+        max-width: 1300px;
         width: 100%;
         margin: 0 auto;
     }
 
     .btn {
-        @apply px-12 rounded-md py-2 font-semibold text-sm m-2 hover:scale-[1.02] transition-all ease-linear 
+        @apply px-12 rounded-md py-2 font-semibold text-sm hover:scale-[1.02] transition-all ease-linear 
     }
 
     .logo {

@@ -14,6 +14,9 @@ module.exports = {
         lightGrayishBlue: "hsl(223, 64%, 98%)",
         white: "hsl(0, 0%, 100%)",
         black: "hsl(0, 0%, 0%)"
+      },
+      backgroundImage: {
+        "light-home-bg": "url('/src/assets/images/home-bg.png')" 
       }
     },
   },
