@@ -25,10 +25,10 @@ const Header = () => {
         <nav className='md:block hidden'>
           <ul className='flex items-center ml-12'>
             <li>
-              <Link className='nav-item' to="/categories">Categories</Link>
+              <Link className='nav-item' to="/shop">Shop</Link>
             </li>
             <li>
-              <Link className='nav-item' to="/shop">Shop</Link>
+              <Link className='nav-item' to="/categories">Categories</Link>
             </li>
             <li>
               <Link className='nav-item' to="/shop">Contact</Link>
@@ -82,10 +82,10 @@ const Header = () => {
           <div className={`${activeHamburger && "translate-y-0"} ${!activeHamburger && "translate-y-[100%]"} transition-all duration-300  mt-4 pt-16 bg-white flex flex-col items-center gap-y-7 ml-auto h-screen rounded-tl-[2.375rem] rounded-tr-[2.375rem] `}>
             <ul className='flex items-center flex-col gap-y-6'>
               <li>
-                <Link className='nav-item text-xl' to="/categories">Categories</Link>
+                <Link className='nav-item text-xl' to="/shop">Shop</Link>
               </li>
               <li>
-                <Link className='nav-item text-xl' to="/shop">Shop</Link>
+                <Link className='nav-item text-xl' to="/categories">Categories</Link>
               </li>
               <li>
                 <Link className='nav-item text-xl' to="/shop">Contact</Link>
