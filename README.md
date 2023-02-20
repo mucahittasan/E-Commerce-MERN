@@ -1,11 +1,5 @@
 ## TODOS -->
 
-[] Create Components </br>
-[] Create Pages</br>
-[] Create Store</br>
-[] Create types</br>
-[] Make design</br>
-[] Add dark mode</br>
-[] Make responsive</br>
-[] Page scrool transition</br>
-[] Page transition</br>
+
+[X] Header and responsive </br>
+[X] Home Page and responsive </br>
