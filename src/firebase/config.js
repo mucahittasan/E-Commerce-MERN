@@ -1,17 +1,18 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCddX32hTTmBA1_O_TnJPCpeDRbI30Oyas",
-    authDomain: "e-commerce-typescript.firebaseapp.com",
-    databaseURL: "https://e-commerce-typescript-default-rtdb.firebaseio.com",
-    projectId: "e-commerce-typescript",
-    storageBucket: "e-commerce-typescript.appspot.com",
-    messagingSenderId: "552800904405",
-    appId: "1:552800904405:web:3b46ab8ff7c14bd300ee5c",
-    measurementId: "G-HQ85YR0ZBQ"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+export const db = getFirestore(app);
