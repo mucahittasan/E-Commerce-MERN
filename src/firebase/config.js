@@ -1,9 +1,11 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
     apiKey: "AIzaSyCddX32hTTmBA1_O_TnJPCpeDRbI30Oyas",
     authDomain: "e-commerce-typescript.firebaseapp.com",
+    databaseURL: "https://e-commerce-typescript-default-rtdb.firebaseio.com",
     projectId: "e-commerce-typescript",
     storageBucket: "e-commerce-typescript.appspot.com",
     messagingSenderId: "552800904405",

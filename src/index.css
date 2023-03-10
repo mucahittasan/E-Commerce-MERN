@@ -29,7 +29,7 @@
     }
 
     .nav-item {
-        @apply text-darkGrayishBlue pb-7 mx-2 font-medium p-3 hover:font-semibold hover:text-primaryOrange transition-all before:transition-all relative before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-primaryOrange before:opacity-0 hover:before:w-full hover:before:opacity-[1]
+        @apply text-darkGrayishBlue pb-7 mx-2 font-medium p-3 hover:text-primaryOrange transition-all before:transition-all relative before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-primaryOrange before:opacity-0 hover:before:w-full hover:before:opacity-[1]
     }
 
     .nav-item.active {
