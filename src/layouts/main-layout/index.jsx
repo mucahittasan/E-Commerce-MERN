@@ -4,7 +4,7 @@ import Main from "../../components/main";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
       <Main />
       <Footer />

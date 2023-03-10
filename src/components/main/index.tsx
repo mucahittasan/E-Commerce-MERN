@@ -2,9 +2,9 @@ import { Outlet } from 'react-router-dom'
 
 const Main = () => {
   return (
-    <div>
+    <main className='flex-auto'>
       <Outlet />
-    </div>
+    </main>
   )
 }
 
