@@ -16,9 +16,11 @@ module.exports = {
         black: "hsl(0, 0%, 0%)"
       },
       backgroundImage: {
-        "light-home-bg": "url('/src/assets/images/home-bg.png')" 
+        "light-home-bg": "url('/src/assets/images/home-bg.png')"
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

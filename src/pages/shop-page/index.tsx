@@ -1,8 +1,11 @@
+import ShopPageContainer from "../../containers/shop-page-container"
 
 const ShopPage = () => {
     return (
-        <div>ShopPage</div>
+        <div>
+            <ShopPageContainer />
+        </div>
     )
 }
 
-export default ShopPage
+export default ShopPage;

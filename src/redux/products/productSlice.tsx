@@ -1,8 +1,10 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { getProductsAsync } from './services'
+import { createSlice } from '@reduxjs/toolkit'
+import { getProductsAsync, getProductsByPageAsync } from './services'
+import { IProducts } from '../../@types/productsType'
 
-export interface ProductState {
-    products: [],
+
+export type ProductState = {
+    products: IProducts[] | [],
     isLoading: boolean,
     error: null | string | undefined
 }
@@ -17,23 +19,37 @@ const initialState: ProductState = {
 export const productSlice = createSlice({
     name: "product",
     initialState,
-    reducers: {
-
-    },
+    reducers: {},
     extraReducers: (builder) => {
-        // Get Products Progress
-        builder.addCase(getProductsAsync.pending, (state, action) => {
-            state.isLoading = true;
-        })
-        builder.addCase(getProductsAsync.fulfilled, (state, action) => {
-            //...
-        })
-        builder.addCase(getProductsAsync.rejected, (state, action) => {
-            state.error = action.error.message;
-        })
+        // Get Products
+        builder
+            .addCase(getProductsAsync.pending, (state, action) => {
+                state.isLoading = true;
+            })
+            .addCase(getProductsAsync.fulfilled, (state, action) => {
+                state.isLoading = false;
+                state.products = action.payload
+            })
+            .addCase(getProductsAsync.rejected, (state, action) => {
+                state.isLoading = false;
+                state.error = action.error.message;
+            })
+
+        // Get Products By Page
+        builder
+            .addCase(getProductsByPageAsync.pending, (state, action) => {
+                state.isLoading = true;
+            })
+            .addCase(getProductsByPageAsync.fulfilled, (state, action) => {
+                state.products = action.payload;
+            })
+            .addCase(getProductsByPageAsync.rejected, (state, action) => {
+                state.isLoading = false;
+                state.error = action.error.message;
+            })
     }
 })
 
-export const { } = productSlice.actions
+// export const { } = productSlice.actions
 
 export default productSlice.reducer

@@ -8,6 +8,7 @@ import gamingChair from '../../assets/images/items/gaming_chair.jpg';
 
 const HomePageContainer = () => {
 
+
   return (
 
     <div className="min-h-[calc(100vh_-_102px)] md:min-h-[calc(100vh_-_117px)] flex items-center bg-contain xl:bg-cover bg-no-repeat sm:bg-light-home-bg bg-[#F4F9FD]  ">
