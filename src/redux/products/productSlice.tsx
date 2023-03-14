@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { getProductsAsync, getProductsByPageAsync } from './services'
-import { IProducts } from '../../@types/productsType'
+import { getProductsAsync } from './services'
+import { IProducts } from '../../@types/ProductTypes'
 
 
 export type ProductState = {
@@ -31,19 +31,6 @@ export const productSlice = createSlice({
                 state.products = action.payload
             })
             .addCase(getProductsAsync.rejected, (state, action) => {
-                state.isLoading = false;
-                state.error = action.error.message;
-            })
-
-        // Get Products By Page
-        builder
-            .addCase(getProductsByPageAsync.pending, (state, action) => {
-                state.isLoading = true;
-            })
-            .addCase(getProductsByPageAsync.fulfilled, (state, action) => {
-                state.products = action.payload;
-            })
-            .addCase(getProductsByPageAsync.rejected, (state, action) => {
                 state.isLoading = false;
                 state.error = action.error.message;
             })

@@ -1,8 +1,16 @@
-import { IProducts } from "../../@types/productsType"
 import { HiOutlineHeart } from 'react-icons/hi'
+import { ProductItemProps } from '../../@types/ProductTypes'
 
 
-const ProductItem = ({ item }: IProducts | any) => {
+const ProductItem: React.FC<ProductItemProps> = ({ item }) => {
+
+    const addToBasket = (id: number) => {
+
+    }
+
+    const formatter = new Intl.NumberFormat('tr-TR');
+
+    console.log(formatter.format(2500)); /* $2,500.00 */
 
     return (
         <div className=" w-full flex flex-col item-center cursor-pointer group">
@@ -18,8 +26,8 @@ const ProductItem = ({ item }: IProducts | any) => {
                     {item.description}
                 </p>
                 <div className="flex justify-between items-center">
-                    <button className="btn border-[2px] bg-white font-bold text-veryDarkBlue border-grayishBlue hover:text-white hover:bg-veryDarkBlue hover:border-veryDarkBlue">Sepete Ekle</button>
-                    <span className="text-base font-bold text-veryDarkBlue">{item.price} TL</span>
+                    <button onClick={() => addToBasket(item.id)} className="btn border-[2px] bg-white font-bold text-veryDarkBlue border-grayishBlue hover:text-white hover:bg-veryDarkBlue hover:border-veryDarkBlue">Sepete Ekle</button>
+                    <span className="text-base font-bold text-veryDarkBlue">{formatter.format(item.price)} TL</span>
                 </div>
             </div>
         </div>

@@ -9,3 +9,13 @@ export interface IProducts {
     main_image: string,
     sub_images?: string[],
 }
+
+export interface ProductItemProps {
+    item: {
+        id: number,
+        title: string,
+        description?: string,
+        price: number,
+        main_image: string,
+    }
+}

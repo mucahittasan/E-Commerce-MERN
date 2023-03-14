@@ -37,7 +37,6 @@ const ProductItems = () => {
     const handlePageClick = (event: any) => {
         const newOffset = (event.selected * itemsPerPage) % products.length;
         setItemOffset(newOffset);
-        console.log(event)
     };
 
 
