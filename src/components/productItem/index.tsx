@@ -1,16 +1,49 @@
+import React, { useEffect, useState } from 'react';
 import { HiOutlineHeart } from 'react-icons/hi'
-import { ProductItemProps } from '../../@types/ProductTypes'
+import { IProductItem, IProducts } from '../../@types/ProductTypes'
+import { useDispatch, useSelector } from 'react-redux';
+import { addProductToBasketAsync, getAllBasketItemsAsync, removeFromBasketAsync } from '../../redux/products/services';
+import { AppDispatch, RootState } from '../../redux/store';
+import CircleLoading from '../circleLoading';
 
 
-const ProductItem: React.FC<ProductItemProps> = ({ item }) => {
+const ProductItem: React.FC<IProductItem> = ({ item }) => {
 
-    const addToBasket = (id: number) => {
+    const basket = useSelector((state: RootState) => state.product.basket);
+    const isAddBasketLoading = useSelector((state: RootState) => state.product.isAddBasketLoading);
+
+    const [haveBasket, setHaveBasket] = useState<IProducts | undefined>();
+
+    // Formatter for prices
+    const formatter = new Intl.NumberFormat('tr-TR');
+
+    const dispatch = useDispatch<AppDispatch>();
+
+    const loadingProcess = (item: IProducts) => {
 
     }
 
-    const formatter = new Intl.NumberFormat('tr-TR');
+    const addToBasket = async (item: IProducts) => {
+        loadingProcess(item)
+        await dispatch(addProductToBasketAsync(item))
+    }
 
-    console.log(formatter.format(2500)); /* $2,500.00 */
+    const removeFromBasket = async (item: IProducts) => {
+        loadingProcess(item)
+        await dispatch(removeFromBasketAsync(item.id))
+    }
+
+
+
+    useEffect(() => {
+        dispatch(getAllBasketItemsAsync());
+    }, [dispatch])
+
+
+    useEffect(() => {
+        setHaveBasket(basket.find(data => data.id === item.id))
+    }, [basket, item, haveBasket])
+
 
     return (
         <div className=" w-full flex flex-col item-center cursor-pointer group">
@@ -26,7 +59,22 @@ const ProductItem: React.FC<ProductItemProps> = ({ item }) => {
                     {item.description}
                 </p>
                 <div className="flex justify-between items-center">
-                    <button onClick={() => addToBasket(item.id)} className="btn border-[2px] bg-white font-bold text-veryDarkBlue border-grayishBlue hover:text-white hover:bg-veryDarkBlue hover:border-veryDarkBlue">Sepete Ekle</button>
+                    {haveBasket?.id === item.id ?
+                        <button onClick={() => removeFromBasket(item)} className={`btn basket-button relative justify-between border-[2px] font-bold hover:shadow-[0_0_10px_2px_rgba(255,125,26,0.75)] text-white bg-primaryOrange border-primaryOrange`}>
+                            <span>Sepet'ten Çıkar</span>
+                            <div className='absolute right-2 top-[12px]'>
+                                <CircleLoading />
+                            </div>
+
+                        </button>
+                        : <button onClick={() => addToBasket(item)} className={`btn basket-button relative justify-between border-[2px] font-bold bg-grayishBlue text-veryDarkBlue border-grayishBlue hover:text-white hover:bg-veryDarkBlue hover:border-veryDarkBlue`}>
+                            <span>Sepete Ekle</span>
+                            <div className='absolute right-2 top-[12px]'>
+                                <CircleLoading />
+                            </div>
+
+                        </button>
+                    }
                     <span className="text-base font-bold text-veryDarkBlue">{formatter.format(item.price)} TL</span>
                 </div>
             </div>
