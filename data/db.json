@@ -1,23 +1,6 @@
 {
   "items": [
     {
-      "id": 0,
-      "loading": false,
-      "title": "Asus Tuf Gaming Monitor",
-      "description": "23,8 inç 165 Hz 1ms FreeSync Full HD Gaming Monitör",
-      "price": 3095,
-      "category": "technology",
-      "type_of_product": "monitor",
-      "main_image": "https://cdn.dsmcdn.com/ty254/product/media/images/20211125/15/111747763/322396520/1/1_org.jpg",
-      "sub_images": [
-        {
-          "sub_image_1": "https://cdn.dsmcdn.com/ty254/product/media/images/20211125/15/111747763/322396520/2/2_org_zoom.jpg",
-          "sub_image_2": "https://cdn.dsmcdn.com/ty253/product/media/images/20211125/15/111747763/322396520/3/3_org_zoom.jpg",
-          "sub_image_3": "https://cdn.dsmcdn.com/ty253/product/media/images/20211125/15/111747763/322396520/4/4_org_zoom.jpg"
-        }
-      ]
-    },
-    {
       "id": 1,
       "loading": false,
       "title": "Rampage Monitor",
@@ -1070,94 +1053,5 @@
       "sub_images": []
     }
   ],
-  "basket": [
-    {
-      "id": 6,
-      "title": "Huawei Mate 50pro",
-      "description": "Dahili Hafıza 256 GB, Renk Gümüş, Garanti Tipi Huawei Türkiye Garantili, Ekran Boyut Aralığı 6.5'' - 7'', Dokunmatik Ekran Var, Arka Kamera Sayısı 3",
-      "price": 32.999,
-      "category": "technology",
-      "type_of_product": "phone",
-      "main_image": "https://cdn.dsmcdn.com/ty569/product/media/images/20221018/13/196554062/599746666/1/1_org_zoom.jpg",
-      "sub_images": [
-        {
-          "sub_image_1": "https://cdn.dsmcdn.com/ty567/product/media/images/20221018/13/196554062/599746666/2/2_org_zoom.jpg",
-          "sub_image_2": "https://cdn.dsmcdn.com/ty568/product/media/images/20221018/13/196554062/599746666/3/3_org_zoom.jpg",
-          "sub_image_3": "https://cdn.dsmcdn.com/ty567/product/media/images/20221018/13/196554062/599746666/4/4_org_zoom.jpg"
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "title": "logitech G G300s Mouse",
-      "description": "2.500 DPI Optik Kablolu Oyuncu Mouse - Siyah ",
-      "price": 479,
-      "category": "technology",
-      "type_of_product": "mouse",
-      "main_image": "https://cdn.dsmcdn.com/ty542/product/media/images/20220928/11/180738140/12905998/2/2_org_zoom.jpg",
-      "sub_images": [
-        {
-          "sub_image_1": "https://productimages.hepsiburada.net/s/56/550/11229703733298.jpg",
-          "sub_image_2": "https://productimages.hepsiburada.net/s/56/550/11229703766066.jpg",
-          "sub_image_3": "https://productimages.hepsiburada.net/s/56/550/11229703700530.jpg"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "loading": false,
-      "title": "Samsung Monitor",
-      "description": "27 inç T350 Çerçevesiz Ips 75hz Freesync Hdmi Full Hd Gaming Monitör LLF27T350FHRXUF",
-      "price": 2780,
-      "category": "technology",
-      "type_of_product": "monitor",
-      "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
-      "sub_images": [
-        {
-          "sub_image_1": "https://cdn.dsmcdn.com/ty21/product/media/images/20201109/11/24208278/103014183/3/3_org_zoom.jpg",
-          "sub_image_2": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/4/4_org_zoom.jpg",
-          "sub_image_3": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "loading": false,
-      "title": "Iphone 14 Pro Max 128GB Derin Mor",
-      "description": "Apple Türkiye Garantili 7 inc QHD+ 20 - 40 MP On kamera cozunurlugu, 6GB ram, Mor renk",
-      "price": 44.48,
-      "category": "technology",
-      "type_of_product": "phone",
-      "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
-      "sub_images": [
-        {
-          "sub_image_1": "https://cdn.dsmcdn.com/ty539/product/media/images/20220920/22/177587611/574173140/2/2_org_zoom.jpg",
-          "sub_image_2": "https://cdn.dsmcdn.com/ty537/product/media/images/20220920/22/177587615/574173140/2/2_org_zoom.jpg",
-          "sub_image_3": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587650/574173140/2/2_org_zoom.jpg"
-        }
-      ]
-    },
-    {
-      "id": 57,
-      "loading": false,
-      "title": "Olağanüstü Bir Gece - Stefan Zweig ",
-      "description": "Seçkin bir burjuva olarak rahat ve tasasız varoluşunu sürdürürken giderek duyarsızlaşan bir adamın hayatındaki dönüştürücü deneyimin hikâyesidir. Sıradan bir Pazar gününü at yarışlarında geçirirken, belki de ilk kez burjuva ahlakından saparak suç işler. Böylece yeniden hissetmeye başladığını, kötücül ve ateşli hazları olan gerçek bir insan olduğunu fark eder. İçindeki haz dolu esrime, aynı günün akşamında onu gece âleminin son atıklarının arasına, hayatın en dibindeki lağımlara sürükleyecek, varış noktası ise ruhani bir uyanış olacaktır.",
-      "price": 21,
-      "category": "book",
-      "type_of_product": "classic",
-      "main_image": "https://cdn.dsmcdn.com/ty213/product/media/images/20211029/15/159442385/14722695/2/2_org_zoom.jpg",
-      "sub_images": []
-    },
-    {
-      "id": 58,
-      "loading": false,
-      "title": "Içimizdeki Şeytan - Sabahattin Ali",
-      "description": "İsteyip istemedeğimi doğru dürüst bilmediğim fakat neticede aleyhime çıkarsa istemediğimi iddia ettiğim bu nevi söz ve fiillerimin daimi bir mesulünü bulmuştum: Buna içimdeki şeytan diyordum müdafaasını üzerime almaktan korktuğum bütün hareketlerimi ona yüklüyor ve kendi suratıma tüküreceğim yerde haksızlığa tesadüfün cilvesine uğramış bir mazlum gibi nefsimi şefkat ve ihtimama layık görüyordum. Halbuki ne şeytanı azizim ne şeytanı? ",
-      "price": 22,
-      "category": "book",
-      "type_of_product": "horror_thriller",
-      "main_image": "https://cdn.dsmcdn.com/ty670/product/media/images/20221231/14/249839610/5703075/1/1_org_zoom.jpg",
-      "sub_images": []
-    }
-  ]
+  "basket": []
 }

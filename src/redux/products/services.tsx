@@ -18,7 +18,8 @@ export const getProductsAsync = createAsyncThunk("products/getProductsAsync", as
 export const addProductToBasketAsync = createAsyncThunk("basket/addProductToBasketAsync", async (product: IProducts) => {
     await wait(1000)
     const res = await axios.post(`${process.env.REACT_APP_PORT}/basket`, product);
-    return res.data;
+    console.log("Res data", res.data)
+    return await res.data;
 })
 
 // DELETE FROM BASKET

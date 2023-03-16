@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 import { addProductToBasketAsync, getAllBasketItemsAsync, getProductsAsync, removeFromBasketAsync } from './services'
 import { IProducts } from '../../@types/ProductTypes'
 
@@ -45,7 +45,7 @@ export const productSlice = createSlice({
             .addCase(addProductToBasketAsync.pending, (state, action) => {
                 state.isAddBasketLoading = true;
             })
-            .addCase(addProductToBasketAsync.fulfilled, (state, action) => {
+            .addCase(addProductToBasketAsync.fulfilled, (state, action: PayloadAction<IProducts>) => {
                 state.isAddBasketLoading = false;
                 state.basket.push(action.payload);
             })

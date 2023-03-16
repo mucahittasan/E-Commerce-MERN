@@ -32,7 +32,6 @@ const ProductItems = () => {
         dispatch(getProductsAsync());
     }, [dispatch])
 
-
     // When we click one of the page actions than this function will work
     const handlePageClick = (event: any) => {
         const newOffset = (event.selected * itemsPerPage) % products.length;
@@ -46,7 +45,7 @@ const ProductItems = () => {
                 {isLoading && <LoadingScreen />}
 
                 {!isLoading && currentItems?.map((item, index) => (
-                    <ProductItem key={index} item={item} />
+                    <ProductItem key={index} item={item} itemOffset={itemOffset} />
                 ))}
 
             </div>

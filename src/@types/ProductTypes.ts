@@ -24,4 +24,5 @@ export interface IProductItem {
         main_image: string,
         sub_images?: string[],
     }
+    itemOffset?: number | undefined
 }
