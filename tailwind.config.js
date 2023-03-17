@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryOrange: "hsl(26, 100%, 55%)",
+        // primaryOrange: "hsl(26, 100%, 55%)",
+        primaryOrange: "#ff1a48",
         paleOrange: "hsl(25, 100%, 94%)",
         veryDarkBlue: "hsl(220, 13%, 13%)",
         darkGrayishBlue: "hsl(219, 9%, 45%)",

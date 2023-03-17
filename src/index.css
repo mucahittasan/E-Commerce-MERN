@@ -10,12 +10,20 @@
         font-family: 'Kumbh Sans', sans-serif;
     }
 
+    ::selection {
+        @apply bg-primaryOrange text-lightGrayishBlue
+    }
+
     body, html {
         overflow-x: hidden;
     }
 
     body {
         @apply text-veryDarkBlue
+    }
+
+    button {
+        outline: none;
     }
 
     .content {

@@ -15,6 +15,7 @@ const ProductItems = () => {
 
     // All Products 
     const products = useSelector((state: RootState) => state.product.products);
+    // isLoading state
     const isLoading = useSelector((state: RootState) => state.product.isLoading);
 
     const [itemOffset, setItemOffset] = useState<number>(0);
@@ -41,7 +42,7 @@ const ProductItems = () => {
 
     return (
         <>
-            <div className='grid grid-cols-4 place-items-center my-8 gap-10'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center my-8 gap-10'>
                 {isLoading && <LoadingScreen />}
 
                 {!isLoading && currentItems?.map((item, index) => (

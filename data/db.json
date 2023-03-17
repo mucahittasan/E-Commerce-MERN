@@ -1053,5 +1053,42 @@
       "sub_images": []
     }
   ],
-  "basket": []
+  "basket": [
+    {
+      "id": 1,
+      "loading": false,
+      "title": "Rampage Monitor",
+      "description": "31.5 inç 165Hz 1ms (HDMI + Display) FreeSync AUO VA Full HD HDR Curved Gaming Oyuncu Monitör",
+      "price": 4890,
+      "category": "technology",
+      "type_of_product": "monitor",
+      "main_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg",
+      "sub_images": [
+        {
+          "sub_image_1": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274313/546865443/2/2_org_zoom.jpg",
+          "sub_image_2": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274339/546865443/2/2_org_zoom.jpg",
+          "sub_image_3": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274380/546865443/2/2_org_zoom.jpg"
+        }
+      ]
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "loading": false,
+      "title": "Rampage Monitor",
+      "description": "31.5 inç 165Hz 1ms (HDMI + Display) FreeSync AUO VA Full HD HDR Curved Gaming Oyuncu Monitör",
+      "price": 4890,
+      "category": "technology",
+      "type_of_product": "monitor",
+      "main_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg",
+      "sub_images": [
+        {
+          "sub_image_1": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274313/546865443/2/2_org_zoom.jpg",
+          "sub_image_2": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274339/546865443/2/2_org_zoom.jpg",
+          "sub_image_3": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274380/546865443/2/2_org_zoom.jpg"
+        }
+      ]
+    }
+  ]
 }

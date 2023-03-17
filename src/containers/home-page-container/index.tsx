@@ -19,7 +19,7 @@ const HomePageContainer = () => {
           <h2 className='text-[clamp(40px,6.5454vw,72px)] leading-none font-bold mb-4'>Online Mağazanın En Büyük <span className='text-primaryOrange'>Yolculuğu</span> </h2>
           <p className='text-base text-slate-600'>Sadece 5 dakikanızı alır ve ödemeden teslimata kadar her şeyi biz hallederiz</p>
           <Link to="/shop">
-            <button className='btn sm:mt-8 mt-4 bg-primaryOrange text-white hover:shadow-[0_0_10px_2px_rgba(255,125,26,0.75)]' >Alışverişe başla</button>
+            <button className='btn sm:mt-8 mt-4 bg-primaryOrange text-white hover:shadow-[0_0_10px_2px_rgba(255,26,72,.75)]' >Alışverişe başla</button>
           </Link>
         </div>
 
