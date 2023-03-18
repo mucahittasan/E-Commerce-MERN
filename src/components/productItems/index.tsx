@@ -1,5 +1,5 @@
 // Libraries
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { AppDispatch, RootState } from '../../redux/store';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactPaginate from 'react-paginate';
@@ -10,6 +10,7 @@ import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
 // Component
 import ProductItem from '../productItem';
 import LoadingScreen from '../loadingScreen';
+import { setItemOffset } from '../../redux/basket/basketSlice';
 
 const ProductItems = () => {
 
@@ -18,7 +19,9 @@ const ProductItems = () => {
     // isLoading state
     const isLoading = useSelector((state: RootState) => state.product.isLoading);
 
-    const [itemOffset, setItemOffset] = useState<number>(0);
+    const itemOffset = useSelector((state: RootState) => state.basket.itemOffset)
+
+
     // number of items to be displayed per page
     const itemsPerPage = 16;
 
@@ -36,17 +39,17 @@ const ProductItems = () => {
     // When we click one of the page actions than this function will work
     const handlePageClick = (event: any) => {
         const newOffset = (event.selected * itemsPerPage) % products.length;
-        setItemOffset(newOffset);
+        dispatch(setItemOffset(newOffset))
     };
 
 
     return (
         <>
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center my-8 gap-10'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center my-8 gap-10'>
                 {isLoading && <LoadingScreen />}
 
                 {!isLoading && currentItems?.map((item, index) => (
-                    <ProductItem key={index} item={item} itemOffset={itemOffset} />
+                    <ProductItem key={index} item={item} />
                 ))}
 
             </div>

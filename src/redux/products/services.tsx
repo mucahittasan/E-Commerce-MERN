@@ -1,6 +1,11 @@
 import axios from 'axios'
 import { createAsyncThunk } from '@reduxjs/toolkit'
 
+interface IUpdateCount {
+    id: number,
+    count: number
+}
+
 // Wait for it :)
 const wait = (ms: number) =>
     new Promise<void>((resolve) => {
@@ -18,5 +23,12 @@ export const getProductsAsync = createAsyncThunk("products/getProductsAsync", as
 export const getProductByIdAsync = createAsyncThunk("products/getProductByIdAsync", async (id: number) => {
     const res = await axios.get(`${process.env.REACT_APP_PORT}/items/${id}`);
     return await res.data;
+})
 
+// UPDATE PRODUCT COUNT
+export const updateProductCountAsync = createAsyncThunk("products/updateProductCountAsync", async ({ id, count }: IUpdateCount) => {
+    const res = await axios.patch(`${process.env.REACT_APP_PORT}/items/${id}`, {
+        count: count
+    });
+    return await res.data;
 })

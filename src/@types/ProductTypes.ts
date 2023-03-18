@@ -6,9 +6,14 @@ export interface IProducts {
     price: number,
     category: string,
     type_of_product: string,
+    count: number,
     gender?: string,
     main_image: string,
-    sub_images?: string[],
+    images?: [
+        {
+            sub_image?: string
+        }
+    ] | undefined,
 }
 
 export interface IProductItem {
@@ -20,9 +25,14 @@ export interface IProductItem {
         price: number,
         category: string,
         type_of_product: string,
+        count: number,
         gender?: string,
         main_image: string,
-        sub_images?: string[],
+        images?: [
+            {
+                sub_image?: string
+            }
+        ] | undefined,
     }
     itemOffset?: number | undefined
 }

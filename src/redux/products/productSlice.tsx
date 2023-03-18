@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { getProductByIdAsync, getProductsAsync } from './services'
+import { getProductByIdAsync, getProductsAsync, updateProductCountAsync } from './services'
 import { IProducts } from '../../@types/ProductTypes'
 
 
@@ -8,6 +8,11 @@ export type ProductState = {
     currentProduct: IProducts | undefined,
     isLoading: boolean,
     error: null | string | undefined,
+}
+
+export interface IncrementProductCountPayload {
+    productId: number;
+    count: number;
 }
 
 const initialState: ProductState = {
@@ -49,6 +54,14 @@ export const productSlice = createSlice({
             })
             .addCase(getProductByIdAsync.rejected, (state, action) => {
                 state.isLoading = false;
+                state.error = action.error.message;
+            })
+
+        // Update product count
+        builder
+            .addCase(updateProductCountAsync.fulfilled, (state, action) => {
+            })
+            .addCase(updateProductCountAsync.rejected, (state, action) => {
                 state.error = action.error.message;
             })
 
