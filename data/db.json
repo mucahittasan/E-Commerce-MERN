@@ -33,7 +33,7 @@
       "price": 2780,
       "category": "technology",
       "type_of_product": "monitor",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
       "images": [
         {
@@ -1492,7 +1492,58 @@
           "sub_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794358/81711096/1/1_org_zoom.jpg"
         }
       ]
+    },
+    {
+      "id": 2,
+      "loading": false,
+      "title": "Samsung Monitor",
+      "description": "27 inç T350 Çerçevesiz Ips 75hz Freesync Hdmi Full Hd Gaming Monitör LLF27T350FHRXUF",
+      "price": 2780,
+      "category": "technology",
+      "type_of_product": "monitor",
+      "count": 0,
+      "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty21/product/media/images/20201109/11/24208278/103014183/3/3_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/4/4_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
+        }
+      ]
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "id": 2,
+      "loading": false,
+      "title": "Samsung Monitor",
+      "description": "27 inç T350 Çerçevesiz Ips 75hz Freesync Hdmi Full Hd Gaming Monitör LLF27T350FHRXUF",
+      "price": 2780,
+      "category": "technology",
+      "type_of_product": "monitor",
+      "count": 0,
+      "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty21/product/media/images/20201109/11/24208278/103014183/3/3_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/4/4_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
+        }
+      ]
+    }
+  ]
 }

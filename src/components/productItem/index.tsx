@@ -56,7 +56,7 @@ const ProductItem: React.FC<IProductItem> = ({ item }) => {
             <div className="relative transition border-[2px] border-slate-200 rounded p-2 group group-hover:border-grayishBlue ">
                 <img src={item.main_image} alt={item.title} className="max-h-80 w-full object-contain transition duration-300 group-hover:scale-[1.05]" />
                 {haveFavorites?.id === item.id ?
-                    <button onClick={(e) => removeFromFavorites(e, item)} className="absolute top-3 right-3 w-[30px] h-[30px] text-lg flex items-center justify-center transition bg-primaryOrange text-white rounded-full hover:shadow-[0_0_10px_2px_rgba(255,26,72,.75)]"> <HiOutlineHeart /> </button>
+                    <button onClick={(e) => removeFromFavorites(e, item)} className="absolute top-3 right-3 w-[30px] h-[30px] text-lg flex items-center justify-center transition bg-primaryRed text-white rounded-full hover:shadow-[0_0_10px_2px_rgba(255,26,72,.75)]"> <HiOutlineHeart /> </button>
                     : <button onClick={(e) => addToFavorites(e, item)} className="absolute top-3 right-3 w-[30px] h-[30px] text-lg flex items-center justify-center bg-slate-200 transition hover:bg-veryDarkBlue hover:text-white rounded-full"> <HiOutlineHeart /> </button>
                 }
             </div>

@@ -16,10 +16,10 @@ const HomePageContainer = () => {
       <div className='p-4 sm:px-6 md:gap-y-0 gap-y-10 flex items-center h-full w-full sm:flex-row flex-col content gap-x-5 justify-between px-4 2xl:px-0'>
         <div className='max-w-[600px]'>
           <h3 className='font-medium mb-3 text-[clamp(14px,1.4545vw,16px)]'>DAHA İYİ ALIŞVERİŞ</h3>
-          <h2 className='text-[clamp(40px,6.5454vw,72px)] leading-none font-bold mb-4'>Online Mağazanın En Büyük <span className='text-primaryOrange'>Yolculuğu</span> </h2>
+          <h2 className='text-[clamp(40px,6.5454vw,72px)] leading-none font-bold mb-4'>Online Mağazanın En Büyük <span className='text-primaryRed'>Yolculuğu</span> </h2>
           <p className='text-base text-slate-600'>Sadece 5 dakikanızı alır ve ödemeden teslimata kadar her şeyi biz hallederiz</p>
           <Link to="/shop">
-            <button className='btn sm:mt-8 mt-4 bg-primaryOrange text-white hover:shadow-[0_0_10px_2px_rgba(255,26,72,.75)]' >Alışverişe başla</button>
+            <button className='btn sm:mt-8 mt-4 bg-primaryRed text-white hover:shadow-[0_0_10px_2px_rgba(255,26,72,.75)]' >Alışverişe başla</button>
           </Link>
         </div>
 

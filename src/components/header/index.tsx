@@ -53,7 +53,7 @@ const Header = () => {
                 type="text"
                 placeholder='Ara..' />
 
-              <button onClick={() => setSearchActive(false)} className='absolute md:right-20 right-[10px] text-3xl top-20 text-white transition-colors hover:text-primaryOrange'>
+              <button onClick={() => setSearchActive(false)} className='absolute md:right-20 right-[10px] text-3xl top-20 text-white transition-colors hover:text-primaryRed'>
                 x
               </button>
             </div>
@@ -66,7 +66,7 @@ const Header = () => {
             Favoriler
           </div>
           {favoritesLength > 0 &&
-            <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryOrange text-white rounded-full'>{favoritesLength}</span>
+            <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryRed text-white rounded-full'>{favoritesLength}</span>
           }
         </Link>
 
@@ -76,7 +76,7 @@ const Header = () => {
             Sepet
           </div>
           {basketLength > 0 &&
-            <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryOrange text-white rounded-full'>{basketLength}</span>
+            <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryRed text-white rounded-full'>{basketLength}</span>
           }
         </Link>
 
@@ -112,7 +112,7 @@ const Header = () => {
                     type="text"
                     placeholder='Ara..' />
 
-                  <button onClick={() => setSearchActive(false)} className='absolute md:right-20 right-[10px] text-3xl top-20 text-white transition-colors hover:text-primaryOrange'>
+                  <button onClick={() => setSearchActive(false)} className='absolute md:right-20 right-[10px] text-3xl top-20 text-white transition-colors hover:text-primaryRed'>
                     x
                   </button>
                 </div>
@@ -125,7 +125,7 @@ const Header = () => {
                 Favoriler
               </div>
               {favoritesLength > 0 &&
-                <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryOrange text-white rounded-full'>{favoritesLength}</span>
+                <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryRed text-white rounded-full'>{favoritesLength}</span>
               }
             </Link>
 
@@ -135,11 +135,11 @@ const Header = () => {
                 Sepet
               </div>
               {basketLength > 0 &&
-                <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryOrange text-white rounded-full'>{basketLength}</span>
+                <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryRed text-white rounded-full'>{basketLength}</span>
               }
             </Link>
           </div>
-          <button onClick={() => setActiveHamburger(false)} className='absolute right-5 top-5 text-xl font-medium hover:text-primaryOrange'>
+          <button onClick={() => setActiveHamburger(false)} className='absolute right-5 top-5 text-xl font-medium hover:text-primaryRed'>
             X
           </button>
         </div>
