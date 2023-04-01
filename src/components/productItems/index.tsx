@@ -45,7 +45,7 @@ const ProductItems = () => {
 
     return (
         <>
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center my-8 gap-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center my-8 gap-10'>
                 {isLoading && <LoadingScreen />}
 
                 {!isLoading && currentItems?.map((item, index) => (

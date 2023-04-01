@@ -6,6 +6,9 @@ import MainLayout from "../../layouts/main-layout";
 import HomePage from "../../pages/home-page";
 import ShopPage from "../../pages/shop-page";
 import ProductDetailPage from "../../pages/productDetail-page";
+import SepetPage from "../../pages/sepet-page";
+import FavoritesPage from "../../pages/favorites-page";
+import SearchPage from "../../pages/search-page";
 
 export const router = createBrowserRouter([
   {
@@ -14,7 +17,6 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
-        // loader: homePageLoader
       },
       {
         path: "/shop",
@@ -23,6 +25,18 @@ export const router = createBrowserRouter([
       {
         path: "/shop/:id",
         element: <ProductDetailPage />
+      },
+      {
+        path: "/basket",
+        element: <SepetPage />,
+      },
+      {
+        path: "/favorites",
+        element: <FavoritesPage />,
+      },
+      {
+        path: "/search",
+        element: <SearchPage />,
       }
     ],
   },

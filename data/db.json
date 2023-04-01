@@ -83,7 +83,7 @@
       "price": 5250,
       "category": "technology",
       "type_of_product": "phone",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg",
       "images": [
         {
@@ -191,12 +191,6 @@
         },
         {
           "sub_image": "https://cdn.dsmcdn.com/ty561/product/media/images/20221013/15/192780224/595571180/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty561/product/media/images/20221013/15/192780224/595571180/3/3_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty561/product/media/images/20221013/15/192780224/595571180/4/4_org_zoom.jpg"
         }
       ]
     },
@@ -233,7 +227,7 @@
       "price": 14.539,
       "category": "technology",
       "type_of_product": "television",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty159/product/media/images/20210816/16/119076250/226111631/1/1_org_zoom.jpg",
       "images": [
         {
@@ -881,9 +875,6 @@
         },
         {
           "sub_image": "https://cdn.dsmcdn.com/ty651/product/media/images/20221220/0/241995474/654675342/3/3_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty651/product/media/images/20221220/0/241995474/654675342/4/4_org_zoom.jpg"
         }
       ]
     },
@@ -930,9 +921,6 @@
         },
         {
           "sub_image": "https://cdn.dsmcdn.com/ty737/product/media/images/20230217/14/282668933/859565059/3/3_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty737/product/media/images/20230217/14/282668933/859565059/4/4_org_zoom.jpg"
         }
       ]
     },
@@ -982,9 +970,6 @@
         },
         {
           "sub_image": "https://cdn.dsmcdn.com/ty623/product/media/images/20221206/8/227854168/639536529/3/3_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty623/product/media/images/20221206/8/227854168/639536529/4/4_org_zoom.jpg"
         }
       ]
     },
@@ -1469,81 +1454,80 @@
   ],
   "basket": [
     {
-      "id": 12,
+      "id": 2,
       "loading": false,
-      "title": "Rampage Rm-k27 Kulaklik",
-      "description": "3,5 Mm 7 Renk Ledli Gaming Oyuncu Mikrofonlu Kulaklık",
-      "price": 329,
+      "title": "Samsung Monitor",
+      "description": "27 inç T350 Çerçevesiz Ips 75hz Freesync Hdmi Full Hd Gaming Monitör LLF27T350FHRXUF",
+      "price": 2780,
       "category": "technology",
-      "type_of_product": "earphones",
-      "count": 6,
-      "main_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794300/81711096/1/1_org_zoom.jpg",
+      "type_of_product": "monitor",
+      "count": 0,
+      "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
       "images": [
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794300/81711096/1/1_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794270/81711096/1/1_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty21/product/media/images/20201109/11/24208278/103014183/3/3_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty206/product/media/images/20211020/13/152794312/81711096/1/1_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/4/4_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794358/81711096/1/1_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
         }
       ]
     },
     {
-      "id": 2,
+      "id": 4,
       "loading": false,
-      "title": "Samsung Monitor",
-      "description": "27 inç T350 Çerçevesiz Ips 75hz Freesync Hdmi Full Hd Gaming Monitör LLF27T350FHRXUF",
-      "price": 2780,
+      "title": "Samsung Galaxy M13",
+      "description": "Dahili Hafıza 128 GB Renk, Mavi Garanti Tipi Samsung TR Garantili, Ekran Boyutu 7 inç, Kamera Çözünürlüğü 20 MP ve üstü, Ekran Çözünürlüğü FHD+",
+      "price": 5250,
       "category": "technology",
-      "type_of_product": "monitor",
+      "type_of_product": "phone",
       "count": 0,
-      "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
+      "main_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg",
       "images": [
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty21/product/media/images/20201109/11/24208278/103014183/3/3_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/4/4_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/4/4_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/5/5_org_zoom.jpg"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "loading": false,
+      "title": "Samsung 55AU7000",
+      "description": "55' 139 Ekran Uydu Alıcılı Crystal 4K Ultra HD Smart LED TV",
+      "price": 14.539,
+      "category": "technology",
+      "type_of_product": "television",
+      "count": 0,
+      "main_image": "https://cdn.dsmcdn.com/ty159/product/media/images/20210816/16/119076250/226111631/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty159/product/media/images/20210816/16/119076250/226111631/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty160/product/media/images/20210816/15/119074798/227669857/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty161/product/media/images/20210816/15/119074802/227669857/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty160/product/media/images/20210816/15/119074812/227669857/1/1_org_zoom.jpg"
         }
       ]
     }
   ],
-  "favorites": [
-    {
-      "id": 2,
-      "loading": false,
-      "title": "Samsung Monitor",
-      "description": "27 inç T350 Çerçevesiz Ips 75hz Freesync Hdmi Full Hd Gaming Monitör LLF27T350FHRXUF",
-      "price": 2780,
-      "category": "technology",
-      "type_of_product": "monitor",
-      "count": 0,
-      "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
-      "images": [
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty21/product/media/images/20201109/11/24208278/103014183/3/3_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/4/4_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
-        }
-      ]
-    }
-  ]
+  "favorites": []
 }

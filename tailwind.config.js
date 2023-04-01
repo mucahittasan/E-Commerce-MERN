@@ -5,13 +5,13 @@ module.exports = {
   ],
   theme: {
     minHeight: {
-      "screenSize": "calc(100vh - 117px)"
+      "screenSize": "calc(100vh - 102px)",
+      "mobileScreenSize": "calc(100vh - 102px)"
     },
     extend: {
       colors: {
         // primaryOrange: "hsl(26, 100%, 55%)",
         primaryRed: "#ff1a48",
-        paleOrange: "hsl(25, 100%, 94%)",
         veryDarkBlue: "hsl(220, 13%, 13%)",
         darkGrayishBlue: "hsl(219, 9%, 45%)",
         grayishBlue: "hsl(220, 14%, 75%)",

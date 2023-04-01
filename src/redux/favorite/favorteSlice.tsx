@@ -37,6 +37,9 @@ export const productSlice = createSlice({
 
         // Get All Favorites
         builder
+            .addCase(getAllFavoritesAsync.pending, (state, action) => {
+                state.isLoading = true;
+            })
             .addCase(getAllFavoritesAsync.fulfilled, (state, action) => {
                 state.isLoading = false;
                 state.favorites = action.payload
@@ -52,7 +55,7 @@ export const productSlice = createSlice({
                 state.isLoading = true;
             })
             .addCase(removeFromFavoritesAsync.fulfilled, (state, action) => {
-                state.isLoading = true;
+                state.isLoading = false;
                 const newBasket = state.favorites.filter(item => item.id !== action.payload)
                 state.favorites = newBasket
             })

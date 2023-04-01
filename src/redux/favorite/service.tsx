@@ -2,6 +2,7 @@ import axios from 'axios'
 import { createAsyncThunk } from '@reduxjs/toolkit'
 import { IProducts } from '../../@types/ProductTypes';
 
+
 // GET ALL FAVORITEs
 export const getAllFavoritesAsync = createAsyncThunk("favorites/getAllFavoritesAsync", async () => {
     const res = await axios.get(`${process.env.REACT_APP_PORT}/favorites`,);

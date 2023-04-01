@@ -1,5 +1,5 @@
 // React Libraries
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 // Icons
@@ -12,6 +12,8 @@ import { getProductByIdAsync, updateProductCountAsync } from '../../redux/produc
 // Api actions
 import AddToBasketButton from '../../components/addToBasketButton';
 import { addProductToBasketAsync, removeFromBasketAsync } from '../../redux/basket/service';
+// Components
+import ImageSlider from '../../components/imageSlider';
 
 const ProductDetailContainer = () => {
 
@@ -22,11 +24,6 @@ const ProductDetailContainer = () => {
 
     // This is give us clicked (current) product
     const currentProduct = useSelector((state: RootState) => state.product.currentProduct);
-
-    // Which image is clicked, we will define the index number of that image in this state
-    const [clickedItem, setClickedItem] = useState<number>(0)
-
-    const [imagesLength, setImagesLength] = useState<boolean>()
 
 
     // Product count is increment
@@ -53,76 +50,29 @@ const ProductDetailContainer = () => {
         }
     }
 
-    // When we click the each image than this will work and we get the index of the image and we will show it 
-    const showClickedItem = (index: number) => {
-        const getAllImages = document.querySelectorAll(".detail-image");
-        getAllImages.forEach((item) => {
-            item.classList.remove("active")
-        })
-
-        getAllImages[index].classList.add("active");
-        setClickedItem(index);
-    }
-
     // Get product by id when page is load and if it's  dispatch
     useEffect(() => {
         dispatch(getProductByIdAsync(Number(id)));
     }, [dispatch, id]);
 
 
-    // When product is come, we will add an active class to first image
-    useEffect(() => {
-        const getAllImages = document.querySelectorAll(".detail-image");
-        getAllImages.forEach((item) => {
-            item.classList.remove("active")
-        })
-        getAllImages[clickedItem || 0]?.classList.add("active")
-
-        if (currentProduct?.images && currentProduct.images?.length > 0) {
-            setImagesLength(true)
-        }
-
-        if (currentProduct?.images && currentProduct.images?.length <= 0) {
-            setImagesLength(false)
-        }
-
-    }, [currentProduct])
-
     return (
-        <div className='flex max-w-[1300px] m-auto gap-x-12 min-h-screenSize items-center'>
+        <div className='flex max-w-[1300px] md:flex-row flex-col xl:px-0 gap-y-9 px-3 m-auto gap-x-12 md:min-h-screenSize min-h-mobileScreenSize items-center'>
             {currentProduct &&
                 <>
-
-                    <div className='flex-1 flex flex-col items-center'>
-                        <div className='w-96 mb-8'>
-                            {imagesLength &&
-                                <img src={currentProduct.images && currentProduct.images[clickedItem]?.sub_image} alt="Product" />
-                            }
-                            {!imagesLength &&
-                                <img src={currentProduct.main_image} alt="Product" />
-                            }
-                        </div>
-                        <div className='flex w-full justify-center gap-x-4'>
-                            {currentProduct?.images?.map((item, index) => (
-                                <button onClick={() => showClickedItem(index)} className='detail-image' key={index}>
-                                    <img className='w-full h-full object-contain' src={item.sub_image} alt="Sub photos" />
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className='flex-1 flex flex-col justify-center'>
-                        <div className='text-5xl font-bold text-veryDarkBlue mb-8'>
+                    <ImageSlider currentProduct={currentProduct} />
+                    <div className='flex-1 flex flex-col justify-center md:mb-0 mb-10'>
+                        <div className='text-[clamp(30px,3.6923vw,48px)] font-bold text-veryDarkBlue mb-8'>
                             {currentProduct?.title}
                         </div>
-                        <div className='text-darkGrayishBlue tracking-[0.5px] mb-4'>
+                        <div className='text-darkGrayishBlue tracking-[0.5px] mb-4 text-[clamp(14px,1.2307vw,16px)]'>
                             {currentProduct?.description && currentProduct?.description}
                         </div>
-                        <div className='text-3xl font-bold mb-8'>
+                        <div className='text-[clamp(20px,2.3076vw,30px)] font-bold mb-8'>
                             {currentProduct?.price} TL
                         </div>
-                        <div className='flex gap-x-4'>
-                            <div className='bg-slate-200 flex items-center justify-between min-w-[150px] rounded-md font-bold text-sm overflow-hidden'>
+                        <div className='flex gap-x-4 sm:flex-row flex-col sm:items-stretch gap-y-4 items-start'>
+                            <div className='bg-slate-200 flex items-center sm:h-auto h-9 justify-between min-w-[150px] rounded-md font-bold text-sm overflow-hidden'>
                                 <button onClick={() => decrementCount(currentProduct)} className='text-primaryRed h-full w-9 flex items-center justify-center transition hover:bg-primaryRed hover:text-white'>
                                     <FaMinus />
                                 </button>

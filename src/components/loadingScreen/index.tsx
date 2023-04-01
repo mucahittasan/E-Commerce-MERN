@@ -14,7 +14,7 @@ const LoadingScreen = () => {
                         <Skeleton width={250} height={300} />
                     </div>
                     <div>
-                        <Skeleton count={3} />
+                        <Skeleton count={4} />
                     </div>
                 </div>
             ))}

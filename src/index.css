@@ -10,6 +10,25 @@
         font-family: 'Kumbh Sans', sans-serif;
     }
 
+    ::-webkit-scrollbar {
+        width: 8px;
+        max-width: 8px;
+        min-width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+       
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        @apply bg-veryDarkBlue rounded-lg transition-all border-r-8 border-white
+    }
+
+    ::-webkit-scrollbar-thumb:hover{
+        @apply bg-darkGrayishBlue
+    }
+
     ::selection {
         @apply bg-primaryRed text-lightGrayishBlue
     }
@@ -20,6 +39,10 @@
 
     body {
         @apply text-veryDarkBlue
+    }
+
+    .main-container {
+        @apply max-w-[1300px] w-full m-auto px-4 2xl:px-0 
     }
 
     button {
@@ -61,11 +84,15 @@
     }
 
     .detail-image {
-        @apply w-32 max-h-32 border-[2px] transition border-slate-200 hover:border-grayishBlue rounded-xl overflow-hidden
+        @apply w-[clamp(75px,9.8461vw,128px)] aspect-square border-[2px] transition border-slate-200 hover:border-grayishBlue rounded-xl overflow-hidden
     }
 
     .detail-image.active {
         @apply border-primaryRed relative before:absolute before:w-full before:h-full before:bg-white before:opacity-[.7] before:left-0 before:top-0 scale-[1.05]
+    }
+
+    .basket-button {
+        @apply sm:w-auto w-full justify-center flex sm:justify-between
     }
 
     /* Pagination Content */
@@ -98,9 +125,7 @@
     }
 
     ul[role="navigation"] li.selected a {
-        background-color: rgb(255, 125, 26);
-        color: #fff;
-        font-weight: bold;
+        @apply bg-primaryRed text-white font-bold
     }
 
     /* LOADING */
