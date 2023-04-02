@@ -33,7 +33,7 @@
       "price": 2780,
       "category": "teknoloji",
       "type_of_product": "monitor",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
       "images": [
         {
@@ -58,7 +58,7 @@
       "price": 44.48,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
       "images": [
         {
@@ -108,7 +108,7 @@
       "price": 19.499,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg",
       "images": [
         {
@@ -133,7 +133,7 @@
       "price": 32.999,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty569/product/media/images/20221018/13/196554062/599746666/1/1_org_zoom.jpg",
       "images": [
         {
@@ -252,7 +252,7 @@
       "price": 379,
       "category": "teknoloji",
       "type_of_product": "kulaklik",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty19/product/media/images/20201105/2/22595195/101193178/0/0_org_zoom.jpg",
       "images": [
         {
@@ -837,7 +837,7 @@
       "price": 191,
       "category": "kiyafet",
       "type_of_product": "tshirt",
-      "count": 0,
+      "count": 5,
       "gender": "man",
       "main_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/1/1_org_zoom.jpg",
       "images": [
@@ -1314,7 +1314,7 @@
       "description": "Her gün, daima öğleden sonra oraya gidiyor, koridorlardaki resimlere bakıyormuş gibi ağır ağır, fakat büyük bir sabırzıszılka asıl hedefine varmak isteyen adımlarımı zorla zapt ederek geziniyor Rastgele gözüme çarpmış gibi önünde durduğum 'kürk mantolu madonna'yı seyre dalıyor, ta kapılar kapanıncaya kadar orada bekliyordum.",
       "price": 20,
       "category": "kitap",
-      "count": 0,
+      "count": 1,
       "type_of_product": "ask",
       "main_image": "https://cdn.dsmcdn.com/ty697/product/media/images/20230121/9/262568079/5703074/1/1_org_zoom.jpg",
       "images": []
@@ -1326,7 +1326,7 @@
       "description": "Seçkin bir burjuva olarak rahat ve tasasız varoluşunu sürdürürken giderek duyarsızlaşan bir adamın hayatındaki dönüştürücü deneyimin hikâyesidir. Sıradan bir Pazar gününü at yarışlarında geçirirken, belki de ilk kez burjuva ahlakından saparak suç işler. Böylece yeniden hissetmeye başladığını, kötücül ve ateşli hazları olan gerçek bir insan olduğunu fark eder. İçindeki haz dolu esrime, aynı günün akşamında onu gece âleminin son atıklarının arasına, hayatın en dibindeki lağımlara sürükleyecek, varış noktası ise ruhani bir uyanış olacaktır.",
       "price": 21,
       "category": "kitap",
-      "count": 0,
+      "count": 1,
       "type_of_product": "klasik",
       "main_image": "https://cdn.dsmcdn.com/ty213/product/media/images/20211029/15/159442385/14722695/2/2_org_zoom.jpg",
       "images": []
@@ -1454,27 +1454,102 @@
   ],
   "basket": [
     {
-      "id": 11,
+      "id": 3,
       "loading": false,
-      "title": "Rampage Alquist Kulaklik",
-      "description": "Siyah 3,5mm Rgb Gaming Oyuncu Mikrofonlu Kulaklık 153195",
-      "price": 379,
+      "title": "Iphone 14 Pro Max 128GB Derin Mor",
+      "description": "Apple Türkiye Garantili 7 inc QHD+ 20 - 40 MP On kamera cozunurlugu, 6GB ram, Mor renk",
+      "price": 44.48,
       "category": "teknoloji",
-      "type_of_product": "kulaklik",
+      "type_of_product": "telefon",
       "count": 0,
-      "main_image": "https://cdn.dsmcdn.com/ty19/product/media/images/20201105/2/22595195/101193178/0/0_org_zoom.jpg",
+      "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
       "images": [
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty19/product/media/images/20201105/2/22595195/101193178/0/0_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty20/product/media/images/20201105/2/22595195/101193178/1/1_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty539/product/media/images/20220920/22/177587611/574173140/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty19/product/media/images/20201105/2/22595195/101193178/2/2_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty537/product/media/images/20220920/22/177587615/574173140/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty20/product/media/images/20201105/2/22595195/101193178/3/3_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587650/574173140/2/2_org_zoom.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "loading": false,
+      "title": "Kürk Mantolu Madonna",
+      "description": "Her gün, daima öğleden sonra oraya gidiyor, koridorlardaki resimlere bakıyormuş gibi ağır ağır, fakat büyük bir sabırzıszılka asıl hedefine varmak isteyen adımlarımı zorla zapt ederek geziniyor Rastgele gözüme çarpmış gibi önünde durduğum 'kürk mantolu madonna'yı seyre dalıyor, ta kapılar kapanıncaya kadar orada bekliyordum.",
+      "price": 20,
+      "category": "kitap",
+      "count": 0,
+      "type_of_product": "ask",
+      "main_image": "https://cdn.dsmcdn.com/ty697/product/media/images/20230121/9/262568079/5703074/1/1_org_zoom.jpg",
+      "images": []
+    },
+    {
+      "id": 57,
+      "loading": false,
+      "title": "Olağanüstü Bir Gece - Stefan Zweig ",
+      "description": "Seçkin bir burjuva olarak rahat ve tasasız varoluşunu sürdürürken giderek duyarsızlaşan bir adamın hayatındaki dönüştürücü deneyimin hikâyesidir. Sıradan bir Pazar gününü at yarışlarında geçirirken, belki de ilk kez burjuva ahlakından saparak suç işler. Böylece yeniden hissetmeye başladığını, kötücül ve ateşli hazları olan gerçek bir insan olduğunu fark eder. İçindeki haz dolu esrime, aynı günün akşamında onu gece âleminin son atıklarının arasına, hayatın en dibindeki lağımlara sürükleyecek, varış noktası ise ruhani bir uyanış olacaktır.",
+      "price": 21,
+      "category": "kitap",
+      "count": 0,
+      "type_of_product": "klasik",
+      "main_image": "https://cdn.dsmcdn.com/ty213/product/media/images/20211029/15/159442385/14722695/2/2_org_zoom.jpg",
+      "images": []
+    },
+    {
+      "id": 35,
+      "loading": false,
+      "title": "Unisex 3 Iplik Şardonlu %100 Pamuk Oversize Sweatshirt ",
+      "description": "%100 Pamuk Kumaştan üretilmiştir. Oversize Kalıptır. 3 İplik Şardonlu modeldir.",
+      "price": 191,
+      "category": "kiyafet",
+      "type_of_product": "tshirt",
+      "count": 0,
+      "gender": "man",
+      "main_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/3/3_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty580/product/media/images/20221027/14/203054071/568889862/4/4_org_zoom.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "loading": false,
+      "title": "Samsung Galaxy S22",
+      "description": "Dahili Hafıza 128 GB, Garanti Tipi Resmi Distribütör Garantili, Renk Pembe, Ekran Boyut 7'' Üstü,  Ekran Cinsi AMOLED, Ekran Teknolojisi Dinamik AMOLED",
+      "price": 19.499,
+      "category": "teknoloji",
+      "type_of_product": "telefon",
+      "count": 0,
+      "main_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty352/product/media/images/20220308/14/65167204/408683873/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/3/3_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty352/product/media/images/20220308/14/65167204/408683873/4/4_org_zoom.jpg"
         }
       ]
     },
@@ -1486,7 +1561,7 @@
       "price": 4890,
       "category": "teknoloji",
       "type_of_product": "monitor",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg",
       "images": [
         {
@@ -1502,57 +1577,45 @@
           "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274380/546865443/2/2_org_zoom.jpg"
         }
       ]
+    }
+  ],
+  "favorites": [
+    {
+      "id": 55,
+      "loading": false,
+      "title": "Hayvan Çiftliği - George Orwell",
+      "description": "İngiliz yazar George Orwell, ülkemizde daha çok Bin Dokuz Yüz Seksen Dört adlı kitabıyla tanınır. Hayvan Çiftliği, onun çağdaş klasikler arasına girmiş bir diğer çok ünlü eseridir.",
+      "price": 25,
+      "category": "kitap",
+      "count": 0,
+      "type_of_product": "klasik",
+      "main_image": "https://cdn.dsmcdn.com/ty169/product/media/images/20210903/18/125634694/5703095/1/1_org_zoom.jpg",
+      "images": []
     },
     {
-      "id": 2,
+      "id": 5,
       "loading": false,
-      "title": "Samsung Monitor",
-      "description": "27 inç T350 Çerçevesiz Ips 75hz Freesync Hdmi Full Hd Gaming Monitör LLF27T350FHRXUF",
-      "price": 2780,
-      "category": "teknoloji",
-      "type_of_product": "monitor",
-      "count": 1,
-      "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
-      "images": [
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty21/product/media/images/20201109/11/24208278/103014183/3/3_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/4/4_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "loading": false,
-      "title": "Huawei Mate 50pro",
-      "description": "Dahili Hafıza 256 GB, Renk Gümüş, Garanti Tipi Huawei Türkiye Garantili, Ekran Boyut Aralığı 6.5'' - 7'', Dokunmatik Ekran Var, Arka Kamera Sayısı 3",
-      "price": 32.999,
+      "title": "Samsung Galaxy S22",
+      "description": "Dahili Hafıza 128 GB, Garanti Tipi Resmi Distribütör Garantili, Renk Pembe, Ekran Boyut 7'' Üstü,  Ekran Cinsi AMOLED, Ekran Teknolojisi Dinamik AMOLED",
+      "price": 19.499,
       "category": "teknoloji",
       "type_of_product": "telefon",
       "count": 0,
-      "main_image": "https://cdn.dsmcdn.com/ty569/product/media/images/20221018/13/196554062/599746666/1/1_org_zoom.jpg",
+      "main_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg",
       "images": [
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty569/product/media/images/20221018/13/196554062/599746666/1/1_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty567/product/media/images/20221018/13/196554062/599746666/2/2_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty352/product/media/images/20220308/14/65167204/408683873/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty568/product/media/images/20221018/13/196554062/599746666/3/3_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/3/3_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty567/product/media/images/20221018/13/196554062/599746666/4/4_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty352/product/media/images/20220308/14/65167204/408683873/4/4_org_zoom.jpg"
         }
       ]
     }
-  ],
-  "favorites": []
+  ]
 }
