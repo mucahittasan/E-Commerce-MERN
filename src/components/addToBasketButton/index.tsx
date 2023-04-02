@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import { AppDispatch, RootState } from '../../redux/store';
 import { IProducts } from '../../@types/ProductTypes';
 // Service Actions of Basket
-import { addProductToBasketAsync, getAllBasketItemsAsync, removeFromBasketAsync } from '../../redux/basket/service';
+import { addProductToBasketAsync, removeFromBasketAsync } from '../../redux/basket/service';
 // Service Actions of Products
 import { getProductByIdAsync, updateProductCountAsync } from '../../redux/products/services';
 // Components
@@ -30,7 +30,6 @@ export interface IAddToBasketProps {
             }
         ] | undefined,
     }
-    itemOffset?: number | undefined,
     myKey?: number | undefined
 }
 
@@ -40,8 +39,6 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
     const [haveBasket, setHaveBasket] = useState<IProducts | undefined>();
 
     const basket = useSelector((state: RootState) => state.basket.basket);
-
-    const itemOffset = useSelector((state: RootState) => state.basket.itemOffset)
 
     const dispatch = useDispatch<AppDispatch>()
 
@@ -69,16 +66,14 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
                 setTimeout(() => {
                     getBasketBtn[0].querySelector(".circle-loading")?.classList.remove("active")
                 }, 1000)
-                console.log("girdi")
 
             } else {
                 const allAddBasketBtn = document.querySelectorAll(".basket-button");
-                allAddBasketBtn[Number(item.id) - Number(itemOffset) - 1]?.querySelector(".circle-loading")?.classList.add("active");
+                allAddBasketBtn[Number(item.id) - 1]?.querySelector(".circle-loading")?.classList.add("active");
 
                 setTimeout(() => {
-                    allAddBasketBtn[Number(item.id) - Number(itemOffset) - 1]?.querySelector(".circle-loading")?.classList.remove("active");
+                    allAddBasketBtn[Number(item.id) - 1]?.querySelector(".circle-loading")?.classList.remove("active");
                 }, 1000);
-                console.log("girdi")
 
             }
         }
@@ -89,10 +84,6 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
     useEffect(() => {
         setHaveBasket(basket?.find(data => data.id === item.id))
     }, [basket, item, haveBasket]);
-
-    useEffect(() => {
-        dispatch(getAllBasketItemsAsync())
-    }, [dispatch])
 
     // Add to basket function
     const addToBasket = async (e: React.SyntheticEvent, item: IProducts) => {

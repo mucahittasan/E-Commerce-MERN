@@ -83,7 +83,7 @@
       "price": 5250,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg",
       "images": [
         {
@@ -133,7 +133,7 @@
       "price": 32.999,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty569/product/media/images/20221018/13/196554062/599746666/1/1_org_zoom.jpg",
       "images": [
         {
@@ -252,7 +252,7 @@
       "price": 379,
       "category": "teknoloji",
       "type_of_product": "kulaklik",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty19/product/media/images/20201105/2/22595195/101193178/0/0_org_zoom.jpg",
       "images": [
         {
@@ -1454,6 +1454,31 @@
   ],
   "basket": [
     {
+      "id": 11,
+      "loading": false,
+      "title": "Rampage Alquist Kulaklik",
+      "description": "Siyah 3,5mm Rgb Gaming Oyuncu Mikrofonlu Kulaklık 153195",
+      "price": 379,
+      "category": "teknoloji",
+      "type_of_product": "kulaklik",
+      "count": 0,
+      "main_image": "https://cdn.dsmcdn.com/ty19/product/media/images/20201105/2/22595195/101193178/0/0_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty19/product/media/images/20201105/2/22595195/101193178/0/0_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty20/product/media/images/20201105/2/22595195/101193178/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty19/product/media/images/20201105/2/22595195/101193178/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty20/product/media/images/20201105/2/22595195/101193178/3/3_org_zoom.jpg"
+        }
+      ]
+    },
+    {
       "id": 1,
       "loading": false,
       "title": "Rampage Monitor",
@@ -1475,6 +1500,56 @@
         },
         {
           "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274380/546865443/2/2_org_zoom.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "loading": false,
+      "title": "Samsung Monitor",
+      "description": "27 inç T350 Çerçevesiz Ips 75hz Freesync Hdmi Full Hd Gaming Monitör LLF27T350FHRXUF",
+      "price": 2780,
+      "category": "teknoloji",
+      "type_of_product": "monitor",
+      "count": 1,
+      "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty21/product/media/images/20201109/11/24208278/103014183/3/3_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/4/4_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "loading": false,
+      "title": "Huawei Mate 50pro",
+      "description": "Dahili Hafıza 256 GB, Renk Gümüş, Garanti Tipi Huawei Türkiye Garantili, Ekran Boyut Aralığı 6.5'' - 7'', Dokunmatik Ekran Var, Arka Kamera Sayısı 3",
+      "price": 32.999,
+      "category": "teknoloji",
+      "type_of_product": "telefon",
+      "count": 0,
+      "main_image": "https://cdn.dsmcdn.com/ty569/product/media/images/20221018/13/196554062/599746666/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty569/product/media/images/20221018/13/196554062/599746666/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty567/product/media/images/20221018/13/196554062/599746666/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty568/product/media/images/20221018/13/196554062/599746666/3/3_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty567/product/media/images/20221018/13/196554062/599746666/4/4_org_zoom.jpg"
         }
       ]
     }

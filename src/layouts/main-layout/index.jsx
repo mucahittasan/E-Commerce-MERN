@@ -14,8 +14,6 @@ const MainLayout = () => {
 
   const dispatch = useDispatch();
 
-
-
   useEffect(() => {
     dispatch(getAllBasketItemsAsync())
     dispatch(getAllFavoritesAsync())

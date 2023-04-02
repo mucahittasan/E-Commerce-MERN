@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { AppDispatch, RootState } from '../../redux/store';
-import { getProductsAsync } from '../../redux/products/services';
 import { addSearchItemToProducts, inputSearch } from '../../redux/search/searchSlice';
 
 interface SearchInputComponent {
@@ -19,10 +18,6 @@ const SearchInput: React.FC<SearchInputComponent> = ({ setSearchActive, setActiv
     const search = useSelector((state: RootState) => state.search.search);
 
     const dispatch = useDispatch<AppDispatch>();
-
-    useEffect(() => {
-        dispatch(getProductsAsync())
-    }, [dispatch])
 
 
     const headerSubmit = (e: React.SyntheticEvent) => {

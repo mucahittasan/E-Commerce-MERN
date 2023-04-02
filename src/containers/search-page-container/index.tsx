@@ -10,7 +10,7 @@ const SearchPageContainer = () => {
         <div className='flex flex-col main-container mb-8'>
             <h2 className="main-title">Arama Sonuçları</h2>
             {searchProducts?.length !== 0 ?
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center my-8 gap-10'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center my-8 gap-4'>
                     {searchProducts && searchProducts.map((item, index) => (
                         <ProductItem item={item} key={index} myKey={index} />
                     ))}

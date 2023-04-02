@@ -57,7 +57,7 @@ const ProductDetailContainer = () => {
 
 
     return (
-        <div className='flex max-w-[1300px] md:flex-row flex-col xl:px-0 gap-y-9 px-3 m-auto gap-x-12 md:min-h-screenSize min-h-mobileScreenSize items-center'>
+        <div className='flex max-w-[1300px] my-4 md:flex-row flex-col xl:px-0 gap-y-9 px-3 m-auto gap-x-12 md:min-h-screenSize min-h-mobileScreenSize items-center'>
             {currentProduct &&
                 <>
                     <ImageSlider currentProduct={currentProduct} />
