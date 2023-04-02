@@ -3,7 +3,7 @@ import { AiOutlineHeart, AiOutlineSearch } from 'react-icons/ai';
 import { SlBasket } from 'react-icons/sl';
 import { RxHamburgerMenu } from 'react-icons/rx';
 // Libraries
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 // Redux Store Types
@@ -16,13 +16,13 @@ const Header = () => {
   const basketLength = useSelector((state: RootState) => state.basket.basket.length);
   const favoritesLength = useSelector((state: RootState) => state.favorite.favorites.length);
 
+  const location = useLocation()
 
   // Search content open/close
   const [searchActive, setSearchActive] = useState<boolean>(false);
 
   // Hamburger menu open/close
   const [activeHamburger, setActiveHamburger] = useState<boolean>(false);
-
 
 
   return (
@@ -38,29 +38,20 @@ const Header = () => {
           <li>
             <NavLink className='nav-item' to="/shop">Alışveriş</NavLink>
           </li>
-          <li>
-            <NavLink className='nav-item' to="/categories">Kategoriler</NavLink>
-          </li>
+
           <li>
             <NavLink className='nav-item' to="/contact">İletişim</NavLink>
           </li>
         </ul>
       </nav>
 
-      <div className="md:flex hidden ml-auto gap-8">
-        <div className='relative group'>
-          <label className='flex cursor-pointer'>
-            <AiOutlineSearch className='text-2xl mr-2' onClick={() => setSearchActive(true)} />
-            <div className={`z-50 fixed left-0 top-0 pt-[200px] flex justify-center bg-slate-900 w-full h-full transition-all ease-linear ${!searchActive && "opacity-0 invisible"} ${searchActive && "opacity-[0.98] visible"}`}>
-              <SearchInput setSearchActive={setSearchActive} setActiveHamburger={setActiveHamburger} />
+      <div className='md:block hidden w-full flex-1'>
+        <SearchInput />
 
-              <button onClick={() => setSearchActive(false)} className='absolute md:right-20 right-[10px] text-3xl top-20 text-white transition-colors hover:text-primaryRed'>
-                x
-              </button>
-            </div>
-          </label>
-        </div>
+      </div>
 
+
+      <div className='md:flex gap-x-6 hidden'>
         <Link to="/favorites" className='relative group'>
           <AiOutlineHeart className='text-2xl' />
           <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
@@ -80,8 +71,8 @@ const Header = () => {
             <span className='absolute aspect-square top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryRed text-white rounded-full'>{basketLength}</span>
           }
         </Link>
-
       </div>
+
 
       <button onClick={() => setActiveHamburger(true)} className='text-2xl md:hidden block ml-auto'>
         <RxHamburgerMenu />
@@ -96,9 +87,7 @@ const Header = () => {
             <li>
               <NavLink className='nav-item text pb-4' to="/shop">Alışveriş</NavLink>
             </li>
-            <li>
-              <NavLink className='nav-item text pb-4' to="/categories">Kategoriler</NavLink>
-            </li>
+
             <li>
               <NavLink className='nav-item text pb-4' to="/contact">İletişim</NavLink>
             </li>

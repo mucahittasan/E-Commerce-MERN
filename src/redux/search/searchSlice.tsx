@@ -24,16 +24,23 @@ export const searchSlice = createSlice({
     initialState,
     reducers: {
         addSearchItemToProducts: (state, action) => {
-            state.products = action.payload
-            state.search = ""
+            if (state.search === "") {
+                state.products = [];
+            } else {
+                state.products = action.payload
+            }
         },
         inputSearch: (state, action) => {
             state.search = action.payload
+        },
+        clearSearchProducts: (state) => {
+            state.products = [];
+            state.search = ""
         }
     },
 
 })
 
-export const { addSearchItemToProducts, inputSearch } = searchSlice.actions
+export const { addSearchItemToProducts, inputSearch, clearSearchProducts } = searchSlice.actions
 
 export default searchSlice.reducer

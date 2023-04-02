@@ -5,8 +5,8 @@ import { AppDispatch, RootState } from '../../redux/store';
 import { addSearchItemToProducts, inputSearch } from '../../redux/search/searchSlice';
 
 interface SearchInputComponent {
-    setSearchActive: (bool: boolean) => void,
-    setActiveHamburger: (bool: boolean) => void
+    setSearchActive?: (bool: boolean) => void,
+    setActiveHamburger?: (bool: boolean) => void
 }
 
 const SearchInput: React.FC<SearchInputComponent> = ({ setSearchActive, setActiveHamburger }) => {
@@ -32,8 +32,8 @@ const SearchInput: React.FC<SearchInputComponent> = ({ setSearchActive, setActiv
         dispatch(addSearchItemToProducts(searchProducts));
 
         navigate("/search")
-        setSearchActive(false)
-        setActiveHamburger(false)
+        setSearchActive && setSearchActive(false)
+        setActiveHamburger && setActiveHamburger(false)
     }
 
     const setSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -42,9 +42,9 @@ const SearchInput: React.FC<SearchInputComponent> = ({ setSearchActive, setActiv
 
 
     return (
-        <form className='w-full flex justify-center' onSubmit={(e) => headerSubmit(e)}>
+        <form className='flex flex-1 justify-center' onSubmit={(e) => headerSubmit(e)}>
             <input
-                className={`border-b-2 min-w-[320px] w-1/2 h-12 rounded-md placeholder:text-black px-2 text-black font-medium outline-none`}
+                className={`border-2 w-3/4 h-12 rounded-md placeholder:text-black px-2 text-black font-medium outline-none`}
                 type="text"
                 placeholder='Ara..'
                 onChange={(e) => setSearch(e)}

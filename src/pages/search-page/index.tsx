@@ -1,9 +1,9 @@
-import SearchPageContainer from '../../containers/search-page-container'
+import CategoriesPageContainer from "../../containers/search-page-container"
 
 const SearchPage = () => {
     return (
-        <div className='flex-auto'>
-            <SearchPageContainer />
+        <div>
+            <CategoriesPageContainer />
         </div>
     )
 }
