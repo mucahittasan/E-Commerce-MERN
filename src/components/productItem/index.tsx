@@ -1,13 +1,32 @@
 // React Libraries
 import { Link } from 'react-router-dom';
-// Types
-import { IProductItem } from '../../@types/ProductTypes'
 // Components
 import AddToBasketButton from '../addToBasketButton';
 import FavoritesButton from '../favoritesButton';
 
+interface ProductItemProps {
+    item: {
+        id: number,
+        loading: boolean,
+        title: string,
+        description?: string,
+        price: number,
+        category: string,
+        type_of_product: string,
+        count: number,
+        gender?: string,
+        main_image: string,
+        images?: [
+            {
+                sub_image?: string
+            }
+        ] | undefined,
+    }
+    itemOffset?: number | undefined,
+    myKey?: number
+}
 
-const ProductItem: React.FC<IProductItem> = ({ item }) => {
+const ProductItem: React.FC<ProductItemProps> = ({ item, myKey }) => {
 
     // Formatter for prices
     const formatter = new Intl.NumberFormat('tr-TR');
@@ -28,7 +47,7 @@ const ProductItem: React.FC<IProductItem> = ({ item }) => {
                 </p>
                 <div className="flex justify-between mt-auto md:flex-row flex-col md:items-center items-start gap-y-4">
                     <div className='md:order-1 order-2 md:w-auto w-full'>
-                        <AddToBasketButton item={item} />
+                        <AddToBasketButton item={item} myKey={myKey} />
                     </div>
                     <span className="text-base font-bold text-veryDarkBlue md:order-2 order-1">{formatter.format(item.price)} TL</span>
                 </div>

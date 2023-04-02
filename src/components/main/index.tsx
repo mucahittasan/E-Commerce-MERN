@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 
 const Main = () => {
   return (
-    <main className='flex-auto min-h-screenSize md:min-h-mobileScreenSize'>
+    <main className='flex-auto min-h-screenSize'>
       <Outlet />
     </main>
   )

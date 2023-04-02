@@ -2,7 +2,7 @@ import SearchPageContainer from '../../containers/search-page-container'
 
 const SearchPage = () => {
     return (
-        <div>
+        <div className='flex-auto'>
             <SearchPageContainer />
         </div>
     )

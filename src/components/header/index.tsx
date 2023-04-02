@@ -3,11 +3,12 @@ import { AiOutlineHeart, AiOutlineSearch } from 'react-icons/ai';
 import { SlBasket } from 'react-icons/sl';
 import { RxHamburgerMenu } from 'react-icons/rx';
 // Libraries
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 // Redux Store Types
 import { RootState } from '../../redux/store';
+import SearchInput from '../searchInput';
 
 
 const Header = () => {
@@ -15,7 +16,6 @@ const Header = () => {
   const basketLength = useSelector((state: RootState) => state.basket.basket.length);
   const favoritesLength = useSelector((state: RootState) => state.favorite.favorites.length);
 
-  const navigate = useNavigate()
 
   // Search content open/close
   const [searchActive, setSearchActive] = useState<boolean>(false);
@@ -23,12 +23,7 @@ const Header = () => {
   // Hamburger menu open/close
   const [activeHamburger, setActiveHamburger] = useState<boolean>(false);
 
-  const headerSubmit = (e: React.SyntheticEvent) => {
-    e.preventDefault();
 
-    navigate("/search")
-    setSearchActive(false)
-  }
 
   return (
     <header className='content px-4 py-2 flex md:justify-start justify-between items-center border-b-[1px] border-gray-200'>
@@ -57,12 +52,7 @@ const Header = () => {
           <label className='flex cursor-pointer'>
             <AiOutlineSearch className='text-2xl mr-2' onClick={() => setSearchActive(true)} />
             <div className={`z-50 fixed left-0 top-0 pt-[200px] flex justify-center bg-slate-900 w-full h-full transition-all ease-linear ${!searchActive && "opacity-0 invisible"} ${searchActive && "opacity-[0.98] visible"}`}>
-              <form className='w-full flex justify-center' onSubmit={(e) => headerSubmit(e)}>
-                <input
-                  className={`border-b-2 min-w-[320px] w-1/2 h-12 rounded-md placeholder:text-black px-2 text-black font-medium outline-none`}
-                  type="text"
-                  placeholder='Ara..' />
-              </form>
+              <SearchInput setSearchActive={setSearchActive} setActiveHamburger={setActiveHamburger} />
 
               <button onClick={() => setSearchActive(false)} className='absolute md:right-20 right-[10px] text-3xl top-20 text-white transition-colors hover:text-primaryRed'>
                 x
@@ -118,12 +108,7 @@ const Header = () => {
               <label className='flex cursor-pointer'>
                 <AiOutlineSearch className='text-2xl mr-2' onClick={() => setSearchActive(true)} />
                 <div className={`z-50 fixed left-0 top-0 pt-[200px] flex justify-center bg-slate-900 w-full h-full transition-all ease-linear ${!searchActive && "opacity-0 invisible"} ${searchActive && "opacity-[0.98] visible"}`}>
-                  <form className='w-full flex justify-center' onSubmit={(e) => headerSubmit(e)}>
-                    <input
-                      className={`border-b-2 min-w-[320px] w-1/2 h-12 rounded-md placeholder:text-black px-2 text-black font-medium outline-none`}
-                      type="text"
-                      placeholder='Ara..' />
-                  </form>
+                  <SearchInput setSearchActive={setSearchActive} setActiveHamburger={setActiveHamburger} />
 
                   <button onClick={() => setSearchActive(false)} className='absolute md:right-20 right-[10px] text-3xl top-20 text-white transition-colors hover:text-primaryRed'>
                     x
