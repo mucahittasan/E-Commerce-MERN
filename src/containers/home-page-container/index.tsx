@@ -5,9 +5,18 @@ import { Link } from 'react-router-dom';
 import phoneImg from '../../assets/images/items/phone1.png';
 import joystick from '../../assets/images/items/joystick.jpg';
 import gamingChair from '../../assets/images/items/gaming_chair.jpg';
+import { useDispatch } from 'react-redux';
+import { AppDispatch } from '../../redux/store';
+import { useEffect } from 'react';
+import { getProductsAsync } from '../../redux/products/services';
 
 const HomePageContainer = () => {
 
+  const dispatch = useDispatch<AppDispatch>()
+
+  useEffect(() => {
+    dispatch(getProductsAsync());
+  }, [])
 
   return (
 

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { AppDispatch, RootState } from '../../redux/store';
 import { addSearchItemToProducts, inputSearch } from '../../redux/search/searchSlice';
+import { getProductsAsync } from '../../redux/products/services';
 
 interface SearchInputComponent {
     setSearchActive?: (bool: boolean) => void,
@@ -40,11 +41,15 @@ const SearchInput: React.FC<SearchInputComponent> = ({ setSearchActive, setActiv
         dispatch(inputSearch(e.target.value));
     }
 
+    useEffect(() => {
+        dispatch(getProductsAsync())
+    }, [])
+
 
     return (
         <form className='flex flex-1 justify-center' onSubmit={(e) => headerSubmit(e)}>
             <input
-                className={`border-2 w-3/4 h-12 rounded-md placeholder:text-black px-2 text-black font-medium outline-none`}
+                className={`border-2 w-3/4 h-9 rounded-md placeholder:text-black px-2 text-sm text-black font-medium outline-none`}
                 type="text"
                 placeholder='Ara..'
                 onChange={(e) => setSearch(e)}

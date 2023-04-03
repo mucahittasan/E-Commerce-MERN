@@ -8,7 +8,7 @@
       "price": 4890,
       "category": "teknoloji",
       "type_of_product": "monitor",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg",
       "images": [
         {
@@ -58,7 +58,7 @@
       "price": 44.48,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
       "images": [
         {
@@ -108,7 +108,7 @@
       "price": 19.499,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg",
       "images": [
         {
@@ -837,7 +837,7 @@
       "price": 191,
       "category": "kiyafet",
       "type_of_product": "tshirt",
-      "count": 5,
+      "count": 1,
       "gender": "man",
       "main_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/1/1_org_zoom.jpg",
       "images": [
@@ -1211,7 +1211,7 @@
       "description": "Modern dekorlarla birleşerek DigiBone serisini oluşturdu. Sunumlarınıza doğal bir dokunuş eklemek için serinin farklı renk ve modelleri sizin için tasarlandı. ",
       "price": 955,
       "category": "ev ve mobilya",
-      "count": 0,
+      "count": 1,
       "type_of_product": "yemek takimi",
       "main_image": "https://cdn.dsmcdn.com/ty370/product/media/images/20220325/13/75842156/121306243/1/1_org_zoom.jpg",
       "images": [
@@ -1314,7 +1314,7 @@
       "description": "Her gün, daima öğleden sonra oraya gidiyor, koridorlardaki resimlere bakıyormuş gibi ağır ağır, fakat büyük bir sabırzıszılka asıl hedefine varmak isteyen adımlarımı zorla zapt ederek geziniyor Rastgele gözüme çarpmış gibi önünde durduğum 'kürk mantolu madonna'yı seyre dalıyor, ta kapılar kapanıncaya kadar orada bekliyordum.",
       "price": 20,
       "category": "kitap",
-      "count": 1,
+      "count": 0,
       "type_of_product": "ask",
       "main_image": "https://cdn.dsmcdn.com/ty697/product/media/images/20230121/9/262568079/5703074/1/1_org_zoom.jpg",
       "images": []
@@ -1326,7 +1326,7 @@
       "description": "Seçkin bir burjuva olarak rahat ve tasasız varoluşunu sürdürürken giderek duyarsızlaşan bir adamın hayatındaki dönüştürücü deneyimin hikâyesidir. Sıradan bir Pazar gününü at yarışlarında geçirirken, belki de ilk kez burjuva ahlakından saparak suç işler. Böylece yeniden hissetmeye başladığını, kötücül ve ateşli hazları olan gerçek bir insan olduğunu fark eder. İçindeki haz dolu esrime, aynı günün akşamında onu gece âleminin son atıklarının arasına, hayatın en dibindeki lağımlara sürükleyecek, varış noktası ise ruhani bir uyanış olacaktır.",
       "price": 21,
       "category": "kitap",
-      "count": 1,
+      "count": 0,
       "type_of_product": "klasik",
       "main_image": "https://cdn.dsmcdn.com/ty213/product/media/images/20211029/15/159442385/14722695/2/2_org_zoom.jpg",
       "images": []
@@ -1434,7 +1434,7 @@
       "description": "Stefan Zweig’ın 1922 tarihli bu novellası, saplantılı aşk üzerine yazılmış en çarpıcı metinlerden biridir. Hayatı boyunca kendisinin farkında bile olmayan bir adamı umutsuzca sevmiş bir kadının yürek parçalayan aşk itirafıdır. Aşkının nesnesi olan kişi ise ömrü boyunca bir kez olsun söz ve eylemlerinin başkalarının hayatları üzerindeki etkisini düşünmemiştir. ",
       "price": 13,
       "category": "kitap",
-      "count": 0,
+      "count": 1,
       "type_of_product": "roman",
       "main_image": "https://i.dr.com.tr/cache/500x400-0/originals/0001988402001-1.jpg",
       "images": []
@@ -1446,62 +1446,13 @@
       "description": "Teknolojik gelişmeler öyle bir boyuta ulaşmış, markete bile gitmeden evden oturduğumuz yerden ya da yurt dışından sipariş vererek alışveriş yapmaya, bankaya gitmeden evden dünyanın öbür ucuna para göndermeye, akıllı kredi kartı gibi kullanmaya kadar dijitalleşme günlük hayatımızın hemen her alanına o kadar egemen olmuştur ki, suç işleyenler de adeta bu duruma ayak uydurarak bilinen suç işleme yöntemleri yerine bambaşka yöntemler geliştirmeye başlamışlardır.",
       "price": 22,
       "category": "kitap",
-      "count": 0,
+      "count": 1,
       "type_of_product": "roman",
       "main_image": "https://i.dr.com.tr/cache/500x400-0/originals/0001806049001-1.jpg",
       "images": []
     }
   ],
   "basket": [
-    {
-      "id": 3,
-      "loading": false,
-      "title": "Iphone 14 Pro Max 128GB Derin Mor",
-      "description": "Apple Türkiye Garantili 7 inc QHD+ 20 - 40 MP On kamera cozunurlugu, 6GB ram, Mor renk",
-      "price": 44.48,
-      "category": "teknoloji",
-      "type_of_product": "telefon",
-      "count": 0,
-      "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
-      "images": [
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty539/product/media/images/20220920/22/177587611/574173140/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty537/product/media/images/20220920/22/177587615/574173140/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587650/574173140/2/2_org_zoom.jpg"
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "loading": false,
-      "title": "Kürk Mantolu Madonna",
-      "description": "Her gün, daima öğleden sonra oraya gidiyor, koridorlardaki resimlere bakıyormuş gibi ağır ağır, fakat büyük bir sabırzıszılka asıl hedefine varmak isteyen adımlarımı zorla zapt ederek geziniyor Rastgele gözüme çarpmış gibi önünde durduğum 'kürk mantolu madonna'yı seyre dalıyor, ta kapılar kapanıncaya kadar orada bekliyordum.",
-      "price": 20,
-      "category": "kitap",
-      "count": 0,
-      "type_of_product": "ask",
-      "main_image": "https://cdn.dsmcdn.com/ty697/product/media/images/20230121/9/262568079/5703074/1/1_org_zoom.jpg",
-      "images": []
-    },
-    {
-      "id": 57,
-      "loading": false,
-      "title": "Olağanüstü Bir Gece - Stefan Zweig ",
-      "description": "Seçkin bir burjuva olarak rahat ve tasasız varoluşunu sürdürürken giderek duyarsızlaşan bir adamın hayatındaki dönüştürücü deneyimin hikâyesidir. Sıradan bir Pazar gününü at yarışlarında geçirirken, belki de ilk kez burjuva ahlakından saparak suç işler. Böylece yeniden hissetmeye başladığını, kötücül ve ateşli hazları olan gerçek bir insan olduğunu fark eder. İçindeki haz dolu esrime, aynı günün akşamında onu gece âleminin son atıklarının arasına, hayatın en dibindeki lağımlara sürükleyecek, varış noktası ise ruhani bir uyanış olacaktır.",
-      "price": 21,
-      "category": "kitap",
-      "count": 0,
-      "type_of_product": "klasik",
-      "main_image": "https://cdn.dsmcdn.com/ty213/product/media/images/20211029/15/159442385/14722695/2/2_org_zoom.jpg",
-      "images": []
-    },
     {
       "id": 35,
       "loading": false,
@@ -1529,93 +1480,52 @@
       ]
     },
     {
-      "id": 5,
+      "id": 51,
       "loading": false,
-      "title": "Samsung Galaxy S22",
-      "description": "Dahili Hafıza 128 GB, Garanti Tipi Resmi Distribütör Garantili, Renk Pembe, Ekran Boyut 7'' Üstü,  Ekran Cinsi AMOLED, Ekran Teknolojisi Dinamik AMOLED",
-      "price": 19.499,
-      "category": "teknoloji",
-      "type_of_product": "telefon",
+      "title": "24 Parça 6 Kişilik Bone Yemek Takımı",
+      "description": "Modern dekorlarla birleşerek DigiBone serisini oluşturdu. Sunumlarınıza doğal bir dokunuş eklemek için serinin farklı renk ve modelleri sizin için tasarlandı. ",
+      "price": 955,
+      "category": "ev ve mobilya",
       "count": 0,
-      "main_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg",
+      "type_of_product": "yemek takimi",
+      "main_image": "https://cdn.dsmcdn.com/ty370/product/media/images/20220325/13/75842156/121306243/1/1_org_zoom.jpg",
       "images": [
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty370/product/media/images/20220325/13/75842156/121306243/1/1_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty352/product/media/images/20220308/14/65167204/408683873/2/2_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty369/product/media/images/20220325/13/75842156/121306243/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/3/3_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty352/product/media/images/20220308/14/65167204/408683873/4/4_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty370/product/media/images/20220325/13/75842156/121306243/3/3_org_zoom.jpg"
         }
       ]
     },
     {
-      "id": 1,
+      "id": 67,
       "loading": false,
-      "title": "Rampage Monitor",
-      "description": "31.5 inç 165Hz 1ms (HDMI + Display) FreeSync AUO VA Full HD HDR Curved Gaming Oyuncu Monitör",
-      "price": 4890,
-      "category": "teknoloji",
-      "type_of_product": "monitor",
-      "count": 0,
-      "main_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg",
-      "images": [
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274313/546865443/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274339/546865443/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274380/546865443/2/2_org_zoom.jpg"
-        }
-      ]
-    }
-  ],
-  "favorites": [
-    {
-      "id": 55,
-      "loading": false,
-      "title": "Hayvan Çiftliği - George Orwell",
-      "description": "İngiliz yazar George Orwell, ülkemizde daha çok Bin Dokuz Yüz Seksen Dört adlı kitabıyla tanınır. Hayvan Çiftliği, onun çağdaş klasikler arasına girmiş bir diğer çok ünlü eseridir.",
-      "price": 25,
+      "title": "Otomatik Portakal",
+      "description": "Teknolojik gelişmeler öyle bir boyuta ulaşmış, markete bile gitmeden evden oturduğumuz yerden ya da yurt dışından sipariş vererek alışveriş yapmaya, bankaya gitmeden evden dünyanın öbür ucuna para göndermeye, akıllı kredi kartı gibi kullanmaya kadar dijitalleşme günlük hayatımızın hemen her alanına o kadar egemen olmuştur ki, suç işleyenler de adeta bu duruma ayak uydurarak bilinen suç işleme yöntemleri yerine bambaşka yöntemler geliştirmeye başlamışlardır.",
+      "price": 22,
       "category": "kitap",
       "count": 0,
-      "type_of_product": "klasik",
-      "main_image": "https://cdn.dsmcdn.com/ty169/product/media/images/20210903/18/125634694/5703095/1/1_org_zoom.jpg",
+      "type_of_product": "roman",
+      "main_image": "https://i.dr.com.tr/cache/500x400-0/originals/0001806049001-1.jpg",
       "images": []
     },
     {
-      "id": 5,
+      "id": 66,
       "loading": false,
-      "title": "Samsung Galaxy S22",
-      "description": "Dahili Hafıza 128 GB, Garanti Tipi Resmi Distribütör Garantili, Renk Pembe, Ekran Boyut 7'' Üstü,  Ekran Cinsi AMOLED, Ekran Teknolojisi Dinamik AMOLED",
-      "price": 19.499,
-      "category": "teknoloji",
-      "type_of_product": "telefon",
+      "title": "Bilinmeyen Bir Kadının Mektubu",
+      "description": "Stefan Zweig’ın 1922 tarihli bu novellası, saplantılı aşk üzerine yazılmış en çarpıcı metinlerden biridir. Hayatı boyunca kendisinin farkında bile olmayan bir adamı umutsuzca sevmiş bir kadının yürek parçalayan aşk itirafıdır. Aşkının nesnesi olan kişi ise ömrü boyunca bir kez olsun söz ve eylemlerinin başkalarının hayatları üzerindeki etkisini düşünmemiştir. ",
+      "price": 13,
+      "category": "kitap",
       "count": 0,
-      "main_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg",
-      "images": [
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty352/product/media/images/20220308/14/65167204/408683873/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/3/3_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty352/product/media/images/20220308/14/65167204/408683873/4/4_org_zoom.jpg"
-        }
-      ]
+      "type_of_product": "roman",
+      "main_image": "https://i.dr.com.tr/cache/500x400-0/originals/0001988402001-1.jpg",
+      "images": []
     }
-  ]
+  ],
+  "favorites": [],
+  "contact": []
 }

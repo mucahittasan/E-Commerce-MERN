@@ -14,10 +14,12 @@ const MainLayout = () => {
 
   const dispatch = useDispatch();
 
+
   useEffect(() => {
     dispatch(getAllBasketItemsAsync())
     dispatch(getAllFavoritesAsync())
   }, [dispatch])
+
 
   return (
     <div className="flex flex-col">

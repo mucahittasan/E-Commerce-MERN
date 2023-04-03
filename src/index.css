@@ -95,6 +95,10 @@
         @apply sm:w-auto w-full justify-center flex sm:justify-between
     }
 
+    .contact-input {
+        @apply border-2 rounded px-2 w-full h-10 outline-none transition-all focus:border-gray-400 text-sm text-veryDarkBlue placeholder:text-darkGrayishBlue placeholder:font-medium font-semibold
+    }
+
     /* Pagination Content */
     ul[role="navigation"]  {
         display: flex;
