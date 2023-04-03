@@ -8,7 +8,7 @@
       "price": 4890,
       "category": "teknoloji",
       "type_of_product": "monitor",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg",
       "images": [
         {
@@ -33,7 +33,7 @@
       "price": 2780,
       "category": "teknoloji",
       "type_of_product": "monitor",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
       "images": [
         {
@@ -58,7 +58,7 @@
       "price": 44.48,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
       "images": [
         {
@@ -83,7 +83,7 @@
       "price": 5250,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 0,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg",
       "images": [
         {
@@ -837,7 +837,7 @@
       "price": 191,
       "category": "kiyafet",
       "type_of_product": "tshirt",
-      "count": 1,
+      "count": 0,
       "gender": "man",
       "main_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/1/1_org_zoom.jpg",
       "images": [
@@ -1211,7 +1211,7 @@
       "description": "Modern dekorlarla birleşerek DigiBone serisini oluşturdu. Sunumlarınıza doğal bir dokunuş eklemek için serinin farklı renk ve modelleri sizin için tasarlandı. ",
       "price": 955,
       "category": "ev ve mobilya",
-      "count": 1,
+      "count": 0,
       "type_of_product": "yemek takimi",
       "main_image": "https://cdn.dsmcdn.com/ty370/product/media/images/20220325/13/75842156/121306243/1/1_org_zoom.jpg",
       "images": [
@@ -1434,7 +1434,7 @@
       "description": "Stefan Zweig’ın 1922 tarihli bu novellası, saplantılı aşk üzerine yazılmış en çarpıcı metinlerden biridir. Hayatı boyunca kendisinin farkında bile olmayan bir adamı umutsuzca sevmiş bir kadının yürek parçalayan aşk itirafıdır. Aşkının nesnesi olan kişi ise ömrü boyunca bir kez olsun söz ve eylemlerinin başkalarının hayatları üzerindeki etkisini düşünmemiştir. ",
       "price": 13,
       "category": "kitap",
-      "count": 1,
+      "count": 0,
       "type_of_product": "roman",
       "main_image": "https://i.dr.com.tr/cache/500x400-0/originals/0001988402001-1.jpg",
       "images": []
@@ -1446,7 +1446,7 @@
       "description": "Teknolojik gelişmeler öyle bir boyuta ulaşmış, markete bile gitmeden evden oturduğumuz yerden ya da yurt dışından sipariş vererek alışveriş yapmaya, bankaya gitmeden evden dünyanın öbür ucuna para göndermeye, akıllı kredi kartı gibi kullanmaya kadar dijitalleşme günlük hayatımızın hemen her alanına o kadar egemen olmuştur ki, suç işleyenler de adeta bu duruma ayak uydurarak bilinen suç işleme yöntemleri yerine bambaşka yöntemler geliştirmeye başlamışlardır.",
       "price": 22,
       "category": "kitap",
-      "count": 1,
+      "count": 0,
       "type_of_product": "roman",
       "main_image": "https://i.dr.com.tr/cache/500x400-0/originals/0001806049001-1.jpg",
       "images": []
@@ -1454,78 +1454,165 @@
   ],
   "basket": [
     {
-      "id": 35,
+      "id": 3,
       "loading": false,
-      "title": "Unisex 3 Iplik Şardonlu %100 Pamuk Oversize Sweatshirt ",
-      "description": "%100 Pamuk Kumaştan üretilmiştir. Oversize Kalıptır. 3 İplik Şardonlu modeldir.",
-      "price": 191,
-      "category": "kiyafet",
-      "type_of_product": "tshirt",
-      "count": 0,
-      "gender": "man",
-      "main_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/1/1_org_zoom.jpg",
+      "title": "Iphone 14 Pro Max 128GB Derin Mor",
+      "description": "Apple Türkiye Garantili 7 inc QHD+ 20 - 40 MP On kamera cozunurlugu, 6GB ram, Mor renk",
+      "price": 44.48,
+      "category": "teknoloji",
+      "type_of_product": "telefon",
+      "count": 2,
+      "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
       "images": [
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/1/1_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/2/2_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty539/product/media/images/20220920/22/177587611/574173140/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty579/product/media/images/20221027/14/203054071/568889862/3/3_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty537/product/media/images/20220920/22/177587615/574173140/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty580/product/media/images/20221027/14/203054071/568889862/4/4_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587650/574173140/2/2_org_zoom.jpg"
         }
       ]
     },
     {
-      "id": 51,
+      "id": 4,
       "loading": false,
-      "title": "24 Parça 6 Kişilik Bone Yemek Takımı",
-      "description": "Modern dekorlarla birleşerek DigiBone serisini oluşturdu. Sunumlarınıza doğal bir dokunuş eklemek için serinin farklı renk ve modelleri sizin için tasarlandı. ",
-      "price": 955,
-      "category": "ev ve mobilya",
-      "count": 0,
-      "type_of_product": "yemek takimi",
-      "main_image": "https://cdn.dsmcdn.com/ty370/product/media/images/20220325/13/75842156/121306243/1/1_org_zoom.jpg",
+      "title": "Samsung Galaxy M13",
+      "description": "Dahili Hafıza 128 GB Renk, Mavi Garanti Tipi Samsung TR Garantili, Ekran Boyutu 7 inç, Kamera Çözünürlüğü 20 MP ve üstü, Ekran Çözünürlüğü FHD+",
+      "price": 5250,
+      "category": "teknoloji",
+      "type_of_product": "telefon",
+      "count": 1,
+      "main_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg",
       "images": [
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty370/product/media/images/20220325/13/75842156/121306243/1/1_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty369/product/media/images/20220325/13/75842156/121306243/2/2_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty370/product/media/images/20220325/13/75842156/121306243/3/3_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/4/4_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/5/5_org_zoom.jpg"
         }
       ]
     },
     {
-      "id": 67,
+      "id": 1,
       "loading": false,
-      "title": "Otomatik Portakal",
-      "description": "Teknolojik gelişmeler öyle bir boyuta ulaşmış, markete bile gitmeden evden oturduğumuz yerden ya da yurt dışından sipariş vererek alışveriş yapmaya, bankaya gitmeden evden dünyanın öbür ucuna para göndermeye, akıllı kredi kartı gibi kullanmaya kadar dijitalleşme günlük hayatımızın hemen her alanına o kadar egemen olmuştur ki, suç işleyenler de adeta bu duruma ayak uydurarak bilinen suç işleme yöntemleri yerine bambaşka yöntemler geliştirmeye başlamışlardır.",
-      "price": 22,
-      "category": "kitap",
-      "count": 0,
-      "type_of_product": "roman",
-      "main_image": "https://i.dr.com.tr/cache/500x400-0/originals/0001806049001-1.jpg",
-      "images": []
+      "title": "Rampage Monitor",
+      "description": "31.5 inç 165Hz 1ms (HDMI + Display) FreeSync AUO VA Full HD HDR Curved Gaming Oyuncu Monitör",
+      "price": 4890,
+      "category": "teknoloji",
+      "type_of_product": "monitor",
+      "count": 1,
+      "main_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274313/546865443/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274339/546865443/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274380/546865443/2/2_org_zoom.jpg"
+        }
+      ]
     },
     {
-      "id": 66,
+      "id": 2,
       "loading": false,
-      "title": "Bilinmeyen Bir Kadının Mektubu",
-      "description": "Stefan Zweig’ın 1922 tarihli bu novellası, saplantılı aşk üzerine yazılmış en çarpıcı metinlerden biridir. Hayatı boyunca kendisinin farkında bile olmayan bir adamı umutsuzca sevmiş bir kadının yürek parçalayan aşk itirafıdır. Aşkının nesnesi olan kişi ise ömrü boyunca bir kez olsun söz ve eylemlerinin başkalarının hayatları üzerindeki etkisini düşünmemiştir. ",
-      "price": 13,
-      "category": "kitap",
-      "count": 0,
-      "type_of_product": "roman",
-      "main_image": "https://i.dr.com.tr/cache/500x400-0/originals/0001988402001-1.jpg",
-      "images": []
+      "title": "Samsung Monitor",
+      "description": "27 inç T350 Çerçevesiz Ips 75hz Freesync Hdmi Full Hd Gaming Monitör LLF27T350FHRXUF",
+      "price": 2780,
+      "category": "teknoloji",
+      "type_of_product": "monitor",
+      "count": 1,
+      "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty21/product/media/images/20201109/11/24208278/103014183/3/3_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/4/4_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
+        }
+      ]
     }
   ],
-  "favorites": [],
-  "contact": []
+  "favorites": [
+    {
+      "id": 3,
+      "loading": false,
+      "title": "Iphone 14 Pro Max 128GB Derin Mor",
+      "description": "Apple Türkiye Garantili 7 inc QHD+ 20 - 40 MP On kamera cozunurlugu, 6GB ram, Mor renk",
+      "price": 44.48,
+      "category": "teknoloji",
+      "type_of_product": "telefon",
+      "count": 1,
+      "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty539/product/media/images/20220920/22/177587611/574173140/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty537/product/media/images/20220920/22/177587615/574173140/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587650/574173140/2/2_org_zoom.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "loading": false,
+      "title": "Samsung Galaxy M13",
+      "description": "Dahili Hafıza 128 GB Renk, Mavi Garanti Tipi Samsung TR Garantili, Ekran Boyutu 7 inç, Kamera Çözünürlüğü 20 MP ve üstü, Ekran Çözünürlüğü FHD+",
+      "price": 5250,
+      "category": "teknoloji",
+      "type_of_product": "telefon",
+      "count": 1,
+      "main_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/4/4_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/5/5_org_zoom.jpg"
+        }
+      ]
+    }
+  ],
+  "contact": [
+    {
+      "name": "Mucahit",
+      "lastName": "Tasan",
+      "email": "mucahittasan00@gmail.com",
+      "message": "Merhaba ben Mucahit ve hadi baslayalim",
+      "id": 1
+    }
+  ]
 }

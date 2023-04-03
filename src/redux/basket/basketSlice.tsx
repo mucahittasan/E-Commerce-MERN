@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
-import { addProductToBasketAsync, getAllBasketItemsAsync, removeFromBasketAsync } from './service'
+import { addProductToBasketAsync, getAllBasketItemsAsync, removeFromBasketAsync, updateBasketItemCountAsync } from './service'
 import { IProducts } from '../../@types/ProductTypes'
 
 
@@ -71,6 +71,14 @@ export const productSlice = createSlice({
                 state.isAddBasketLoading = false;
                 state.error = action.error.message
             });
+
+        // Update basket count
+        builder
+            .addCase(updateBasketItemCountAsync.fulfilled, (state, action) => {
+            })
+            .addCase(updateBasketItemCountAsync.rejected, (state, action) => {
+                state.error = action.error.message;
+            })
 
     }
 })

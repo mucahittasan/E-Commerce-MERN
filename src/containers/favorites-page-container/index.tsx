@@ -25,7 +25,7 @@ const FavoritesPageContainer = () => {
         <div className='main-container '>
             <h2 className="main-title mb-14">Favoriler</h2>
 
-            {favorites.length === 0 ? <div className='font-bold text-2xl text-veryDarkBlue'>Favorilerinizde hiçbir şey yok, ürün eklemek için <Link to="/shop" className='text-primaryRed underline'>alışveriş</Link>  bölümüne gidebilirsiniz.  </div> :
+            {favorites.length === 0 ? <div className='font-bold text-lg text-veryDarkBlue'>Favorilerinizde hiçbir şey yok, ürün eklemek için <Link to="/shop" className='text-primaryRed underline'>alışveriş</Link>  bölümüne gidebilirsiniz.  </div> :
                 <div className='xl:flex xl:flex-wrap grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8'>
 
                     {favorites?.map((item, index) => (

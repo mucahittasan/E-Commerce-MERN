@@ -6,9 +6,9 @@ import { useParams } from 'react-router-dom';
 import { AppDispatch, RootState } from '../../redux/store';
 import { IProducts } from '../../@types/ProductTypes';
 // Service Actions of Basket
-import { addProductToBasketAsync, removeFromBasketAsync } from '../../redux/basket/service';
+import { addProductToBasketAsync, removeFromBasketAsync, updateBasketItemCountAsync } from '../../redux/basket/service';
 // Service Actions of Products
-import { getProductByIdAsync, updateProductCountAsync } from '../../redux/products/services';
+import { getProductByIdAsync } from '../../redux/products/services';
 // Components
 import CircleLoading from '../circleLoading';
 
@@ -89,7 +89,7 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
     const addToBasket = async (e: React.SyntheticEvent, item: IProducts) => {
         e.preventDefault();
         loadingProcess(item);
-        await dispatch(updateProductCountAsync({ id: item.id, count: 1 }))
+        await dispatch(updateBasketItemCountAsync({ id: item.id, count: 1 }))
         await dispatch(addProductToBasketAsync(item));
         if (id) {
             await dispatch(getProductByIdAsync(item.id))
@@ -100,7 +100,7 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
     const removeFromBasket = async (e: React.SyntheticEvent, item: IProducts) => {
         e.preventDefault();
         loadingProcess(item);
-        await dispatch(updateProductCountAsync({ id: item.id, count: 0 }))
+        await dispatch(updateBasketItemCountAsync({ id: item.id, count: 0 }))
         await dispatch(removeFromBasketAsync(item.id));
         if (id) {
             await dispatch(getProductByIdAsync(item.id))

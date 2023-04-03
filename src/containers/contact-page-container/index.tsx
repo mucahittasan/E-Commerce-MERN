@@ -66,7 +66,7 @@ const ContactPageContainer = () => {
                     <textarea onBlur={formik.handleBlur} name="message" onChange={formik.handleChange} value={formik.values.message} className={`contact-input ${formik.errors.name && formik.touched.message && "border-red-500"} min-h-[200px] max-h-[200px] pt-1`} placeholder="Mesajınız..."></textarea>
                 </label>
 
-                <button type="submit" className="btn bg-primaryRed text-white w-1/2 text-center flex justify-center">Gönder</button>
+                <button type="submit" className="btn bg-primaryRed text-white w-1/2 text-center flex justify-center hover:shadow-[0_0_10px_2px_rgba(255,26,72,.75)]">Gönder</button>
             </form>
         </div>
     )

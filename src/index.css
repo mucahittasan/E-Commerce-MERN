@@ -152,6 +152,19 @@
         visibility: visible;
     }
 
+    .page-circle {
+        opacity: 1;
+        visibility: visible;
+        width: 30px;
+        height: 30px;
+        border: 8px solid #FF1A48;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite, fade 300ms ease-in-out forwards;
+    }
+
     @keyframes fade {
         0% {
             opacity: 0;

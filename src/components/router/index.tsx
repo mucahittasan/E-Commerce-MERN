@@ -1,15 +1,17 @@
 // Libraries
+import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 // Layouts
 import MainLayout from "../../layouts/main-layout";
 // Pages
-import HomePage from "../../pages/home-page";
-import ShopPage from "../../pages/shop-page";
-import ProductDetailPage from "../../pages/productDetail-page";
-import SepetPage from "../../pages/sepet-page";
-import FavoritesPage from "../../pages/favorites-page";
-import SearchPage from "../../pages/search-page";
-import ContactPage from "../../pages/contact-page";
+const HomePage = lazy(() => import("../../pages/home-page"))
+const ShopPage = lazy(() => import("../../pages/shop-page"))
+const ProductDetailPage = lazy(() => import("../../pages/productDetail-page"))
+const SepetPage = lazy(() => import("../../pages/sepet-page"))
+const FavoritesPage = lazy(() => import("../../pages/favorites-page"))
+const SearchPage = lazy(() => import("../../pages/search-page"))
+const ContactPage = lazy(() => import("../../pages/contact-page"))
+
 
 export const router = createBrowserRouter([
   {
