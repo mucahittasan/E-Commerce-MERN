@@ -4,13 +4,18 @@ import { createBrowserRouter } from "react-router-dom";
 // Layouts
 import MainLayout from "../../layouts/main-layout";
 // Pages
-const HomePage = lazy(() => import("../../pages/home-page"))
-const ShopPage = lazy(() => import("../../pages/shop-page"))
-const ProductDetailPage = lazy(() => import("../../pages/productDetail-page"))
-const SepetPage = lazy(() => import("../../pages/sepet-page"))
-const FavoritesPage = lazy(() => import("../../pages/favorites-page"))
-const SearchPage = lazy(() => import("../../pages/search-page"))
-const ContactPage = lazy(() => import("../../pages/contact-page"))
+const HomePage = lazy(() => wait(1000).then(() => import("../../pages/home-page")))
+const ShopPage = lazy(() => wait(1000).then(() => import("../../pages/shop-page")))
+const ProductDetailPage = lazy(() => wait(1000).then(() => import("../../pages/productDetail-page")))
+const SepetPage = lazy(() => wait(1000).then(() => import("../../pages/sepet-page")))
+const FavoritesPage = lazy(() => wait(1000).then(() => import("../../pages/favorites-page")))
+const SearchPage = lazy(() => wait(1000).then(() => import("../../pages/search-page")))
+const ContactPage = lazy(() => wait(1000).then(() => import("../../pages/contact-page")))
+
+const wait = (ms: number) =>
+  new Promise<void>((resolve) => {
+    setTimeout(() => resolve(), ms);
+  });
 
 
 export const router = createBrowserRouter([

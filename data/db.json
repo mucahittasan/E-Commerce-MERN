@@ -1454,31 +1454,6 @@
   ],
   "basket": [
     {
-      "id": 3,
-      "loading": false,
-      "title": "Iphone 14 Pro Max 128GB Derin Mor",
-      "description": "Apple Türkiye Garantili 7 inc QHD+ 20 - 40 MP On kamera cozunurlugu, 6GB ram, Mor renk",
-      "price": 44.48,
-      "category": "teknoloji",
-      "type_of_product": "telefon",
-      "count": 2,
-      "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
-      "images": [
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty539/product/media/images/20220920/22/177587611/574173140/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty537/product/media/images/20220920/22/177587615/574173140/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587650/574173140/2/2_org_zoom.jpg"
-        }
-      ]
-    },
-    {
       "id": 4,
       "loading": false,
       "title": "Samsung Galaxy M13",
@@ -1486,7 +1461,7 @@
       "price": 5250,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 1,
+      "count": 4,
       "main_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg",
       "images": [
         {
@@ -1536,7 +1511,7 @@
       "price": 2780,
       "category": "teknoloji",
       "type_of_product": "monitor",
-      "count": 1,
+      "count": 2,
       "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
       "images": [
         {
@@ -1550,6 +1525,31 @@
         },
         {
           "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "loading": false,
+      "title": "Rampage Rm-k27 Kulaklik",
+      "description": "3,5 Mm 7 Renk Ledli Gaming Oyuncu Mikrofonlu Kulaklık",
+      "price": 329,
+      "category": "teknoloji",
+      "type_of_product": "kulaklik",
+      "count": 0,
+      "main_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794300/81711096/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794300/81711096/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794270/81711096/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty206/product/media/images/20211020/13/152794312/81711096/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794358/81711096/1/1_org_zoom.jpg"
         }
       ]
     }

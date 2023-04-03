@@ -1,6 +1,7 @@
 // React Libraries
 import { Link } from 'react-router-dom';
 import ItemCount from '../itemCount';
+import { HiOutlineTrash } from 'react-icons/hi';
 
 interface BasketItemProps {
     item: {
@@ -46,6 +47,9 @@ const BasketItem: React.FC<BasketItemProps> = ({ item }) => {
                     <ItemCount currentProduct={item} />
                 </div>
             </div>
+            <button className='mx-4 text-2xl p-2 transition-all self-center hover:scale-[1.1] text-veryDarkBlue hover:text-primaryRed'>
+                <HiOutlineTrash />
+            </button>
         </div>
     )
 }
