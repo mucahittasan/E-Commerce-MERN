@@ -1,6 +1,9 @@
+// Libraries
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
+// Types
 import { AppDispatch } from "../../../redux/store";
+// Actions
 import { addCardInfo } from "../../../redux/payment/paymentSlice";
 
 

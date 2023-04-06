@@ -1,8 +1,10 @@
+// Libraries
 import { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
-import PageLoading from '../pageLoading'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+// Components
+import PageLoading from '../pageLoading'
 
 const Main = () => {
   return (

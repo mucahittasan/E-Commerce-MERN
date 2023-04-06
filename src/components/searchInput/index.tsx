@@ -1,8 +1,12 @@
+// Libraries
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+// Types
 import { AppDispatch, RootState } from '../../redux/store';
+// Actions
 import { addSearchItemToProducts, inputSearch } from '../../redux/search/searchSlice';
+// Services
 import { getProductsAsync } from '../../redux/products/services';
 
 interface SearchInputComponent {

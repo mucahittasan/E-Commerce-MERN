@@ -1,13 +1,14 @@
 // React Libraries
 import { Link } from "react-router-dom"
-import { IoMdClose } from 'react-icons/io';
 import { useDispatch } from "react-redux";
+// Icons
+import { IoMdClose } from 'react-icons/io';
 // Components
 import AddToBasketButton from "../addToBasketButton"
 // Types
 import { IProducts } from "../../@types/ProductTypes";
 import { AppDispatch } from "../../redux/store";
-
+// Favorites Service
 import { removeFromFavoritesAsync } from "../../redux/favorite/service";
 
 export interface IFavoritesProps {
@@ -34,6 +35,7 @@ export interface IFavoritesProps {
 
 
 const FavoritesCard: React.FC<IFavoritesProps> = ({ item, myKey }) => {
+
     const formatter = new Intl.NumberFormat('tr-TR');
 
     const dispatch = useDispatch<AppDispatch>()

@@ -1,10 +1,14 @@
+// Libraries
+import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
+// Components
 import PaymentUserInfo from '../../components/payment/paymentUserInfo'
 import PaymentCardInfo from '../../components/payment/paymentCardInfo'
-import { useDispatch, useSelector } from 'react-redux'
+// Types
 import { AppDispatch, RootState } from '../../redux/store'
+// Services
 import { addPaymentToOrdersAsync } from '../../redux/payment/service'
-import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 
 interface IPaymentInfo {
@@ -23,40 +27,42 @@ const PaymentPageContainer = () => {
 
     const cardInfo = useSelector((state: RootState) => state.payment.paymentCardInfo)
     const userInfo = useSelector((state: RootState) => state.payment.paymentUserInfo)
-    const allInfos = useSelector((state: RootState) => state.payment.allInfos)
+    const basket = useSelector((state: RootState) => state.basket.basket)
 
     const dispatch = useDispatch<AppDispatch>();
 
-    const [allEmpty, setAllEmpty] = useState<boolean>();
 
     const navigate = useNavigate();
 
     const handleSubmit = async (e: React.SyntheticEvent) => {
         e.preventDefault();
 
+        let allEmpty
+
         const paymentInfo = { ...cardInfo, ...userInfo };
 
         for (const paymentProperty in paymentInfo) {
             // Check if the current property is empty
             if (paymentInfo[paymentProperty as keyof IPaymentInfo]?.length === 0) {
-                alert(`${paymentProperty} is empty!`)
-                setAllEmpty(true)
+                allEmpty = true
                 break
-            } else {
-                setAllEmpty(false)
             }
         }
 
-        if (!allEmpty) {
-            await dispatch(addPaymentToOrdersAsync(paymentInfo));
-            navigate("/success-order")
+        if (basket.length === 0) {
+            toast.warn("Sepetiniz bos!")
+        } else {
+
+            if (!allEmpty) {
+                await dispatch(addPaymentToOrdersAsync(paymentInfo));
+                navigate("/success-order")
+            } else {
+                toast.warn("Eksik veya hatali bilgi girdiniz!")
+            }
+
         }
 
     }
-
-    useEffect(() => {
-        console.log(allInfos)
-    }, [allInfos])
 
 
     return (

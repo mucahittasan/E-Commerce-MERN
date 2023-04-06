@@ -35,7 +35,7 @@ const FavoritesButton: React.FC<FavoriteButtonsProps> = ({ item }) => {
         await dispatch(removeFromFavoritesAsync(item.id));
     }
 
-
+    // Check if the item is in the favorites
     useEffect(() => {
         setHaveFavorites(favorites?.find(data => data.id === item.id))
     }, [favorites, item])

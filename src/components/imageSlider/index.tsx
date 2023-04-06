@@ -13,7 +13,10 @@ type ImageSliderProps = {
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ currentProduct }) => {
 
+    // clicked item = clicked item index number
     const [clickedItem, setClickedItem] = useState<number>(0)
+
+    // Check if there is image
     const [haveImage, setHaveImage] = useState<boolean>()
 
 
@@ -22,7 +25,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ currentProduct }) => {
         setClickedItem(index);
     }
 
+    // Show next image
     const showNextImage = () => {
+        // first we check if currentProduct length is bigger or equeal to images.length - 1
         if (currentProduct?.images?.length && clickedItem >= currentProduct?.images?.length - 1) {
             setClickedItem(0)
         } else {
@@ -30,6 +35,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ currentProduct }) => {
         }
     }
 
+    // Show prev image
     const showPrevImage = () => {
         if (clickedItem <= 0) {
             currentProduct?.images?.length &&
@@ -57,6 +63,8 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ currentProduct }) => {
 
     }, [currentProduct])
 
+    // This is for clicked item class changing, when we click the item then it will remove all active class and
+    // add an active class to clicked item
     useEffect(() => {
 
         const getAllImages = document.querySelectorAll(".detail-image");

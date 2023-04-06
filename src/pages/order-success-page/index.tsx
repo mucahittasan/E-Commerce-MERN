@@ -1,7 +1,10 @@
+// Libraries
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+// Types
 import { AppDispatch, RootState } from '../../redux/store'
+// Services
 import { removeAllItemsInBasketAsync } from '../../redux/basket/service'
 
 const OrderSuccessPage = () => {

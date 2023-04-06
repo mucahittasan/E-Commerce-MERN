@@ -1,9 +1,13 @@
+// Libraries
 import { useDispatch, useSelector } from "react-redux"
-import { AppDispatch, RootState } from "../../redux/store"
 import { useEffect } from "react";
-import { getAllBasketItemsAsync } from "../../redux/basket/service";
-import BasketItem from "../../components/basketItem";
 import { Link } from "react-router-dom";
+// Types
+import { AppDispatch, RootState } from "../../redux/store"
+// Services
+import { getAllBasketItemsAsync } from "../../redux/basket/service";
+// Components
+import BasketItem from "../../components/basketItem";
 
 
 const SepetPageContainer = () => {

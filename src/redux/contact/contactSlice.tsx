@@ -35,6 +35,5 @@ export const contactSlice = createSlice({
     }
 })
 
-// export const {  } = contactSlice.actions
 
 export default contactSlice.reducer

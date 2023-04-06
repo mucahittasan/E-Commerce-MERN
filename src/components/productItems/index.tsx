@@ -15,18 +15,13 @@ const ProductItems = () => {
     // isLoading state
     const isLoading = useSelector((state: RootState) => state.product.isLoading);
 
-
-
     // number of items to be dis
     const dispatch = useDispatch<AppDispatch>();
-
 
     // When page is loaded than we will get all products
     useEffect(() => {
         dispatch(getProductsAsync());
     }, [dispatch])
-
-
 
     return (
         <>

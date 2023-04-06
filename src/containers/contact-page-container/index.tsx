@@ -32,7 +32,7 @@ const ContactPageContainer = () => {
     return (
         <div className="main-container">
             <h2 className="main-title">İletişim</h2>
-            <p className="text-darkGrayishBlue text-sm text-center font-semibold my-6 max-w-xl mx-auto flex flex-col">Merhaba 👋 ben Mücahit, benimle istediğiniz gibi fikir alışverişi, tavsiye, işe alım veya başka konular için iletişim kurabilirsiniz. İsterseniz direkt olarak mail adresime buradan da ulaşabilirsiniz. <a href="mailto: mucahittasan0@gmail.com" className="font-bold text-primaryRed">mucahittasan0@gmail.com</a> </p>
+            <p className="text-darkGrayishBlue text-sm text-center font-semibold my-6 max-w-xl mx-auto flex flex-col">Merhaba 👋 ben Mücahit, benimle istediğiniz gibi fikir alışverişi, tavsiye, işe alım veya başka konular için iletişim kurabilirsiniz. Direkt olarak mail adresimden de iletişim kurabilirsiniz. <a href="mailto: mucahittasan0@gmail.com" className="font-bold text-primaryRed">mucahittasan0@gmail.com</a> </p>
             <form onSubmit={formik.handleSubmit} className="flex flex-col items-center gap-y-4">
 
                 <label className="flex-1 flex flex-col w-1/2">

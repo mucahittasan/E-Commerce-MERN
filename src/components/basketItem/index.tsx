@@ -1,9 +1,13 @@
 // React Libraries
 import { Link } from 'react-router-dom';
-import ItemCount from '../itemCount';
-import { HiOutlineTrash } from 'react-icons/hi';
 import { useDispatch } from 'react-redux';
+// Icons
+import { HiOutlineTrash } from 'react-icons/hi';
+// Components
+import ItemCount from '../itemCount';
+// Dispatch Type
 import { AppDispatch } from '../../redux/store';
+// Basket Service
 import { removeFromBasketAsync } from '../../redux/basket/service';
 
 interface BasketItemProps {

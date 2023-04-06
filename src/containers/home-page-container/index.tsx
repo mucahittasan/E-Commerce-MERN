@@ -1,13 +1,14 @@
 // Libraries
 import { Link } from 'react-router-dom';
-
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 // Images
 import phoneImg from '../../assets/images/items/phone1.png';
 import joystick from '../../assets/images/items/joystick.jpg';
 import gamingChair from '../../assets/images/items/gaming_chair.jpg';
-import { useDispatch } from 'react-redux';
+// Types
 import { AppDispatch } from '../../redux/store';
-import { useEffect } from 'react';
+// Services
 import { getProductsAsync } from '../../redux/products/services';
 
 const HomePageContainer = () => {

@@ -5,7 +5,6 @@ import { IProducts } from '../../@types/ProductTypes'
 
 export type ProductState = {
     basket: IProducts[],
-    itemOffset: number,
     isLoading: boolean,
     error: null | string | undefined,
     isAddBasketLoading: boolean
@@ -13,7 +12,6 @@ export type ProductState = {
 
 const initialState: ProductState = {
     basket: [],
-    itemOffset: 0,
     isLoading: false,
     error: null,
     isAddBasketLoading: false
@@ -23,11 +21,7 @@ const initialState: ProductState = {
 export const productSlice = createSlice({
     name: "basket",
     initialState,
-    reducers: {
-        setItemOffset: (state, action) => {
-            state.itemOffset = action.payload
-        }
-    },
+    reducers: {},
     extraReducers: (builder) => {
 
         // Add product to basket
@@ -96,6 +90,5 @@ export const productSlice = createSlice({
     }
 })
 
-export const { setItemOffset } = productSlice.actions
 
 export default productSlice.reducer

@@ -1,9 +1,14 @@
+// Libraries
 import { useDispatch, useSelector } from "react-redux";
-import SearchInput from "../../components/searchInput"
-import { AppDispatch, RootState } from "../../redux/store";
-import ProductItem from "../../components/productItem";
 import { useEffect } from "react";
+// Components
+import SearchInput from "../../components/searchInput"
+import ProductItem from "../../components/productItem";
+// Types
+import { AppDispatch, RootState } from "../../redux/store";
+// Services
 import { getProductsAsync } from "../../redux/products/services";
+// Actions
 import { clearSearchProducts } from "../../redux/search/searchSlice";
 
 const SearchPageContainer = () => {

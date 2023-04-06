@@ -8,7 +8,7 @@ import { IProducts } from '../../@types/ProductTypes';
 // Service Actions of Basket
 import { addProductToBasketAsync, removeFromBasketAsync, updateBasketItemCountAsync } from '../../redux/basket/service';
 // Service Actions of Products
-import { getProductByIdAsync, updateProductCountAsync } from '../../redux/products/services';
+import { getProductByIdAsync } from '../../redux/products/services';
 // Components
 import CircleLoading from '../circleLoading';
 

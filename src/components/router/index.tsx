@@ -12,7 +12,7 @@ const FavoritesPage = lazy(() => wait(1000).then(() => import("../../pages/favor
 const SearchPage = lazy(() => wait(1000).then(() => import("../../pages/search-page")))
 const ContactPage = lazy(() => wait(1000).then(() => import("../../pages/contact-page")))
 const PaymentPage = lazy(() => wait(1000).then(() => import("../../pages/payment-page")))
-const OrderSuccessPage = lazy(() => wait(1000).then(() => import("../../pages/orderSuccessPage")))
+const OrderSuccessPage = lazy(() => wait(1000).then(() => import("../../pages/order-success-page")))
 
 const wait = (ms: number) =>
   new Promise<void>((resolve) => {

@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { useSelector } from 'react-redux';
 // Redux Store Types
 import { RootState } from '../../redux/store';
+// Components
 import SearchInput from '../searchInput';
 
 
