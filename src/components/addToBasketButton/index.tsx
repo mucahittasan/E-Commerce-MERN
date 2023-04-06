@@ -90,6 +90,7 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
         e.preventDefault();
         loadingProcess(item);
         await dispatch(addProductToBasketAsync(item));
+        console.log("Patch yoktur")
         if (id) {
             await dispatch(getProductByIdAsync(item.id))
         }
