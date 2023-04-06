@@ -14,20 +14,20 @@ const wait = (ms: number) =>
 
 // GET ALL PRODUCTS
 export const getProductsAsync = createAsyncThunk("products/getProductsAsync", async () => {
-    const res = await axios.get(`${process.env.REACT_APP_PORT}/items`);
+    const res = await axios.get(`https://typesciprt-e-commerce-api.vercel.app/items`);
     await wait(1000)
     return await res.data;
 })
 
 // GET PRODUCT BY ID
 export const getProductByIdAsync = createAsyncThunk("products/getProductByIdAsync", async (id: number) => {
-    const res = await axios.get(`${process.env.REACT_APP_PORT}/items/${id}`);
+    const res = await axios.get(`https://typesciprt-e-commerce-api.vercel.app/items/${id}`);
     return await res.data;
 })
 
 // UPDATE PRODUCT COUNT
 export const updateProductCountAsync = createAsyncThunk("products/updateProductCountAsync", async ({ id, count }: IUpdateCount) => {
-    const res = await axios.patch(`${process.env.REACT_APP_PORT}/items/${id}`, {
+    const res = await axios.patch(`https://typesciprt-e-commerce-api.vercel.app/items/${id}`, {
         count: count
     });
     return await res.data;

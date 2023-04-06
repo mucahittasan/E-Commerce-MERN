@@ -4,6 +4,6 @@ import { IContactType } from '../../@types/ContactType';
 
 // ADD PERSON TO CONTACT
 export const addPersonToContactAsync = createAsyncThunk("contact/addPersonToContactAsync", async (person: IContactType) => {
-    const res = await axios.post(`${process.env.REACT_APP_PORT}/contact`, person);
+    const res = await axios.post(`https://typesciprt-e-commerce-api.vercel.app/contact`, person);
     return await res.data;
 })
