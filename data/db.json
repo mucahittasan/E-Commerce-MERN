@@ -8,7 +8,7 @@
       "price": 4890,
       "category": "teknoloji",
       "type_of_product": "monitor",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg",
       "images": [
         {
@@ -33,7 +33,7 @@
       "price": 2780,
       "category": "teknoloji",
       "type_of_product": "monitor",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
       "images": [
         {
@@ -55,10 +55,10 @@
       "loading": false,
       "title": "Iphone 14 Pro Max 128GB Derin Mor",
       "description": "Apple Türkiye Garantili 7 inc QHD+ 20 - 40 MP On kamera cozunurlugu, 6GB ram, Mor renk",
-      "price": 44.48,
+      "price": 44000,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
       "images": [
         {
@@ -83,7 +83,7 @@
       "price": 5250,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg",
       "images": [
         {
@@ -105,7 +105,7 @@
       "loading": false,
       "title": "Samsung Galaxy S22",
       "description": "Dahili Hafıza 128 GB, Garanti Tipi Resmi Distribütör Garantili, Renk Pembe, Ekran Boyut 7'' Üstü,  Ekran Cinsi AMOLED, Ekran Teknolojisi Dinamik AMOLED",
-      "price": 19.499,
+      "price": 19499,
       "category": "teknoloji",
       "type_of_product": "telefon",
       "count": 0,
@@ -130,7 +130,7 @@
       "loading": false,
       "title": "Huawei Mate 50pro",
       "description": "Dahili Hafıza 256 GB, Renk Gümüş, Garanti Tipi Huawei Türkiye Garantili, Ekran Boyut Aralığı 6.5'' - 7'', Dokunmatik Ekran Var, Arka Kamera Sayısı 3",
-      "price": 32.999,
+      "price": 32999,
       "category": "teknoloji",
       "type_of_product": "telefon",
       "count": 0,
@@ -155,7 +155,7 @@
       "loading": false,
       "title": "Dijitsu 55ds8500",
       "description": "Ekran Boyutu:55' / 139, EkranGörüntü Kalitesi 4K Ultra, HDSmart TV:VarDahili Uydu Alıcı Var, Garanti Süresi 2 Yıl, Garanti Tipi Dijitsu Garantili",
-      "price": 7.899,
+      "price": 7899,
       "category": "teknoloji",
       "type_of_product": "televizyon",
       "count": 0,
@@ -180,7 +180,7 @@
       "loading": false,
       "title": "Axen AX43DIL13",
       "description": "Ekran Boyutu : 43' / 109, Ekran Görüntü Kalitesi Full HD, Garanti Tipi Sunny Garantili, Smart TV Var, Dahili Uydu Alıcı Var, Görüntüleme Teknolojisi LED",
-      "price": 4.249,
+      "price": 4249,
       "category": "teknoloji",
       "type_of_product": "televizyon",
       "count": 0,
@@ -199,7 +199,7 @@
       "loading": false,
       "title": "VESTEL 50UA9600",
       "description": "50' 127 Ekran Uydu Alicili 4K Ultra HD Smart LED TV",
-      "price": 8.795,
+      "price": 8795,
       "category": "teknoloji",
       "type_of_product": "televizyon",
       "count": 0,
@@ -224,10 +224,10 @@
       "loading": false,
       "title": "Samsung 55AU7000",
       "description": "55' 139 Ekran Uydu Alıcılı Crystal 4K Ultra HD Smart LED TV",
-      "price": 14.539,
+      "price": 14539,
       "category": "teknoloji",
       "type_of_product": "televizyon",
-      "count": 1,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty159/product/media/images/20210816/16/119076250/226111631/1/1_org_zoom.jpg",
       "images": [
         {
@@ -324,7 +324,7 @@
       "loading": false,
       "title": "HyperX Cloud II Oyuncu Kulaklık",
       "description": "Renk Kırmızı, Bağlantı Türü Kablolu, Mikrofon Var, Kullanım Tipi Kulak üstü, Kablo Uzunluğu 1,1 - 2 m, Garanti Tipi Resmi Distribütör ",
-      "price": 1.797,
+      "price": 1797,
       "category": "teknoloji",
       "type_of_product": "kulaklik",
       "count": 0,
@@ -649,7 +649,7 @@
       "loading": false,
       "title": "XDrive Profesyonel Oyuncu Koltuğu Kırmızı/Siyah",
       "description": "2D Hareketi Kolçaklar Sağa-Sola ve Yukarı-Aşağı hareketleri yapabilen kolcaklar. Ergonomik Tasarım ile vücut yapısına en uygun tasarım, uzun süreli oturumlarda ekstra yumuşatılmış oturum kısmı ile konfor sağlar. Bel ve Boyun Desteği uzun süreli oturumlarda bel ve boyun minderi ile konfor sağlar.",
-      "price": 4.123,
+      "price": 4123,
       "category": "teknoloji",
       "type_of_product": "koltuk",
       "count": 0,
@@ -674,7 +674,7 @@
       "loading": false,
       "title": "XDrive Toryum Oyuncu Koltuğu Mavi/Siyah",
       "description": "2D Hareketi Kolçaklar Sağa-Sola ve Yukarı-Aşağı hareketleri yapabilen kolcaklar. Ergonomik Tasarım ile vücut yapısına en uygun tasarım, uzun süreli oturumlarda ekstra yumuşatılmış oturum kısmı ile konfor sağlar. Bel ve Boyun Desteği uzun süreli oturumlarda bel ve boyun minderi ile konfor sağlar.",
-      "price": 3.873,
+      "price": 3873,
       "category": "teknoloji",
       "type_of_product": "koltuk",
       "count": 0,
@@ -721,7 +721,7 @@
       "loading": false,
       "title": "Sony Oyun Kolu",
       "description": "SONY PS5 Dualsense Kablosuz Kontrol Cihazı Çığır açıcı yeni PS5™ kontrol cihazıyla daha derin bir oyun deneyimi keşfedin. PS5 için DualSense kablosuz kontrol cihazı, size çağa liderlik eden bir tasarımla uyumlu dokunsal geribildirim, dinamik uyarlanabilir tetikler ve dahili bir mikrofon sunar. ",
-      "price": 1.589,
+      "price": 1589,
       "category": "teknoloji",
       "type_of_product": "oyun kolu",
       "count": 0,
@@ -743,7 +743,7 @@
       "loading": false,
       "title": "Xbox Oyun Kolu",
       "description": " Wireless Controller Siyah 9.Nesil (Microsoft TR Garantili)",
-      "price": 1.799,
+      "price": 1799,
       "category": "teknoloji",
       "type_of_product": "oyun kolu",
       "count": 0,
@@ -1461,7 +1461,7 @@
       "price": 5250,
       "category": "teknoloji",
       "type_of_product": "telefon",
-      "count": 4,
+      "count": 1,
       "main_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg",
       "images": [
         {
@@ -1479,27 +1479,79 @@
       ]
     },
     {
-      "id": 1,
+      "id": 5,
       "loading": false,
-      "title": "Rampage Monitor",
-      "description": "31.5 inç 165Hz 1ms (HDMI + Display) FreeSync AUO VA Full HD HDR Curved Gaming Oyuncu Monitör",
-      "price": 4890,
+      "title": "Samsung Galaxy S22",
+      "description": "Dahili Hafıza 128 GB, Garanti Tipi Resmi Distribütör Garantili, Renk Pembe, Ekran Boyut 7'' Üstü,  Ekran Cinsi AMOLED, Ekran Teknolojisi Dinamik AMOLED",
+      "price": 19499,
       "category": "teknoloji",
-      "type_of_product": "monitor",
+      "type_of_product": "telefon",
       "count": 1,
-      "main_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg",
+      "main_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg",
       "images": [
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274302/546865443/2/2_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/1/1_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274313/546865443/2/2_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty352/product/media/images/20220308/14/65167204/408683873/2/2_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274339/546865443/2/2_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty353/product/media/images/20220308/14/65167204/408683873/3/3_org_zoom.jpg"
         },
         {
-          "sub_image": "https://cdn.dsmcdn.com/ty555/product/media/images/20221010/10/190274380/546865443/2/2_org_zoom.jpg"
+          "sub_image": "https://cdn.dsmcdn.com/ty352/product/media/images/20220308/14/65167204/408683873/4/4_org_zoom.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "loading": false,
+      "title": "Huawei Mate 50pro",
+      "description": "Dahili Hafıza 256 GB, Renk Gümüş, Garanti Tipi Huawei Türkiye Garantili, Ekran Boyut Aralığı 6.5'' - 7'', Dokunmatik Ekran Var, Arka Kamera Sayısı 3",
+      "price": 32999,
+      "category": "teknoloji",
+      "type_of_product": "telefon",
+      "count": 1,
+      "main_image": "https://cdn.dsmcdn.com/ty569/product/media/images/20221018/13/196554062/599746666/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty569/product/media/images/20221018/13/196554062/599746666/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty567/product/media/images/20221018/13/196554062/599746666/2/2_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty568/product/media/images/20221018/13/196554062/599746666/3/3_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty567/product/media/images/20221018/13/196554062/599746666/4/4_org_zoom.jpg"
+        }
+      ]
+    }
+  ],
+  "favorites": [
+    {
+      "id": 10,
+      "loading": false,
+      "title": "Samsung 55AU7000",
+      "description": "55' 139 Ekran Uydu Alıcılı Crystal 4K Ultra HD Smart LED TV",
+      "price": 14539,
+      "category": "teknoloji",
+      "type_of_product": "televizyon",
+      "count": 0,
+      "main_image": "https://cdn.dsmcdn.com/ty159/product/media/images/20210816/16/119076250/226111631/1/1_org_zoom.jpg",
+      "images": [
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty159/product/media/images/20210816/16/119076250/226111631/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty160/product/media/images/20210816/15/119074798/227669857/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty161/product/media/images/20210816/15/119074802/227669857/1/1_org_zoom.jpg"
+        },
+        {
+          "sub_image": "https://cdn.dsmcdn.com/ty160/product/media/images/20210816/15/119074812/227669857/1/1_org_zoom.jpg"
         }
       ]
     },
@@ -1511,7 +1563,7 @@
       "price": 2780,
       "category": "teknoloji",
       "type_of_product": "monitor",
-      "count": 2,
+      "count": 0,
       "main_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/1/1_org_zoom.jpg",
       "images": [
         {
@@ -1527,92 +1579,8 @@
           "sub_image": "https://cdn.dsmcdn.com/ty22/product/media/images/20201109/11/24208278/103014183/7/7_org_zoom.jpg"
         }
       ]
-    },
-    {
-      "id": 12,
-      "loading": false,
-      "title": "Rampage Rm-k27 Kulaklik",
-      "description": "3,5 Mm 7 Renk Ledli Gaming Oyuncu Mikrofonlu Kulaklık",
-      "price": 329,
-      "category": "teknoloji",
-      "type_of_product": "kulaklik",
-      "count": 0,
-      "main_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794300/81711096/1/1_org_zoom.jpg",
-      "images": [
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794300/81711096/1/1_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794270/81711096/1/1_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty206/product/media/images/20211020/13/152794312/81711096/1/1_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty204/product/media/images/20211020/13/152794358/81711096/1/1_org_zoom.jpg"
-        }
-      ]
     }
   ],
-  "favorites": [
-    {
-      "id": 3,
-      "loading": false,
-      "title": "Iphone 14 Pro Max 128GB Derin Mor",
-      "description": "Apple Türkiye Garantili 7 inc QHD+ 20 - 40 MP On kamera cozunurlugu, 6GB ram, Mor renk",
-      "price": 44.48,
-      "category": "teknoloji",
-      "type_of_product": "telefon",
-      "count": 1,
-      "main_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg",
-      "images": [
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587596/574173140/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty539/product/media/images/20220920/22/177587611/574173140/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty537/product/media/images/20220920/22/177587615/574173140/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/22/177587650/574173140/2/2_org_zoom.jpg"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "loading": false,
-      "title": "Samsung Galaxy M13",
-      "description": "Dahili Hafıza 128 GB Renk, Mavi Garanti Tipi Samsung TR Garantili, Ekran Boyutu 7 inç, Kamera Çözünürlüğü 20 MP ve üstü, Ekran Çözünürlüğü FHD+",
-      "price": 5250,
-      "category": "teknoloji",
-      "type_of_product": "telefon",
-      "count": 1,
-      "main_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg",
-      "images": [
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty469/product/media/images/20220706/12/136022031/515399556/1/1_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/2/2_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/4/4_org_zoom.jpg"
-        },
-        {
-          "sub_image": "https://cdn.dsmcdn.com/ty468/product/media/images/20220706/12/136022031/515399556/5/5_org_zoom.jpg"
-        }
-      ]
-    }
-  ],
-  "contact": [
-    {
-      "name": "Mucahit",
-      "lastName": "Tasan",
-      "email": "mucahittasan00@gmail.com",
-      "message": "Merhaba ben Mucahit ve hadi baslayalim",
-      "id": 1
-    }
-  ]
+  "contact": [],
+  "orders": []
 }

@@ -17,7 +17,7 @@ const initialState: ContactState = {
 
 
 export const contactSlice = createSlice({
-    name: "basket",
+    name: "contact",
     initialState,
     reducers: {},
     extraReducers: (builder) => {

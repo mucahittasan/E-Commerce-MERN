@@ -11,6 +11,8 @@ const SepetPage = lazy(() => wait(1000).then(() => import("../../pages/sepet-pag
 const FavoritesPage = lazy(() => wait(1000).then(() => import("../../pages/favorites-page")))
 const SearchPage = lazy(() => wait(1000).then(() => import("../../pages/search-page")))
 const ContactPage = lazy(() => wait(1000).then(() => import("../../pages/contact-page")))
+const PaymentPage = lazy(() => wait(1000).then(() => import("../../pages/payment-page")))
+const OrderSuccessPage = lazy(() => wait(1000).then(() => import("../../pages/orderSuccessPage")))
 
 const wait = (ms: number) =>
   new Promise<void>((resolve) => {
@@ -49,6 +51,14 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />,
+      },
+      {
+        path: "/basket/payment",
+        element: <PaymentPage />,
+      },
+      {
+        path: "/success-order",
+        element: <OrderSuccessPage />,
       }
     ],
   },

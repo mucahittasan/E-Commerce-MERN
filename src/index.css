@@ -22,11 +22,11 @@
        
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        @apply bg-veryDarkBlue rounded-lg transition-all border-r-8 border-white
+        @apply bg-veryDarkBlue transition-all border-r-8 border-white
     }
 
     ::-webkit-scrollbar-thumb:hover{
-        @apply bg-darkGrayishBlue
+        @apply bg-primaryRed
     }
 
     ::selection {
@@ -41,8 +41,24 @@
         @apply text-veryDarkBlue
     }
 
+        /* Chrome, Safari, Edge, Opera */
+    .contact-input::-webkit-outer-spin-button,
+    .contact-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    .contact-input[type=number] {
+    -moz-appearance: textfield;
+    }
+
     .main-container {
         @apply max-w-[1300px] w-full m-auto px-4 2xl:px-0 
+    }
+
+    textarea {
+        resize: none;
     }
 
     button {
@@ -96,7 +112,7 @@
     }
 
     .contact-input {
-        @apply border-2 rounded px-2 w-full h-10 outline-none transition-all focus:border-gray-400 text-sm text-veryDarkBlue placeholder:text-darkGrayishBlue placeholder:font-medium font-semibold
+        @apply border-2 rounded px-2 w-full h-10 outline-none transition-all focus:border-gray-400 text-sm text-veryDarkBlue placeholder:text-grayishBlue placeholder:font-medium font-semibold
     }
 
     /* Pagination Content */

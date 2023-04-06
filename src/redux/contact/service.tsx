@@ -6,6 +6,4 @@ import { IContactType } from '../../@types/ContactType';
 export const addPersonToContactAsync = createAsyncThunk("contact/addPersonToContactAsync", async (person: IContactType) => {
     const res = await axios.post(`${process.env.REACT_APP_PORT}/contact`, person);
     return await res.data;
-
-
 })

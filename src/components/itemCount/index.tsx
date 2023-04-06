@@ -1,6 +1,6 @@
 import React from 'react'
 import { IProducts } from '../../@types/ProductTypes';
-import { addProductToBasketAsync, getAllBasketItemsAsync, removeFromBasketAsync, updateBasketItemCountAsync } from '../../redux/basket/service';
+import { addProductToBasketAsync, getAllBasketItemsAsync, updateBasketItemCountAsync } from '../../redux/basket/service';
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from '../../redux/store';
 import { FaMinus, FaPlus } from 'react-icons/fa';
@@ -43,10 +43,6 @@ const ItemCount: React.FC<ItemCountProps> = ({ currentProduct }) => {
 
     // Product count is decrement
     const decrementCount = async (item: IProducts) => {
-        // if count is 1 and we click the decrement button than it will remove from basket
-        if (item?.count === 1) {
-            await dispatch(removeFromBasketAsync(item.id));
-        }
 
         if (item?.count > 0) {
             await dispatch(updateBasketItemCountAsync({ id: Number(item.id), count: item?.count - 1 }))
@@ -57,11 +53,11 @@ const ItemCount: React.FC<ItemCountProps> = ({ currentProduct }) => {
     return (
         <>
             {currentProduct &&
-                <div className='bg-slate-200 flex items-center sm:h-auto h-9 justify-between min-w-[150px] max-w-[150px] rounded-md font-bold text-sm overflow-hidden'>
-                    <button onClick={() => decrementCount(currentProduct)} className='text-primaryRed h-full w-9 flex items-center justify-center transition hover:bg-primaryRed hover:text-white'>
+                <div className='bg-slate-200 flex items-center sm:h-auto h-9 justify-between min-w-[150px] max-w-[150px] rounded-md font-bold text-[12px] overflow-hidden'>
+                    <button disabled={currentProduct.count === 1} onClick={() => decrementCount(currentProduct)} className='disabled:bg-slate-200 text-primaryRed disabled:text-primaryRed h-full w-9 flex items-center justify-center transition hover:bg-primaryRed hover:text-white'>
                         <FaMinus />
                     </button>
-                    <span className='text-xl'>{currentProduct?.count}</span>
+                    <span className='text-lg'>{currentProduct?.count}</span>
                     <button onClick={() => incrementCount(currentProduct)} className='text-primaryRed h-full w-9 flex items-center justify-center transition hover:bg-primaryRed hover:text-white'>
                         <FaPlus />
                     </button>

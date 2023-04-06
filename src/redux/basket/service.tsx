@@ -40,3 +40,10 @@ export const updateBasketItemCountAsync = createAsyncThunk("basket/updateBasketI
     });
     return await res.data;
 })
+
+// DELETE ALL ITEMS IN ARRAY
+export const removeAllItemsInBasketAsync = createAsyncThunk("basket/removeAllItemsInBasketAsync", async (products: IProducts[]) => {
+    products.map(async (product) => {
+        return await axios.delete(`${process.env.REACT_APP_PORT}/basket/${product.id}`);
+    })
+})

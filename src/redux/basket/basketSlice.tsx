@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
-import { addProductToBasketAsync, getAllBasketItemsAsync, removeFromBasketAsync, updateBasketItemCountAsync } from './service'
+import { addProductToBasketAsync, getAllBasketItemsAsync, removeAllItemsInBasketAsync, removeFromBasketAsync, updateBasketItemCountAsync } from './service'
 import { IProducts } from '../../@types/ProductTypes'
 
 
@@ -78,6 +78,19 @@ export const productSlice = createSlice({
             })
             .addCase(updateBasketItemCountAsync.rejected, (state, action) => {
                 state.error = action.error.message;
+            })
+
+        builder
+            .addCase(removeAllItemsInBasketAsync.pending, (state, action) => {
+                state.isLoading = true;
+            })
+            .addCase(removeAllItemsInBasketAsync.fulfilled, (state, action) => {
+                state.isLoading = false;
+                state.basket = []
+            })
+            .addCase(removeAllItemsInBasketAsync.rejected, (state, action) => {
+                state.isLoading = false;
+                state.error = action.error.message
             })
 
     }

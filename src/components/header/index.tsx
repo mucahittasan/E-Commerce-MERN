@@ -3,7 +3,7 @@ import { AiOutlineHeart, AiOutlineSearch } from 'react-icons/ai';
 import { SlBasket } from 'react-icons/sl';
 import { RxHamburgerMenu } from 'react-icons/rx';
 // Libraries
-import { Link, NavLink, useLocation } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 // Redux Store Types
@@ -16,8 +16,6 @@ const Header = () => {
   const basketLength = useSelector((state: RootState) => state.basket.basket.length);
   const favoritesLength = useSelector((state: RootState) => state.favorite.favorites.length);
 
-  const location = useLocation()
-
   // Search content open/close
   const [searchActive, setSearchActive] = useState<boolean>(false);
 
@@ -27,9 +25,9 @@ const Header = () => {
 
   return (
     <header className='bg-white fixed flex-1 w-full top-0 left-0 z-50'>
-      <div className='main-container px-4 py-2 flex md:justify-start justify-between items-center border-b-[1px] border-gray-200'>
+      <div className='main-container px-4 py flex md:justify-start justify-between items-center border-b-[1px] border-gray-200 min-h-[77px]'>
         <Link to="/" className="font-bold text-[30px] md:text-[40px] logo">
-          stealim
+          steal<span className='text-primaryRed logo'>im</span>
         </Link>
 
         {/* Desktop Screen Navbar */}
@@ -39,7 +37,6 @@ const Header = () => {
             <li>
               <NavLink className='nav-item' to="/shop">Alışveriş</NavLink>
             </li>
-
             <li>
               <NavLink className='nav-item' to="/contact">İletişim</NavLink>
             </li>

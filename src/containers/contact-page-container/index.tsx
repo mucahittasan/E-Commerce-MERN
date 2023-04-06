@@ -1,5 +1,4 @@
 // Libraries
-import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { useFormik } from 'formik';
 // Validation
@@ -8,15 +7,12 @@ import { userSchema } from "./validation";
 import { addPersonToContactAsync } from "../../redux/contact/service";
 // Type
 import { AppDispatch } from "../../redux/store";
-// Modal
-import ContactInfoModal from "../../modal/infoModal";
+import { toast } from "react-toastify";
 
 
 const ContactPageContainer = () => {
 
     const dispatch = useDispatch<AppDispatch>();
-
-    const [activeModal, setActiveModal] = useState(false);
 
     const formik = useFormik({
         initialValues: {
@@ -27,20 +23,14 @@ const ContactPageContainer = () => {
         },
         onSubmit: async (values, { resetForm }) => {
             dispatch(addPersonToContactAsync(values));
-
-            setActiveModal(true);
+            toast.info(`Merhaba ${values.name}, mesajınız alınmıştır ve en kısa sürede sizinle iletişime geçilecektir.`)
             resetForm()
-            setTimeout(() => {
-                setActiveModal(false)
-            }, 5000)
-
         },
         validationSchema: userSchema
     });
 
     return (
         <div className="main-container">
-            <ContactInfoModal activeModal={activeModal} name={formik.values.name} message={"Merhaba, mesajınız alınmıştır. En kısa sürede sizinle iletişime geçilecektir!"} detail={"info"} />
             <h2 className="main-title">İletişim</h2>
             <p className="text-darkGrayishBlue text-sm text-center font-semibold my-6 max-w-xl mx-auto flex flex-col">Merhaba 👋 ben Mücahit, benimle istediğiniz gibi fikir alışverişi, tavsiye, işe alım veya başka konular için iletişim kurabilirsiniz. İsterseniz direkt olarak mail adresime buradan da ulaşabilirsiniz. <a href="mailto: mucahittasan0@gmail.com" className="font-bold text-primaryRed">mucahittasan0@gmail.com</a> </p>
             <form onSubmit={formik.handleSubmit} className="flex flex-col items-center gap-y-4">
