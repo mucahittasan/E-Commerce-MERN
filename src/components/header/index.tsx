@@ -1,23 +1,34 @@
-import {AiOutlineHeart, AiOutlineSearch} from 'react-icons/ai';
-import {SlBasket} from 'react-icons/sl';
-import {RxHamburgerMenu} from 'react-icons/rx';
-
-import { Link } from 'react-router-dom'
+// Icons
+import { AiOutlineHeart, AiOutlineSearch } from 'react-icons/ai';
+import { SlBasket } from 'react-icons/sl';
+import { RxHamburgerMenu } from 'react-icons/rx';
+// Libraries
+import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
+// Redux Store Types
+import { RootState } from '../../redux/store';
+// Components
+import SearchInput from '../searchInput';
 
 
 const Header = () => {
 
+  const basketLength = useSelector((state: RootState) => state.basket.basket.length);
+  const favoritesLength = useSelector((state: RootState) => state.favorite.favorites.length);
+
   // Search content open/close
   const [searchActive, setSearchActive] = useState<boolean>(false);
-  
+
   // Hamburger menu open/close
   const [activeHamburger, setActiveHamburger] = useState<boolean>(false);
 
+
   return (
-    <header className='content p-2 flex md:justify-start justify-between items-center border-b-[1px] border-gray-200'>
+    <header className='bg-white fixed flex-1 w-full top-0 left-0 z-50'>
+      <div className='main-container px-4 py flex md:justify-start justify-between items-center border-b-[1px] border-gray-200 min-h-[77px]'>
         <Link to="/" className="font-bold text-[30px] md:text-[40px] logo">
-          stealim
+          steal<span className='text-primaryRed logo'>im</span>
         </Link>
 
         {/* Desktop Screen Navbar */}
@@ -25,113 +36,104 @@ const Header = () => {
         <nav className='md:block hidden'>
           <ul className='flex items-center ml-12'>
             <li>
-              <Link className='nav-item' to="/shop">Shop</Link>
+              <NavLink className='nav-item' to="/shop">Alışveriş</NavLink>
             </li>
             <li>
-              <Link className='nav-item' to="/categories">Categories</Link>
-            </li>
-            <li>
-              <Link className='nav-item' to="/shop">Contact</Link>
+              <NavLink className='nav-item' to="/contact">İletişim</NavLink>
             </li>
           </ul>
         </nav>
 
-        <div className="md:flex hidden ml-auto gap-8">
-          <button className='relative group'>
-            <label className='flex cursor-pointer'>
-              <AiOutlineSearch className='text-2xl mr-2' onClick={() => setSearchActive(true)}/>
-              <div className={`z-50 fixed left-0 top-0 pt-[200px] flex justify-center bg-slate-900 w-full h-full transition-all ease-linear ${!searchActive && "opacity-0 invisible"} ${searchActive && "opacity-90 visible"}`}>
-                <input 
-                  className={`border-b-2 min-w-[320px] w-1/2 h-12 rounded-md placeholder:text-black px-2 text-black font-medium outline-none`}
-                  type="text" 
-                  placeholder='Search..' />
-                  
-                <button onClick={() => setSearchActive(false)} className='absolute md:right-20 right-[10px] text-3xl top-20 text-white transition-colors hover:text-primaryOrange'>
-                  x
-                </button>
-              </div>
-            </label>
-          </button>
+        <div className='md:block hidden w-full flex-1'>
+          <SearchInput />
 
+        </div>
+
+
+        <div className='md:flex gap-x-6 hidden'>
           <Link to="/favorites" className='relative group'>
-            <AiOutlineHeart className='text-2xl'/>
+            <AiOutlineHeart className='text-2xl' />
             <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
-              Favorites
+              Favoriler
             </div>
-            <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryOrange text-white rounded-full'>1</span>
+            {favoritesLength > 0 &&
+              <span className='absolute aspect-square top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryRed text-white rounded-full'>{favoritesLength}</span>
+            }
           </Link>
 
           <Link to="/basket" className='relative group'>
-            <SlBasket className='text-2xl'/>
+            <SlBasket className='text-2xl' />
             <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
-              Basket
+              Sepet
             </div>
-            <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryOrange text-white rounded-full'>1</span>
+            {basketLength > 0 &&
+              <span className='absolute aspect-square top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryRed text-white rounded-full'>{basketLength}</span>
+            }
           </Link>
         </div>
+
 
         <button onClick={() => setActiveHamburger(true)} className='text-2xl md:hidden block ml-auto'>
           <RxHamburgerMenu />
         </button>
 
-
         {/* -------------------------------------------------------------------------------------------- */}
 
         {/* Mobile Screen Navbar */}
-        <nav className={`${!activeHamburger && "invisible"} ${activeHamburger && "opacity-[1] visible"} transition-all duration-300 opacity-0  fixed right-0 bg-[rgba(0,0,0,.8)] h-screen top-0 w-full`}>
+        <nav className={`${!activeHamburger && "invisible"} ${activeHamburger && "opacity-[1] visible"} transition-all duration-300 z-[999] opacity-0  fixed right-0 bg-[rgba(0,0,0,.8)] h-screen top-0 w-full`}>
           <div className={`${activeHamburger && "translate-y-0"} ${!activeHamburger && "translate-y-[100%]"} transition-all duration-300  mt-4 pt-16 bg-white flex flex-col items-center gap-y-7 ml-auto h-screen rounded-tl-[2.375rem] rounded-tr-[2.375rem] `}>
             <ul className='flex items-center flex-col gap-y-6'>
               <li>
-                <Link className='nav-item text-xl' to="/shop">Shop</Link>
+                <NavLink className='nav-item text pb-4' to="/shop">Alışveriş</NavLink>
               </li>
+
               <li>
-                <Link className='nav-item text-xl' to="/categories">Categories</Link>
-              </li>
-              <li>
-                <Link className='nav-item text-xl' to="/shop">Contact</Link>
+                <NavLink className='nav-item text pb-4' to="/contact">İletişim</NavLink>
               </li>
             </ul>
             <div className="flex gap-8 mt-12">
-            <button className='relative group'>
-              <label className='flex cursor-pointer'>
-                <AiOutlineSearch className='text-2xl mr-2' onClick={() => setSearchActive(true)}/>
-                <div className={`z-50 fixed left-0 top-0 pt-[200px] flex justify-center bg-slate-900 w-full h-full transition-all ease-linear ${!searchActive && "opacity-0 invisible"} ${searchActive && "opacity-90 visible"}`}>
-                  <input 
-                    className={`border-b-2 min-w-[320px] w-1/2 h-12 rounded-md placeholder:text-black px-2 text-black font-medium outline-none`}
-                    type="text" 
-                    placeholder='Search..' />
-                    
-                  <button onClick={() => setSearchActive(false)} className='absolute md:right-20 right-[10px] text-3xl top-20 text-white transition-colors hover:text-primaryOrange'>
-                    x
-                  </button>
+              <div className='relative group'>
+                <label className='flex cursor-pointer'>
+                  <AiOutlineSearch className='text-2xl mr-2' onClick={() => setSearchActive(true)} />
+                  <div className={`z-50 fixed left-0 top-0 pt-[200px] flex justify-center bg-slate-900 w-full h-full transition-all ease-linear ${!searchActive && "opacity-0 invisible"} ${searchActive && "opacity-[0.98] visible"}`}>
+                    <SearchInput setSearchActive={setSearchActive} setActiveHamburger={setActiveHamburger} />
+
+                    <button onClick={() => setSearchActive(false)} className='absolute md:right-20 right-[10px] text-3xl top-20 text-white transition-colors hover:text-primaryRed'>
+                      x
+                    </button>
+                  </div>
+                </label>
+              </div>
+
+              <Link to="/favorites" className='relative group'>
+                <AiOutlineHeart className='text-2xl' />
+                <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
+                  Favoriler
                 </div>
-              </label>
-            </button>
+                {favoritesLength > 0 &&
+                  <span className='absolute aspect-square top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryRed text-white rounded-full'>{favoritesLength}</span>
+                }
+              </Link>
 
-            <Link to="/favorites" className='relative group'>
-              <AiOutlineHeart className='text-2xl'/>
-              <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
-                Favorites
-              </div>
-              <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryOrange text-white rounded-full'>1</span>
-            </Link>
-
-            <Link to="/basket" className='relative group'>
-              <SlBasket className='text-2xl'/>
-              <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
-                Basket
-              </div>
-              <span className='absolute top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryOrange text-white rounded-full'>1</span>
-            </Link>
+              <Link to="/basket" className='relative group'>
+                <SlBasket className='text-2xl' />
+                <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
+                  Sepet
+                </div>
+                {basketLength > 0 &&
+                  <span className='absolute aspect-square top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryRed text-white rounded-full'>{basketLength}</span>
+                }
+              </Link>
             </div>
-            <button onClick={() => setActiveHamburger(false)} className='absolute right-5 top-5 text-xl font-medium hover:text-primaryOrange'>
+            <button onClick={() => setActiveHamburger(false)} className='absolute right-5 top-5 text-xl font-medium hover:text-primaryRed'>
               X
             </button>
           </div>
         </nav>
+      </div>
 
     </header>
   )
 }
 
-export default Header
+export default Header;
