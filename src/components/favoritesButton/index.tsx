@@ -41,7 +41,6 @@ const FavoritesButton: React.FC<FavoriteButtonsProps> = ({ item }) => {
     }, [favorites, item])
 
 
-
     return (
         <>
             {haveFavorites?.id === item.id ?

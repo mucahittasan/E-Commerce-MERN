@@ -39,7 +39,6 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
     const [haveBasket, setHaveBasket] = useState<IProducts | undefined>();
 
     const basket = useSelector((state: RootState) => state.basket.basket);
-    const basketIsLoading = useSelector((state: RootState) => state.basket.isLoading);
 
     const dispatch = useDispatch<AppDispatch>()
 
@@ -53,29 +52,28 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
 
         if (location !== "/shop" && id === undefined) {
             const allAddBasketBtn = document.querySelectorAll(".basket-button");
-            basketIsLoading && allAddBasketBtn[Number(myKey)]?.querySelector(".circle-loading")?.classList.add("active");
+            allAddBasketBtn[Number(myKey)]?.querySelector(".circle-loading")?.classList.add("active");
 
-            !basketIsLoading && allAddBasketBtn[Number(myKey)]?.querySelector(".circle-loading")?.classList.remove("active");
-
-            // setTimeout(() => {
-            // }, 1000);
+            setTimeout(() => {
+                allAddBasketBtn[Number(myKey)]?.querySelector(".circle-loading")?.classList.remove("active");
+            }, 1000);
 
         } else {
             if (id) {
                 const getBasketBtn = document.querySelectorAll(".basket-button")
-                basketIsLoading && getBasketBtn[0].querySelector(".circle-loading")?.classList.add("active")
-                !basketIsLoading && getBasketBtn[0].querySelector(".circle-loading")?.classList.remove("active")
+                getBasketBtn[0].querySelector(".circle-loading")?.classList.add("active")
 
-                // setTimeout(() => {
-                // }, 1000)
+                setTimeout(() => {
+                    getBasketBtn[0].querySelector(".circle-loading")?.classList.remove("active")
+                }, 1000)
 
             } else {
                 const allAddBasketBtn = document.querySelectorAll(".basket-button");
-                basketIsLoading && allAddBasketBtn[Number(item.id) - 1]?.querySelector(".circle-loading")?.classList.add("active");
+                allAddBasketBtn[Number(item.id) - 1]?.querySelector(".circle-loading")?.classList.add("active");
 
-                !basketIsLoading && allAddBasketBtn[Number(item.id) - 1]?.querySelector(".circle-loading")?.classList.remove("active");
-                // setTimeout(() => {
-                // }, 1000);
+                setTimeout(() => {
+                    allAddBasketBtn[Number(item.id) - 1]?.querySelector(".circle-loading")?.classList.remove("active");
+                }, 1000);
 
             }
         }
@@ -92,7 +90,6 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
         e.preventDefault();
         loadingProcess(item);
         await dispatch(addProductToBasketAsync(item));
-        await dispatch(updateBasketItemCountAsync({ id: item.id, count: 1 }))
         if (id) {
             await dispatch(getProductByIdAsync(item.id))
         }
@@ -103,7 +100,6 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
         e.preventDefault();
         loadingProcess(item);
         await dispatch(removeFromBasketAsync(item.id));
-        await dispatch(updateBasketItemCountAsync({ id: item.id, count: 0 }))
         if (id) {
             await dispatch(getProductByIdAsync(item.id))
         }
