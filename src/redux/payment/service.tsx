@@ -15,6 +15,6 @@ interface OrderType {
 
 // ADD PERSON TO CONTACT
 export const addPaymentToOrdersAsync = createAsyncThunk("payment/addPaymentToOrdersAsync", async (order: OrderType) => {
-    const res = await axios.post(`${process.env.REACT_APP_PORT}/orders`, order);
+    const res = await axios.post(`https://typesciprt-e-commerce-api.vercel.app/orders`, order);
     return await res.data;
 })
