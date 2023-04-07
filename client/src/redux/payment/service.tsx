@@ -15,6 +15,6 @@ interface OrderType {
 
 // ADD PERSON TO CONTACT
 export const addPaymentToOrdersAsync = createAsyncThunk("payment/addPaymentToOrdersAsync", async (order: OrderType) => {
-    const res = await axios.post(`http://localhost:5000/payment`, order);
+    const res = await axios.post(`https://e-commerce-g1b7.onrender.com/payment`, order);
     return await res.data;
 })

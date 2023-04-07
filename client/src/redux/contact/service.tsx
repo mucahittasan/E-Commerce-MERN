@@ -4,6 +4,6 @@ import { IContactType } from '../../@types/ContactType';
 
 // ADD PERSON TO CONTACT
 export const addPersonToContactAsync = createAsyncThunk("contact/addPersonToContactAsync", async (person: IContactType) => {
-    const res = await axios.post(`http://localhost:5000/contact`, person);
+    const res = await axios.post(`https://e-commerce-g1b7.onrender.com/contact`, person);
     return await res.data;
 })
