@@ -9,7 +9,7 @@
 </div> 
 
 <div align="center">
-  <img width="900" src = 'https://user-images.githubusercontent.com/88967412/230663773-8f413b37-2faa-46aa-bb1f-81ec03ae45b8.gif' />
+  <img width="900" src = 'https://user-images.githubusercontent.com/88967412/230664359-dfa1a324-333e-46ba-b28e-54b724b108af.gif' />
 </div>
 
 <h2> ✨ About The Project</h2>
