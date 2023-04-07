@@ -15,7 +15,6 @@ dotenv.config()
 
 const port = process.env.PORT;
 
-
 const connect = async () => {
     try {
         await mongoose.connect(process.env.MONGOOSE)
@@ -29,7 +28,7 @@ const connect = async () => {
 app.use(express.json());
 app.use(morgan("common"))
 app.use(
-    cors({ origin: [process.env.CORS, process.env.CORS_2] })
+    cors({ origin: [process.env.CORS] })
 )
 
 app.use("/basket", basketRoute)
