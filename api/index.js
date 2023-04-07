@@ -28,7 +28,7 @@ const connect = async () => {
 app.use(express.json());
 app.use(morgan("common"))
 app.use(
-    cors({ origin: [process.env.CORS] })
+    cors({ origin: "https://e-commerce-g1b7.onrender.com" })
 )
 
 app.use("/basket", basketRoute)
