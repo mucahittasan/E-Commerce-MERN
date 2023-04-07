@@ -116,39 +116,6 @@
         @apply border-2 rounded px-2 w-full h-10 outline-none transition-all focus:border-gray-400 text-sm text-veryDarkBlue placeholder:text-grayishBlue placeholder:font-medium font-semibold
     }
 
-    /* Pagination Content */
-    ul[role="navigation"]  {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 4rem 0;
-        column-gap: 0.5rem;
-    }
-
-    ul[role="navigation"] a {
-        width: 45px;
-        height: 45px;
-        border-radius: 6px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #dde6f3;
-        transition: 200ms all ease;
-    }
-    ul[role="navigation"] a:hover {
-        background-color: #b5c0cf;
-    }
-
-    ul[role="navigation"] li:first-child a,
-    ul[role="navigation"] li:last-child a {
-        width: 35px;
-        height: 35px;
-    }
-
-    ul[role="navigation"] li.selected a {
-        @apply bg-primaryRed text-white font-bold
-    }
-
     /* LOADING */
 
     .circle-loading {
