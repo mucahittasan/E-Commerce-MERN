@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "build": "npm install"
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "",
