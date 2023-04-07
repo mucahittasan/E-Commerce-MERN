@@ -49,7 +49,7 @@
   npm start
   ```
   
-  - After that, get into api folder and run below codes:
+- After that, get into api folder and run below codes:
   - Run with npm:
   ```npm
   npm start
