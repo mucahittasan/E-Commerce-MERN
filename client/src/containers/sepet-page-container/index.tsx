@@ -41,7 +41,7 @@ const SepetPageContainer = () => {
             <h2 className="main-title">Sepetim</h2>
             {basketItems.length !== 0 ?
                 <div className="flex my-12 gap-x-8 gap-y-16 items-start lg:flex-row flex-col">
-                    <div className="flex flex-col gap-y-8">
+                    <div className="flex flex-col gap-y-8 w-full">
                         {basketItems.map((basketItem, index) => (
                             <BasketItem item={basketItem} key={index} />
                         ))}
