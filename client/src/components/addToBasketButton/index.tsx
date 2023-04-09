@@ -113,7 +113,7 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
                     </div>
 
                 </button>
-                : <button onClick={(e) => addToBasket(e, item)} className={`btn basket-button relative border-[2px] font-bold bg-grayishBlue text-veryDarkBlue border-grayishBlue hover:text-white hover:bg-veryDarkBlue hover:border-veryDarkBlue`}>
+                : <button onClick={(e) => addToBasket(e, item)} className={`btn basket-button relative border-[2px] font-bold bg-grayishBlue dark:hover:border-primaryRed dark:hover:bg-primaryRed text-veryDarkBlue border-grayishBlue hover:text-white hover:bg-veryDarkBlue hover:border-veryDarkBlue`}>
                     <span>Sepete Ekle</span>
                     <div className='absolute right-2 top-[10px]'>
                         <CircleLoading />

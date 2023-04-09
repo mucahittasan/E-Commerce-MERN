@@ -11,7 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        // primaryOrange: "hsl(26, 100%, 55%)",
+        darkModeBg: "#0C0B0B",
         primaryRed: "#ff1a48",
         veryDarkBlue: "hsl(220, 13%, 13%)",
         darkGrayishBlue: "hsl(219, 9%, 45%)",

@@ -52,28 +52,28 @@ const PaymentCardInfo = () => {
     }, [cardNumber, cvv, expirationDateMonth, expirationDateYear, dispatch, cardOwnerName])
 
     return (
-        <div className='border-2 rounded-md w-full p-4 gap-y-8 flex flex-col'>
+        <div className='border-2 dark:border-slate-600 rounded-md w-full p-4 gap-y-8 flex flex-col'>
             <label className="flex flex-col w-full gap-y-2">
-                <span className="text-sm text-darkGrayishBlue font-semibold">Kart Numarası</span>
+                <span className="text-sm text-darkGrayishBlue font-semibold dark:text-grayishBlue">Kart Numarası</span>
                 <input maxLength={19} onChange={(e) => handleCardNumberChange(e)} value={cardNumber} className={`contact-input`} type="text" placeholder="**** **** **** ****" />
             </label>
 
             <label className="flex flex-col w-full gap-y-2">
-                <span className="text-sm text-darkGrayishBlue font-semibold">Kartu Üzerindeki İsim</span>
+                <span className="text-sm text-darkGrayishBlue font-semibold dark:text-grayishBlue">Kartu Üzerindeki İsim</span>
                 <input name="cardOwnerName" onChange={(e) => setCardOwnerName(e.target.value)} value={cardOwnerName} className={`contact-input`} type="text" placeholder="Kartın üzerindeki ad ve soyad" />
             </label>
 
             <div className="flex gap-x-2 xl:flex-row flex-col">
                 <label className="w-full xl:max-w-none lg:max-w-[250px]">
-                    <span className="text-sm text-darkGrayishBlue font-semibold">Son Kullanma Tarihi - <span className="text-veryDarkBlue font-bold">Ay</span></span>
+                    <span className="text-sm text-darkGrayishBlue font-semibold dark:text-grayishBlue">Son Kullanma Tarihi - <span className="text-veryDarkBlue font-bold">Ay</span></span>
                     <input maxLength={2} max={31} name="expirationDateMonth" onChange={(e) => setExpirationDateMonth(e.target.value)} value={expirationDateMonth} className={`contact-input`} type="text" />
                 </label>
                 <label className="w-full xl:max-w-none lg:max-w-[250px]">
-                    <span className="text-sm text-darkGrayishBlue font-semibold">Son Kullanma Tarihi - <span className="text-veryDarkBlue font-bold">Yıl</span></span>
+                    <span className="text-sm text-darkGrayishBlue font-semibold dark:text-grayishBlue">Son Kullanma Tarihi - <span className="text-veryDarkBlue font-bold">Yıl</span></span>
                     <input maxLength={4} minLength={4} min={2023} max={2050} name="expirationDateYear" onChange={(e) => setExpirationDateYear(e.target.value)} value={expirationDateYear} className={`contact-input `} type="text" />
                 </label>
                 <label className="w-full xl:max-w-none lg:max-w-[250px]">
-                    <span className="text-sm text-darkGrayishBlue font-semibold">CVV</span>
+                    <span className="text-sm text-darkGrayishBlue font-semibold dark:text-grayishBlue">CVV</span>
                     <input maxLength={3} name="cvv" onChange={(e) => setCvv(e.target.value)} value={cvv} className={`contact-input`} type="text" />
                 </label>
             </div>

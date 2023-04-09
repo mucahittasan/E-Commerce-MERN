@@ -46,26 +46,26 @@ const SepetPageContainer = () => {
                             <BasketItem item={basketItem} key={index} />
                         ))}
                     </div>
-                    <div className="border-2 bg-white bottom-10 rounded-lg p-2 gap-y-2 flex flex-col border-grayishBlue w-full lg:w-auto md:min-w-[300px]">
+                    <div className="border-2 bg-white dark:bg-veryDarkBlue dark:border-slate-600 bottom-10 rounded-lg p-2 gap-y-2 flex flex-col border-grayishBlue w-full lg:w-auto md:min-w-[300px]">
                         <div className="flex justify-between gap-x-4">
-                            <span className="text-darkGrayishBlue text-sm font-medium">Ürünün Toplamı</span>
-                            <span className="whitespace-nowrap font-semibold">{formatter.format(totalPrice())} TL</span>
+                            <span className="text-darkGrayishBlue text-sm font-medium dark:text-grayishBlue">Ürünün Toplamı</span>
+                            <span className="whitespace-nowrap font-semibold dark:text-white">{formatter.format(totalPrice())} TL</span>
                         </div>
                         <div className="flex justify-between gap-x-4">
-                            <span className="text-darkGrayishBlue text-sm font-medium">Kargo</span>
-                            <span className="whitespace-nowrap font-semibold">{shippingMoney} TL</span>
+                            <span className="text-darkGrayishBlue text-sm font-medium dark:text-grayishBlue">Kargo</span>
+                            <span className="whitespace-nowrap font-semibold dark:text-white">{shippingMoney} TL</span>
                         </div>
                         {totalPrice() > 150 &&
 
                             <div className="flex justify-between gap-x-4">
-                                <span className="text-darkGrayishBlue text-sm font-medium">150 TL ve üzeri kargo bedava</span>
+                                <span className="text-darkGrayishBlue text-sm font-medium dark:text-grayishBlue">150 TL ve üzeri kargo bedava</span>
                                 <span className="whitespace-nowrap font-semibold text-primaryRed">-{shippingMoney} TL</span>
                             </div>
                         }
 
                         <div className="flex justify-between gap-x-4 border-t-2 pt-2">
-                            <span className="text-darkGrayishBlue text-sm font-medium">Toplam</span>
-                            <span className="whitespace-nowrap font-semibold ">{totalPrice() < 150 ? formatter.format(totalPrice() + shippingMoney) : formatter.format(totalPrice() - shippingMoney)} TL</span>
+                            <span className="text-darkGrayishBlue text-sm font-medium dark:text-grayishBlue">Toplam</span>
+                            <span className="whitespace-nowrap font-semibold dark:text-white">{totalPrice() < 150 ? formatter.format(totalPrice() + shippingMoney) : formatter.format(totalPrice() - shippingMoney)} TL</span>
 
                         </div>
 
@@ -74,7 +74,7 @@ const SepetPageContainer = () => {
                         </Link>
                     </div>
                 </div>
-                : <div className='font-bold text-lg text-veryDarkBlue'>Sepetinizde ürün yok, ürün eklemek için <Link to="/shop" className='text-primaryRed underline'>alışveriş</Link>  bölümüne gidebilirsiniz.  </div>}
+                : <div className='font-bold text-lg text-veryDarkBlue dark:text-white'>Sepetinizde ürün yok, ürün eklemek için <Link to="/shop" className='text-primaryRed underline'>alışveriş</Link>  bölümüne gidebilirsiniz.  </div>}
 
         </div>
     )

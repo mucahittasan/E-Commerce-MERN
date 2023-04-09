@@ -52,11 +52,11 @@ const ItemCount: React.FC<ItemCountProps> = ({ currentProduct }) => {
     return (
         <>
             {currentProduct &&
-                <div className='bg-slate-200 flex items-center sm:h-auto h-9 justify-between min-w-[150px] max-w-[150px] rounded-md font-bold text-[12px] overflow-hidden'>
-                    <button disabled={currentProduct.count === 1} onClick={() => decrementCount(currentProduct)} className='disabled:bg-slate-200 text-primaryRed disabled:text-primaryRed h-full w-9 flex items-center justify-center transition hover:bg-primaryRed hover:text-white'>
+                <div className='bg-slate-200 dark:bg-veryDarkBlue flex items-center sm:h-auto h-9 justify-between min-w-[150px] max-w-[150px] rounded-md font-bold text-[12px] overflow-hidden'>
+                    <button disabled={currentProduct.count === 1} onClick={() => decrementCount(currentProduct)} className='disabled:bg-transparent  text-primaryRed disabled:text-primaryRed h-full w-9 flex items-center justify-center transition hover:bg-primaryRed hover:text-white'>
                         <FaMinus />
                     </button>
-                    <span className='text-lg'>{currentProduct?.count}</span>
+                    <span className='text-lg dark:text-white'>{currentProduct?.count}</span>
                     <button onClick={() => incrementCount(currentProduct)} className='text-primaryRed h-full w-9 flex items-center justify-center transition hover:bg-primaryRed hover:text-white'>
                         <FaPlus />
                     </button>

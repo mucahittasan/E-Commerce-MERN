@@ -96,7 +96,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ currentProduct }) => {
                 </div>
                 <div className={`sm:flex w-full justify-center gap-x-4 grid ${currentProduct.images?.length && currentProduct?.images?.length >= 3 ? "grid-cols-3" : "grid-cols-2"} place-items-center gap-y-4`}>
                     {currentProduct?.images?.map((item, index) => (
-                        <button onClick={() => showClickedItem(index)} className='detail-image' key={index}>
+                        <button onClick={() => showClickedItem(index)} className='detail-image bg-white' key={index}>
                             <img className='w-full h-full object-contain' src={item.sub_image} alt="Sub photos" />
                         </button>
                     ))}

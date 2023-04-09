@@ -25,7 +25,7 @@ const PaymentUserInfo = () => {
     }, [address, dispatch, email, lastName, name])
 
     return (
-        <div className='border-2 flex-1 rounded-md w-full p-4 gap-y-2 flex flex-col'>
+        <div className='border-2 dark:border-slate-600 flex-1 rounded-md w-full p-4 gap-y-2 flex flex-col'>
             <div className='flex gap-x-2 items-end md:flex-row flex-col gap-y-2'>
                 <label className="flex flex-col w-full">
                     <input name="name" onChange={(e) => setName(e.target.value)} value={name} className={`contact-input`} type="text" placeholder="İsim" />

@@ -35,13 +35,13 @@ const ProductDetailContainer = () => {
                 <>
                     <ImageSlider currentProduct={currentProduct} />
                     <div className='flex-1 flex flex-col justify-center md:mb-0 mb-10'>
-                        <div className='text-[clamp(30px,3.6923vw,48px)] font-bold text-veryDarkBlue mb-8'>
+                        <div className='text-[clamp(30px,3.6923vw,48px)] font-bold text-veryDarkBlue dark:text-white mb-8'>
                             {currentProduct?.title}
                         </div>
-                        <div className='text-darkGrayishBlue tracking-[0.5px] mb-4 text-[clamp(14px,1.2307vw,16px)]'>
+                        <div className='text-darkGrayishBlue dark:text-grayishBlue tracking-[0.5px] mb-4 text-[clamp(14px,1.2307vw,16px)]'>
                             {currentProduct?.description && currentProduct?.description}
                         </div>
-                        <div className='text-[clamp(20px,2.3076vw,30px)] font-bold mb-8'>
+                        <div className='text-[clamp(20px,2.3076vw,30px)] dark:text-white font-bold mb-8'>
                             {currentProduct?.price} TL
                         </div>
                         <div className='flex gap-x-4 sm:flex-row flex-col sm:items-stretch gap-y-4 items-start'>
