@@ -81,7 +81,7 @@
     }
 
     .nav-item {
-        @apply text-darkGrayishBlue pb-7 mx-2 font-medium p-3 hover:text-primaryRed transition-all before:transition-all relative before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-primaryRed before:opacity-0 hover:before:w-full hover:before:opacity-[1]
+        @apply text-darkGrayishBlue dark:text-white pb-7 mx-2 font-medium p-3 hover:text-primaryRed dark:hover:text-primaryRed transition-all before:transition-all relative before:absolute before:bottom-[-1px] before:left-0 before:w-0 before:h-[3px] before:bg-primaryRed before:opacity-0 hover:before:w-full hover:before:opacity-[1]
     }
 
     .nav-item.active {
@@ -89,7 +89,7 @@
     }
 
     .hover-information {
-        @apply opacity-0 invisible delay-75 bg-slate-800 p-2 text-sm top-10 text-white rounded-md left-[50%] absolute translate-x-[-50%] before:absolute before:w-0 before:h-0 before:border-l-8 before:border-r-8 before:border-b-8 before:border-transparent before:border-b-slate-800 before:left-[50%] before:translate-x-[-50%] before:top-[-7px]
+        @apply opacity-0 invisible delay-75 bg-slate-800 dark:bg-darkGrayishBlue  p-2 text-sm top-10 text-white rounded-md left-[50%] absolute translate-x-[-50%] before:absolute before:w-0 before:h-0 before:border-l-8 before:border-r-8 before:border-b-8 before:border-transparent before:border-b-slate-800 transition-all duration-200 dark:before:border-b-darkGrayishBlue before:left-[50%] before:translate-x-[-50%] before:top-[-7px]
     }
 
     .home-card {

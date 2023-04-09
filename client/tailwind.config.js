@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: "class",
   theme: {
     minHeight: {
       "screenSize": "calc(100vh - 102px)",
@@ -20,8 +21,10 @@ module.exports = {
         black: "hsl(0, 0%, 0%)"
       },
       backgroundImage: {
-        "light-home-bg": "url('/src/assets/images/home-bg.png')"
+        "light-home-bg": "url('/src/assets/images/home-bg.png')",
+        "dark-home-bg": "url('/src/assets/images/home-bg-dark.png')",
       }
+      ,
     },
   },
   plugins: [
