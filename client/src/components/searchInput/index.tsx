@@ -53,7 +53,7 @@ const SearchInput: React.FC<SearchInputComponent> = ({ setSearchActive, setActiv
     return (
         <form className='flex flex-1 justify-center' onSubmit={(e) => headerSubmit(e)}>
             <input
-                className={`border-2 dark:border-veryDarkBlue transition-all duration-200 w-3/4 h-9 rounded-md placeholder:transition-all placeholder:opacity-[1] focus:placeholder:opacity-[0] placeholder:text-black px-2 text-sm text-black font-medium outline-none`}
+                className={`border-2 dark:border-veryDarkBlue w-3/4 h-9 rounded-md placeholder:transition-all placeholder:opacity-[1] focus:placeholder:opacity-[0] placeholder:text-black px-2 text-sm text-black font-medium outline-none`}
                 type="text"
                 placeholder='Ara..'
                 onChange={(e) => setSearch(e)}
