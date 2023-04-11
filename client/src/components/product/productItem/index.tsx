@@ -1,8 +1,8 @@
 // React Libraries
 import { Link } from 'react-router-dom';
 // Components
-import AddToBasketButton from '../addToBasketButton';
-import FavoritesButton from '../favoritesButton';
+import AddToBasketButton from '../../basket/addToBasketButton';
+import FavoritesButton from '../../favorites/favoritesButton';
 
 interface ProductItemProps {
     item: {

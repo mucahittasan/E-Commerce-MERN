@@ -7,9 +7,9 @@ import { AppDispatch, RootState } from "../../redux/store";
 // Api calls
 import { getProductByIdAsync } from '../../redux/products/services';
 // Api actions
-import AddToBasketButton from '../../components/addToBasketButton';
+import AddToBasketButton from '../../components/basket/addToBasketButton';
 // Components
-import ImageSlider from '../../components/imageSlider';
+import ImageSlider from '../../components/features/imageSlider';
 
 const ProductDetailContainer = () => {
 

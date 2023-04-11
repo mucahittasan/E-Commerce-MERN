@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 // Types
-import { AppDispatch, RootState } from '../../redux/store';
-import { IProducts } from '../../@types/ProductTypes';
+import { AppDispatch, RootState } from '../../../redux/store';
+import { IProducts } from '../../../@types/ProductTypes';
 // Service Actions of Basket
-import { addProductToBasketAsync, removeFromBasketAsync } from '../../redux/basket/service';
+import { addProductToBasketAsync, removeFromBasketAsync } from '../../../redux/basket/service';
 // Components
-import CircleLoading from '../circleLoading';
+import CircleLoading from '../../features/circleLoading';
 
 export interface IAddToBasketProps {
     item: {

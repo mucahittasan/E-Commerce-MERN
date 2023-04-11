@@ -1,9 +1,9 @@
 // React Libraries
 import React, { useEffect, useState } from 'react'
 // Types
-import { IProducts } from '../../@types/ProductTypes'
+import { IProducts } from '../../..//@types/ProductTypes'
 // Components
-import FavoritesButton from '../favoritesButton'
+import FavoritesButton from '../../favorites/favoritesButton'
 // Icons
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go'
 

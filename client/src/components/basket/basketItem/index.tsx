@@ -4,11 +4,11 @@ import { useDispatch } from 'react-redux';
 // Icons
 import { HiOutlineTrash } from 'react-icons/hi';
 // Components
-import ItemCount from '../itemCount';
+import ItemCount from '../../product/productCount';
 // Dispatch Type
-import { AppDispatch } from '../../redux/store';
+import { AppDispatch } from '../../../redux/store';
 // Basket Service
-import { removeFromBasketAsync } from '../../redux/basket/service';
+import { removeFromBasketAsync } from '../../../redux/basket/service';
 
 interface BasketItemProps {
     item: {

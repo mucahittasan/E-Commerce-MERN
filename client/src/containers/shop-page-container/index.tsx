@@ -1,5 +1,5 @@
 // Components
-import { ProductItems } from "../../components/productItems";
+import { ProductItems } from "../../components/product/productItems";
 
 const ShopPageContainer = () => {
     return (

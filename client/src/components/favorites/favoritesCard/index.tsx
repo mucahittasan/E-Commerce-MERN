@@ -4,12 +4,12 @@ import { useDispatch } from "react-redux";
 // Icons
 import { IoMdClose } from 'react-icons/io';
 // Components
-import AddToBasketButton from "../addToBasketButton"
+import AddToBasketButton from "../../basket/addToBasketButton"
 // Types
-import { IProducts } from "../../@types/ProductTypes";
-import { AppDispatch } from "../../redux/store";
+import { IProducts } from "../../../@types/ProductTypes";
+import { AppDispatch } from "../../../redux/store";
 // Favorites Service
-import { removeFromFavoritesAsync } from "../../redux/favorite/service";
+import { removeFromFavoritesAsync } from "../../../redux/favorite/service";
 
 export interface IFavoritesProps {
     item: {

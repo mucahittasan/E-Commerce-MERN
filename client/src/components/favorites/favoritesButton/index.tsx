@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 // Types
-import { IProducts } from '../../@types/ProductTypes';
-import { AppDispatch, RootState } from '../../redux/store';
+import { IProducts } from '../../../@types/ProductTypes';
+import { AppDispatch, RootState } from '../../../redux/store';
 // Services
-import { addProductToFavorites, removeFromFavoritesAsync } from '../../redux/favorite/service';
+import { addProductToFavorites, removeFromFavoritesAsync } from '../../../redux/favorite/service';
 // Icons
 import { HiOutlineHeart } from 'react-icons/hi';
 

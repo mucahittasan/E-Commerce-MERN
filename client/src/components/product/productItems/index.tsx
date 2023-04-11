@@ -1,12 +1,12 @@
 // Libraries
 import { useEffect } from 'react'
-import { AppDispatch, RootState } from '../../redux/store';
+import { AppDispatch, RootState } from '../../../redux/store';
 import { useDispatch, useSelector } from 'react-redux';
 // REST
-import { getProductsAsync } from '../../redux/products/services';
+import { getProductsAsync } from '../../../redux/products/services';
 // Components
 import ProductItem from '../productItem';
-import LoadingScreen from '../loadingScreen';
+import LoadingScreen from '../../features/loadingScreen';
 
 const ProductItems = () => {
 

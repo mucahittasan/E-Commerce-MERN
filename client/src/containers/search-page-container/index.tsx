@@ -2,8 +2,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 // Components
-import SearchInput from "../../components/searchInput"
-import ProductItem from "../../components/productItem";
+import SearchInput from "../../components/features/searchInput"
+import ProductItem from "../../components/product/productItem";
 // Types
 import { AppDispatch, RootState } from "../../redux/store";
 // Services

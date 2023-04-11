@@ -7,10 +7,10 @@ import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 // Redux Store Types
-import { RootState } from '../../redux/store';
+import { RootState } from '../../../redux/store';
 // Components
-import SearchInput from '../searchInput';
-import DarkModeButton from '../darkModeButton';
+import SearchInput from '../../features/searchInput';
+import DarkModeButton from '../../features/darkModeButton';
 
 
 const Header = () => {
@@ -23,8 +23,6 @@ const Header = () => {
 
   // Hamburger menu open/close
   const [activeHamburger, setActiveHamburger] = useState<boolean>(false);
-
-
 
 
   return (

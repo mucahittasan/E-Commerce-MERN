@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
 // Components
-import FavoritesCard from '../../components/favoritesCard'
+import FavoritesCard from '../../components/favorites/favoritesCard'
 // Types
 import { AppDispatch, RootState } from '../../redux/store'
 // Favorite Service Actions

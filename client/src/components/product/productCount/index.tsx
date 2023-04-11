@@ -4,10 +4,10 @@ import { useDispatch } from 'react-redux';
 // Icons
 import { FaMinus, FaPlus } from 'react-icons/fa';
 // Types
-import { IProducts } from '../../@types/ProductTypes';
-import { AppDispatch } from '../../redux/store';
+import { IProducts } from '../../../@types/ProductTypes';
+import { AppDispatch } from '../../../redux/store';
 // Services
-import { getAllBasketItemsAsync, updateBasketItemCountAsync } from '../../redux/basket/service';
+import { getAllBasketItemsAsync, updateBasketItemCountAsync } from '../../../redux/basket/service';
 
 interface ItemCountProps {
     currentProduct: {

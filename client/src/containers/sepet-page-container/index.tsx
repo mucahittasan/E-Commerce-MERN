@@ -7,7 +7,7 @@ import { AppDispatch, RootState } from "../../redux/store"
 // Services
 import { getAllBasketItemsAsync } from "../../redux/basket/service";
 // Components
-import BasketItem from "../../components/basketItem";
+import BasketItem from "../../components/basket/basketItem";
 
 
 const SepetPageContainer = () => {
