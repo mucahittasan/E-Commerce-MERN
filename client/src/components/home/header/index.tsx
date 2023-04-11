@@ -11,6 +11,7 @@ import { RootState } from '../../../redux/store';
 // Components
 import SearchInput from '../../features/searchInput';
 import DarkModeButton from '../../features/darkModeButton';
+import UserLoginButton from '../../user-login/userLoginButton';
 
 
 const Header = () => {
@@ -73,6 +74,9 @@ const Header = () => {
               <span className='absolute aspect-square top-[-5px] right-[-5px] text-xs min-w-[15px] min-h-[15px] flex items-center justify-center bg-primaryRed text-white rounded-full'>{basketLength}</span>
             }
           </Link>
+
+          {/* <UserLoginButton /> */}
+
         </div>
 
 
