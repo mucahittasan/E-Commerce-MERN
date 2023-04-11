@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // Components
-import PageLoading from '../pageLoading'
+import PageLoading from '../features/pageLoading'
 
 const Main = () => {
   return (

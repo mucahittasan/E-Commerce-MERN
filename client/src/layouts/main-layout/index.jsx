@@ -2,7 +2,7 @@
 import { useDispatch } from "react-redux";
 import { useEffect } from 'react'
 // Components
-import Footer from "../../components/footer";
+import Footer from "../../components/home/footer";
 import Header from "../../components/home/header";
 import Main from "../../components/main";
 // Service Actions
