@@ -3,6 +3,8 @@ import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 // Layouts
 import MainLayout from "../../layouts/main-layout";
+import LoginPage from "../../pages/login-page";
+import RegisterPage from "../../pages/register-page";
 // Pages
 const HomePage = lazy(() => wait(1000).then(() => import("../../pages/home-page")))
 const ShopPage = lazy(() => wait(1000).then(() => import("../../pages/shop-page")))
@@ -59,6 +61,14 @@ export const router = createBrowserRouter([
       {
         path: "/success-order",
         element: <OrderSuccessPage />,
+      },
+      {
+        path: "/login",
+        element: <LoginPage />,
+      },
+      {
+        path: "/register",
+        element: <RegisterPage />,
       }
     ],
   },
