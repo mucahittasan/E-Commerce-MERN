@@ -9,6 +9,7 @@ import productRoute from './routes/ProductRoute.js'
 import favoriteRoute from './routes/FavoriteRoute.js'
 import contactRoute from './routes/ContactRoute.js'
 import paymentRoute from './routes/PaymentRoute.js'
+import userRoute from './routes/UserRoute.js'
 
 const app = express();
 dotenv.config()
@@ -36,6 +37,7 @@ app.use("/products", productRoute)
 app.use("/favorites", favoriteRoute)
 app.use("/contact", contactRoute)
 app.use("/payment", paymentRoute)
+app.use("/user", userRoute)
 
 app.listen(port, () => {
     connect();

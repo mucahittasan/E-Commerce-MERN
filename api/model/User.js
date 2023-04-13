@@ -15,8 +15,23 @@ const UserSchema = new mongoose.Schema({
         type: String,
         require: true,
         min: 8,
+    },
+    basket: {
+        type: Array,
+        require: false,
+        default: []
+    },
+    favorites: {
+        type: Array,
+        require: false,
+        default: []
+    },
+    orders: {
+        type: Array,
+        require: false,
+        default: []
     }
-}, { timestamps: true })
+}, { timestamps: true });
 
 
 export default mongoose.model("User", UserSchema);
