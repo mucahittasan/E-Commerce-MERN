@@ -43,39 +43,27 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
 
     const { id } = useParams()
 
-    const location = window.location.pathname
-
-
     // When we click the add basket button than this function will work and it will give an active class to clicked button and 1000ms after it will remove
     const loadingProcess = (item: IProducts) => {
 
-        if (location !== "/shop" && id === undefined) {
+
+        if (id) {
+            const getBasketBtn = document.querySelectorAll(".basket-button")
+            getBasketBtn[0].querySelector(".circle-loading")?.classList.add("active")
+
+            setTimeout(() => {
+                getBasketBtn[0].querySelector(".circle-loading")?.classList.remove("active")
+            }, 1000)
+
+        } else {
             const allAddBasketBtn = document.querySelectorAll(".basket-button");
             allAddBasketBtn[Number(myKey)]?.querySelector(".circle-loading")?.classList.add("active");
-
             setTimeout(() => {
                 allAddBasketBtn[Number(myKey)]?.querySelector(".circle-loading")?.classList.remove("active");
             }, 1000);
 
-        } else {
-            if (id) {
-                const getBasketBtn = document.querySelectorAll(".basket-button")
-                getBasketBtn[0].querySelector(".circle-loading")?.classList.add("active")
-
-                setTimeout(() => {
-                    getBasketBtn[0].querySelector(".circle-loading")?.classList.remove("active")
-                }, 1000)
-
-            } else {
-                const allAddBasketBtn = document.querySelectorAll(".basket-button");
-                allAddBasketBtn[Number(item.id) - 1]?.querySelector(".circle-loading")?.classList.add("active");
-
-                setTimeout(() => {
-                    allAddBasketBtn[Number(item.id) - 1]?.querySelector(".circle-loading")?.classList.remove("active");
-                }, 1000);
-
-            }
         }
+
 
     }
 

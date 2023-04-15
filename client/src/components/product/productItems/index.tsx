@@ -29,7 +29,7 @@ const ProductItems = () => {
                 {isLoading && <LoadingScreen />}
 
                 {!isLoading && products?.map((item, index) => (
-                    <ProductItem key={index} item={item} />
+                    <ProductItem key={index} item={item} myKey={index} />
                 ))}
 
             </div>

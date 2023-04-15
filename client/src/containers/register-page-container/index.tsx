@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import { useFormik } from "formik";
 import { registerSchema } from "./validation";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../redux/store";
+import { getAllUserAsync, registerUserAsync } from "../../redux/register/service";
 
 const RegsiterPageContainer = () => {
+
+    const dispatch = useDispatch<AppDispatch>();
+    const navlink = useNavigate();
 
     const formik = useFormik({
         initialValues: {
@@ -12,14 +19,20 @@ const RegsiterPageContainer = () => {
             passwordConfirm: "",
         },
         onSubmit: async (values, { resetForm }) => {
-            console.log(values)
+            await dispatch(registerUserAsync(values));
+            resetForm()
+            navlink("/login")
         },
         validationSchema: registerSchema
     });
 
+    useEffect(() => {
+        dispatch(getAllUserAsync());
+    }, [dispatch])
+
     return (
         <div className="main-container">
-            <h2 className="main-title">Giriş Yap</h2>
+            <h2 className="main-title">Kayıt Ol</h2>
             <form onSubmit={formik.handleSubmit} className="flex flex-col items-center gap-y-4 max-w-lg m-auto mt-16">
                 <label className="w-full">
                     {formik.errors.userName && formik.touched.userName && <p className="text-red-500 text-sm font-semibold">{formik.errors.userName}</p>}
@@ -39,7 +52,7 @@ const RegsiterPageContainer = () => {
                     <input onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.passwordConfirm} name="passwordConfirm" minLength={8} type="password" placeholder="Şifre Tekrar" className={`contact-input ${formik.errors.passwordConfirm && formik.touched.passwordConfirm && "dark:border-red-500 border-red-500"}`} />
                 </label>
 
-                <button type="submit" className="btn bg-primaryRed text-white font-bold w-full justify-center">Giriş Yap</button>
+                <button type="submit" className="btn bg-primaryRed text-white font-bold w-full justify-center">Kayıt Ol</button>
             </form>
             <p className="text-center mt-12 text-darkGrayishBlue dark:text-grayishBlue font-semibold text-sm">Kullanıcı hesabın var mı ? <Link to="/login" className="text-primaryRed hover:underline">Giriş Yap</Link> </p>
         </div>

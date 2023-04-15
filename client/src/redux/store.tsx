@@ -6,6 +6,7 @@ import favorteReducer from './favorite/favorteSlice';
 import searchReducer from './search/searchSlice';
 import contactReducer from './contact/contactSlice';
 import paymentReducer from './payment/paymentSlice';
+import registerReducer from './register/registerSlice';
 
 export const store = configureStore({
     reducer: {
@@ -14,7 +15,8 @@ export const store = configureStore({
         favorite: favorteReducer,
         search: searchReducer,
         contact: contactReducer,
-        payment: paymentReducer
+        payment: paymentReducer,
+        register: registerReducer,
     },
 });
 

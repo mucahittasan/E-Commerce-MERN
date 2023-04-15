@@ -9,7 +9,7 @@ import productRoute from './routes/ProductRoute.js'
 import favoriteRoute from './routes/FavoriteRoute.js'
 import contactRoute from './routes/ContactRoute.js'
 import paymentRoute from './routes/PaymentRoute.js'
-import userRoute from './routes/UserRoute.js'
+import userRoute from './routes/AuthRoute.js'
 
 const app = express();
 dotenv.config()
@@ -23,6 +23,7 @@ const connect = async () => {
     } catch (error) {
         console.log(error);
     }
+
 }
 
 // midleware
@@ -37,7 +38,7 @@ app.use("/products", productRoute)
 app.use("/favorites", favoriteRoute)
 app.use("/contact", contactRoute)
 app.use("/payment", paymentRoute)
-app.use("/user", userRoute)
+app.use("/auth", userRoute)
 
 app.listen(port, () => {
     connect();
