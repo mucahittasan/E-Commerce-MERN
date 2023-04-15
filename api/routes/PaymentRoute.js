@@ -1,24 +1,29 @@
 import { Router } from "express";
-import Payment from "../model/Payment.js";
+import User from "../model/User.js";
 
 const router = Router();
 
 // ADD TO Payment
-router.post("/", async (req, res) => {
-    const newPayment = await new Payment(req.body);
+router.post("/:userId", async (req, res) => {
+    const user = await User.findById(req.params.userId)
+
     try {
-        const savedPayment = await newPayment.save();
-        res.status(200).json(savedPayment);
+        user.orders.push(req.body)
+
+        const saveUser = await user.save();
+        res.status(200).json(saveUser);
     } catch (error) {
         res.status(500).send(error)
     }
 })
 
 // GET ALL PAYMENT
-router.get("/", async (req, res) => {
+router.get("/:userId", async (req, res) => {
     try {
-        const allPayment = await Payment.find();
-        res.status(200).json(allPayment);
+        const allPayment = await User.findById(req.params.id);
+        const orders = allPayment.orders
+
+        res.status(200).json(orders);
     } catch (error) {
         res.status(500).send(error)
     }

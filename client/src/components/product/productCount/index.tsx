@@ -1,11 +1,11 @@
 // Libraries
 import React from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 // Icons
 import { FaMinus, FaPlus } from 'react-icons/fa';
 // Types
 import { IProducts } from '../../../@types/ProductTypes';
-import { AppDispatch } from '../../../redux/store';
+import { AppDispatch, RootState } from '../../../redux/store';
 // Services
 import { getAllBasketItemsAsync, updateBasketItemCountAsync } from '../../../redux/basket/service';
 
@@ -35,16 +35,22 @@ const ItemCount: React.FC<ItemCountProps> = ({ currentProduct }) => {
 
     const dispatch = useDispatch<AppDispatch>()
 
+    const user = useSelector((state: RootState) => state.register.user)
+
     // Product count is increment
     const incrementCount = async (item: IProducts) => {
-        await dispatch(updateBasketItemCountAsync({ id: item._id, count: item?.count + 1 }))
+        if (user) {
+            await dispatch(updateBasketItemCountAsync({ id: item.id, count: item?.count + 1, user }))
+        }
         await dispatch(getAllBasketItemsAsync());
     }
 
     // Product count is decrement
     const decrementCount = async (item: IProducts) => {
         if (item?.count > 0) {
-            await dispatch(updateBasketItemCountAsync({ id: item._id, count: item?.count - 1 }))
+            if (user) {
+                await dispatch(updateBasketItemCountAsync({ id: item.id, count: item?.count - 1, user }))
+            }
             await dispatch(getAllBasketItemsAsync());
         }
     }

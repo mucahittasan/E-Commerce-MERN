@@ -28,6 +28,7 @@ const PaymentPageContainer = () => {
     const cardInfo = useSelector((state: RootState) => state.payment.paymentCardInfo)
     const userInfo = useSelector((state: RootState) => state.payment.paymentUserInfo)
     const basket = useSelector((state: RootState) => state.basket.basket)
+    const user = useSelector((state: RootState) => state.register.user)
 
     const dispatch = useDispatch<AppDispatch>();
 
@@ -37,9 +38,9 @@ const PaymentPageContainer = () => {
     const handleSubmit = async (e: React.SyntheticEvent) => {
         e.preventDefault();
 
-        let allEmpty
+        let allEmpty;
 
-        const paymentInfo = { ...cardInfo, ...userInfo };
+        const paymentInfo = { ...cardInfo, ...userInfo, basket };
 
         for (const paymentProperty in paymentInfo) {
             // Check if the current property is empty
@@ -53,8 +54,8 @@ const PaymentPageContainer = () => {
             toast.warn("Sepetiniz bos!")
         } else {
 
-            if (!allEmpty) {
-                await dispatch(addPaymentToOrdersAsync(paymentInfo));
+            if (!allEmpty && user) {
+                await dispatch(addPaymentToOrdersAsync({ order: paymentInfo, user }));
                 navigate("/success-order")
             } else {
                 toast.warn("Eksik veya hatali bilgi girdiniz!")

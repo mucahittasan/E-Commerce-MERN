@@ -1,5 +1,5 @@
 // React Libraries
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from 'react'
 // Components
 import Footer from "../../components/home/footer";
@@ -14,9 +14,13 @@ const MainLayout = () => {
 
   const dispatch = useDispatch();
 
+  const user = useSelector((state) => state.register.user)
+
   useEffect(() => {
-    dispatch(getAllBasketItemsAsync())
-    dispatch(getAllFavoritesAsync())
+    if (user) {
+      dispatch(getAllBasketItemsAsync())
+      dispatch(getAllFavoritesAsync())
+    }
   }, [])
 
 

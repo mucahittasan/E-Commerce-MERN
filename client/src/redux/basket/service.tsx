@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { createAsyncThunk } from '@reduxjs/toolkit'
 import { IProducts } from '../../@types/ProductTypes';
+import { IUser } from '../../@types/UserType';
 
 // Wait for it :)
 const wait = (ms: number) =>
@@ -10,46 +11,63 @@ const wait = (ms: number) =>
 
 interface IAddToBasket {
     count: number,
-    product: IProducts
+    product: IProducts,
+    user: IUser
 }
 
 interface IUpdateCount {
     count: number,
-    id: string
+    id: number,
+    user: IUser
+}
+
+interface IRemoveBasket {
+    id: string,
+    user: IUser
 }
 
 
 // ADD PRODUCT TO BASKET
-export const addProductToBasketAsync = createAsyncThunk("basket/addProductToBasketAsync", async ({ product, count }: IAddToBasket, { getState }) => {
+export const addProductToBasketAsync = createAsyncThunk("basket/addProductToBasketAsync", async ({ product, count, user }: IAddToBasket, { getState }) => {
     await wait(1000)
-    const res = await axios.post(`https://e-commerce-g1b7.onrender.com/basket`, product);
-    await axios.put(`https://e-commerce-g1b7.onrender.com/basket/${product._id}`, {
-        count: count
-    });
-    return await res.data;
+
+    if (user) {
+        const res = await axios.post(`http://localhost:5000/basket/${user._id}`, product);
+
+        await axios.put(`http://localhost:5000/basket/${user._id}`, {
+            id: product.id,
+            count: count
+        });
+
+        return await res.data;
+    }
 })
 
 // DELETE FROM BASKET
-export const removeFromBasketAsync = createAsyncThunk("basket/removeFromBasketAsync", async (id: string) => {
+export const removeFromBasketAsync = createAsyncThunk("basket/removeFromBasketAsync", async ({ id, user }: IRemoveBasket) => {
     await wait(1000)
-    await axios.delete(`https://e-commerce-g1b7.onrender.com/basket/${id}`);
+    await axios.delete(`http://localhost:5000/basket/${user._id}/${id}`);
     return id;
 })
 
 // GET ALL BASKET ITEMS
 export const getAllBasketItemsAsync = createAsyncThunk("basket/getAllBasketItemsAsync", async () => {
-    const res = await axios.get(`https://e-commerce-g1b7.onrender.com/basket`);
+    const user = localStorage.getItem('user')
+        && JSON.parse(localStorage.getItem('user')!);
+
+    const res = await axios.get(`http://localhost:5000/basket/${user._id}`);
     return res.data;
 })
 
 // UPDATE PRODUCT COUNT
-export const updateBasketItemCountAsync = createAsyncThunk("basket/updateBasketItemCountAsync", async ({ id, count }: IUpdateCount) => {
-    await axios.put(`https://e-commerce-g1b7.onrender.com/basket/${id}`, {
+export const updateBasketItemCountAsync = createAsyncThunk("basket/updateBasketItemCountAsync", async ({ user, id, count }: IUpdateCount) => {
+    await axios.put(`http://localhost:5000/basket/${user._id}`, {
+        id,
         count: count
     });
 })
 
 // DELETE ALL ITEMS IN ARRAY
-export const removeAllItemsInBasketAsync = createAsyncThunk("basket/removeAllItemsInBasketAsync", async (products: IProducts[]) => {
-    await axios.delete(`https://e-commerce-g1b7.onrender.com/basket`);
+export const removeAllItemsInBasketAsync = createAsyncThunk("basket/removeAllItemsInBasketAsync", async (user: IUser) => {
+    await axios.delete(`http://localhost:5000/basket/${user._id}`);
 })

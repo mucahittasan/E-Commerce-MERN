@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import { AppDispatch, RootState } from '../../../redux/store';
 import { IProducts } from '../../../@types/ProductTypes';
 // Service Actions of Basket
-import { addProductToBasketAsync, removeFromBasketAsync } from '../../../redux/basket/service';
+import { addProductToBasketAsync, getAllBasketItemsAsync, removeFromBasketAsync } from '../../../redux/basket/service';
 // Components
 import CircleLoading from '../../features/circleLoading';
 
@@ -38,44 +38,33 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
     const [haveBasket, setHaveBasket] = useState<IProducts | undefined>();
 
     const basket = useSelector((state: RootState) => state.basket.basket);
+    const user = useSelector((state: RootState) => state.register.user);
 
     const dispatch = useDispatch<AppDispatch>()
 
     const { id } = useParams()
 
-    const location = window.location.pathname
-
-
     // When we click the add basket button than this function will work and it will give an active class to clicked button and 1000ms after it will remove
     const loadingProcess = (item: IProducts) => {
 
-        if (location !== "/shop" && id === undefined) {
+
+        if (id) {
+            const getBasketBtn = document.querySelectorAll(".basket-button")
+            getBasketBtn[0].querySelector(".circle-loading")?.classList.add("active")
+
+            setTimeout(() => {
+                getBasketBtn[0].querySelector(".circle-loading")?.classList.remove("active")
+            }, 1000)
+
+        } else {
             const allAddBasketBtn = document.querySelectorAll(".basket-button");
             allAddBasketBtn[Number(myKey)]?.querySelector(".circle-loading")?.classList.add("active");
-
             setTimeout(() => {
                 allAddBasketBtn[Number(myKey)]?.querySelector(".circle-loading")?.classList.remove("active");
             }, 1000);
 
-        } else {
-            if (id) {
-                const getBasketBtn = document.querySelectorAll(".basket-button")
-                getBasketBtn[0].querySelector(".circle-loading")?.classList.add("active")
-
-                setTimeout(() => {
-                    getBasketBtn[0].querySelector(".circle-loading")?.classList.remove("active")
-                }, 1000)
-
-            } else {
-                const allAddBasketBtn = document.querySelectorAll(".basket-button");
-                allAddBasketBtn[Number(item.id) - 1]?.querySelector(".circle-loading")?.classList.add("active");
-
-                setTimeout(() => {
-                    allAddBasketBtn[Number(item.id) - 1]?.querySelector(".circle-loading")?.classList.remove("active");
-                }, 1000);
-
-            }
         }
+
 
     }
 
@@ -84,9 +73,10 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
         e.preventDefault();
         loadingProcess(item);
 
-
-        await dispatch(addProductToBasketAsync({ product: item, count: 1 }))
-
+        if (user) {
+            await dispatch(addProductToBasketAsync({ product: item, count: 1, user: user }))
+        }
+        await dispatch(getAllBasketItemsAsync())
     }
 
     // Remove from basket function
@@ -94,8 +84,10 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
         e.preventDefault();
         loadingProcess(item);
 
-        await dispatch(removeFromBasketAsync(item._id));
-
+        if (user) {
+            await dispatch(removeFromBasketAsync({ id: item._id, user }));
+        }
+        await dispatch(getAllBasketItemsAsync())
     }
 
     useEffect(() => {

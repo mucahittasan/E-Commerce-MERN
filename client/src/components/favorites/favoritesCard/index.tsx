@@ -1,13 +1,13 @@
 // React Libraries
 import { Link } from "react-router-dom"
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 // Icons
 import { IoMdClose } from 'react-icons/io';
 // Components
 import AddToBasketButton from "../../basket/addToBasketButton"
 // Types
 import { IProducts } from "../../../@types/ProductTypes";
-import { AppDispatch } from "../../../redux/store";
+import { AppDispatch, RootState } from "../../../redux/store";
 // Favorites Service
 import { removeFromFavoritesAsync } from "../../../redux/favorite/service";
 
@@ -41,10 +41,14 @@ const FavoritesCard: React.FC<IFavoritesProps> = ({ item, myKey }) => {
 
     const dispatch = useDispatch<AppDispatch>()
 
+    const user = useSelector((state: RootState) => state.register.user)
+
     // Remove from favorites
     const removeFromFavorites = async (e: React.SyntheticEvent, item: IProducts) => {
         e.preventDefault()
-        await dispatch(removeFromFavoritesAsync(item._id));
+        if (user) {
+            await dispatch(removeFromFavoritesAsync({ id: item._id, user }));
+        }
     }
 
     return (
