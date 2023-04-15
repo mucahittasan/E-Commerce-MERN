@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { AppDispatch, RootState } from '../../../redux/store'
 import { logOut } from '../../../redux/register/registerSlice'
 import { toast } from 'react-toastify'
+import { getAllBasketItemsAsync } from '../../../redux/basket/service'
+import { getAllFavoritesAsync } from '../../../redux/favorite/service'
 
 type UserLoginButtonProps = {
     setActiveHamburger: (name: boolean) => void
@@ -15,9 +17,11 @@ const UserLoginButton: React.FC<UserLoginButtonProps> = ({ setActiveHamburger })
 
     const dispatch = useDispatch<AppDispatch>()
 
-    const handleLogOut = () => {
+    const handleLogOut = async () => {
         dispatch(logOut())
         toast.success("Çıkış Yapıldı!")
+        await dispatch(getAllBasketItemsAsync())
+        await dispatch(getAllFavoritesAsync())
     }
 
     return (
