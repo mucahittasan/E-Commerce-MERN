@@ -14,11 +14,14 @@ import { getAllFavoritesAsync } from '../../redux/favorite/service';
 const FavoritesPageContainer = () => {
 
     const favorites = useSelector((state: RootState) => state.favorite.favorites);
+    const user = useSelector((state: RootState) => state.register.user);
 
     const dispatch = useDispatch<AppDispatch>()
 
     useEffect(() => {
-        dispatch(getAllFavoritesAsync());
+        if (user) {
+            dispatch(getAllFavoritesAsync());
+        }
     }, [dispatch])
 
     return (

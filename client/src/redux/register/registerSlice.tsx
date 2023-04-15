@@ -1,11 +1,10 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 import { getAllUserAsync, loginUserAsync, registerUserAsync } from './service'
-import { IRegister } from '../../@types/UserType'
-
+import { IRegister, IUser } from '../../@types/UserType'
 
 export type SearchState = {
     users: IRegister[] | null,
-    user: IRegister | undefined,
+    user: IUser | undefined,
     isLoading: boolean,
     error: null | string | undefined,
 }
@@ -23,7 +22,12 @@ const initialState: SearchState = {
 export const registerSlice = createSlice({
     name: "register",
     initialState,
-    reducers: {},
+    reducers: {
+        logOut: (state, action: PayloadAction<void, string>) => {
+            localStorage.setItem("user", JSON.stringify(""));
+            state.user = undefined
+        }
+    },
     extraReducers(builder) {
         builder.addCase(registerUserAsync.pending, (state, action) => {
             state.isLoading = true;
@@ -63,5 +67,7 @@ export const registerSlice = createSlice({
     },
 
 })
+
+export const { logOut } = registerSlice.actions
 
 export default registerSlice.reducer

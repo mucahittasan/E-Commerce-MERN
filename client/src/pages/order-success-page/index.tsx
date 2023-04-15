@@ -11,10 +11,12 @@ const OrderSuccessPage = () => {
 
     const dispatch = useDispatch<AppDispatch>();
 
-    const basket = useSelector((state: RootState) => state.basket.basket)
+    const user = useSelector((state: RootState) => state.register.user)
 
     useEffect(() => {
-        dispatch(removeAllItemsInBasketAsync(basket));
+        if (user) {
+            dispatch(removeAllItemsInBasketAsync(user));
+        }
     }, [])
 
     return (

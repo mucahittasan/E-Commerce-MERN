@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import { AppDispatch, RootState } from '../../../redux/store';
 import { IProducts } from '../../../@types/ProductTypes';
 // Service Actions of Basket
-import { addProductToBasketAsync, removeFromBasketAsync } from '../../../redux/basket/service';
+import { addProductToBasketAsync, getAllBasketItemsAsync, removeFromBasketAsync } from '../../../redux/basket/service';
 // Components
 import CircleLoading from '../../features/circleLoading';
 
@@ -38,6 +38,7 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
     const [haveBasket, setHaveBasket] = useState<IProducts | undefined>();
 
     const basket = useSelector((state: RootState) => state.basket.basket);
+    const user = useSelector((state: RootState) => state.register.user);
 
     const dispatch = useDispatch<AppDispatch>()
 
@@ -72,9 +73,10 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
         e.preventDefault();
         loadingProcess(item);
 
-
-        await dispatch(addProductToBasketAsync({ product: item, count: 1 }))
-
+        if (user) {
+            await dispatch(addProductToBasketAsync({ product: item, count: 1, user: user }))
+        }
+        await dispatch(getAllBasketItemsAsync())
     }
 
     // Remove from basket function
@@ -82,8 +84,10 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
         e.preventDefault();
         loadingProcess(item);
 
-        await dispatch(removeFromBasketAsync(item._id));
-
+        if (user) {
+            await dispatch(removeFromBasketAsync({ id: item._id, user }));
+        }
+        await dispatch(getAllBasketItemsAsync())
     }
 
     useEffect(() => {

@@ -28,6 +28,7 @@ export const productSlice = createSlice({
         builder
             .addCase(addProductToBasketAsync.pending, (state, action) => {
                 state.isAddBasketLoading = true;
+
             })
             .addCase(addProductToBasketAsync.fulfilled, (state, action: PayloadAction<IProducts>) => {
                 state.isAddBasketLoading = false;
@@ -36,6 +37,8 @@ export const productSlice = createSlice({
             .addCase(addProductToBasketAsync.rejected, (state, action) => {
                 state.isAddBasketLoading = false;
                 state.error = action.error.message
+                console.log(action.error.message)
+
             });
 
         // Get all basket items

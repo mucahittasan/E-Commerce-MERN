@@ -1,12 +1,12 @@
 // React Libraries
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 // Icons
 import { HiOutlineTrash } from 'react-icons/hi';
 // Components
 import ItemCount from '../../product/productCount';
 // Dispatch Type
-import { AppDispatch } from '../../../redux/store';
+import { AppDispatch, RootState } from '../../../redux/store';
 // Basket Service
 import { removeFromBasketAsync } from '../../../redux/basket/service';
 
@@ -37,9 +37,12 @@ const BasketItem: React.FC<BasketItemProps> = ({ item }) => {
     const formatter = new Intl.NumberFormat('tr-TR');
 
     const dispatch = useDispatch<AppDispatch>()
+    const user = useSelector((state: RootState) => state.register.user)
 
     const removeFromBasket = async (id: string) => {
-        await dispatch(removeFromBasketAsync(id));
+        if (user) {
+            await dispatch(removeFromBasketAsync({ id: item._id, user }));
+        }
     }
 
     return (

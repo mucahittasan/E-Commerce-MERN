@@ -1,18 +1,17 @@
 import { useEffect } from "react";
 import { useFormik } from "formik";
 import { loginSchema } from "./validation";
-import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../../redux/store";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../redux/store";
 import { getAllUserAsync, loginUserAsync } from "../../redux/register/service";
-import bcrypt from 'bcrypt'
 import { toast } from "react-toastify";
 
 const LoginPageContainer = () => {
 
     const dispatch = useDispatch<AppDispatch>()
-    const error = useSelector((state: RootState) => state.register.error);
-    const users = useSelector((state: RootState) => state.register.users);
+
+    const navigate = useNavigate();
 
     const formik = useFormik({
         initialValues: {
@@ -24,6 +23,7 @@ const LoginPageContainer = () => {
 
             if (localStorage.getItem("user")) {
                 toast.success("Giris yapildi!")
+                navigate("/")
             } else {
                 toast.warning("Gecersiz sifre veya e-posta!")
             }

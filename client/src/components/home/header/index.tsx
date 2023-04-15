@@ -18,6 +18,7 @@ const Header = () => {
 
   const basketLength = useSelector((state: RootState) => state.basket.basket.length);
   const favoritesLength = useSelector((state: RootState) => state.favorite.favorites.length);
+  const user = useSelector((state: RootState) => state.register.user)
 
   // Search content open/close
   const [searchActive, setSearchActive] = useState<boolean>(false);
@@ -25,6 +26,8 @@ const Header = () => {
   // Hamburger menu open/close
   const [activeHamburger, setActiveHamburger] = useState<boolean>(false);
 
+  const conditionalBasket = user ? "/basket" : "/login"
+  const conditionalFavorites = user ? "/favorites" : "/login"
 
   return (
     <header className='bg-white fixed flex-1 w-full top-0 left-0 z-50 dark:bg-veryDarkBlue transition-all duration-200'>
@@ -55,7 +58,7 @@ const Header = () => {
 
           <UserLoginButton setActiveHamburger={setActiveHamburger} />
 
-          <Link to="/favorites" className='relative group'>
+          <Link to={conditionalFavorites} className='relative group'>
             <AiOutlineHeart className='text-2xl dark:text-white transition-all duration-200' />
             <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
               Favoriler
@@ -65,7 +68,7 @@ const Header = () => {
             }
           </Link>
 
-          <Link to="/basket" className='relative group'>
+          <Link to={conditionalBasket} className='relative group'>
             <SlBasket className='text-2xl dark:text-white transition-all duration-200' />
             <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
               Sepet
@@ -113,7 +116,7 @@ const Header = () => {
                   </label>
                 </div>
 
-                <Link onClick={() => setActiveHamburger(false)} to="/favorites" className='relative group'>
+                <Link onClick={() => setActiveHamburger(false)} to={conditionalFavorites} className='relative group'>
                   <AiOutlineHeart className='text-2xl dark:text-white' />
                   <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
                     Favoriler
@@ -123,7 +126,7 @@ const Header = () => {
                   }
                 </Link>
 
-                <Link onClick={() => setActiveHamburger(false)} to="/basket" className='relative group'>
+                <Link onClick={() => setActiveHamburger(false)} to={conditionalBasket} className='relative group'>
                   <SlBasket className='text-2xl dark:text-white' />
                   <div className="hover-information transition-all group-hover:opacity-[1] group-hover:visible">
                     Sepet

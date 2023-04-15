@@ -1,38 +1,51 @@
 import { Router } from "express";
 import Favorite from "../model/Favorite.js";
+import User from "../model/User.js";
 
 const router = Router();
 
 // ADD TO Favorite
-router.post("/", async (req, res) => {
-    const newFavoriteItem = await new Favorite(req.body);
+router.post("/:id", async (req, res) => {
+    const user = await User.findById(req.params.id)
     try {
-        const savedFavoriteItem = await newFavoriteItem.save();
-        res.status(200).json(savedFavoriteItem);
+        user.favorites.push(req.body)
+
+        const saveUser = await user.save();
+        res.status(200).json(saveUser);
     } catch (error) {
         res.status(500).send(error)
     }
 })
 
 // GET ALL Favorite
-router.get("/", async (req, res) => {
+router.get("/:userId", async (req, res) => {
     try {
-        const favoriteItems = await Favorite.find();
-        res.status(200).json(favoriteItems);
+        const allPayment = await User.findById(req.params.userId);
+        const favorites = allPayment.favorites
+
+        res.status(200).json(favorites);
     } catch (error) {
         res.status(500).send(error)
     }
 })
 
+
 // DELETE Favorite ITEM BY ID
-router.delete("/:id", async (req, res) => {
+router.delete("/:userId/:itemId", async (req, res) => {
     try {
-        const item = await Favorite.findByIdAndDelete(req.params.id)
+        const userId = req.params.userId;
+        const itemId = req.params.itemId;
 
-        res.status(200).json("Item is deleted!");
+        await User.findByIdAndUpdate(
+            userId,
+            { $pull: { favorites: { _id: itemId } } },
+            { new: true }
+        );
 
+        res.status(200).json("Item is deleted");
     } catch (error) {
-        res.status(500).send(error)
+        console.error(error);
+        res.status(500).json({ message: "Internal server error" });
     }
 })
 

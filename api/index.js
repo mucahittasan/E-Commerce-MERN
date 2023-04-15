@@ -37,7 +37,7 @@ app.use("/basket", basketRoute)
 app.use("/products", productRoute)
 app.use("/favorites", favoriteRoute)
 app.use("/contact", contactRoute)
-app.use("/payment", paymentRoute)
+app.use("/orders", paymentRoute)
 app.use("/auth", userRoute)
 
 app.listen(port, () => {

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { IProducts } from '../../../@types/ProductTypes';
 import { AppDispatch, RootState } from '../../../redux/store';
 // Services
-import { addProductToFavorites, removeFromFavoritesAsync } from '../../../redux/favorite/service';
+import { addProductToFavorites, getAllFavoritesAsync, removeFromFavoritesAsync } from '../../../redux/favorite/service';
 // Icons
 import { HiOutlineHeart } from 'react-icons/hi';
 
@@ -21,18 +21,25 @@ const FavoritesButton: React.FC<FavoriteButtonsProps> = ({ item }) => {
     const dispatch = useDispatch<AppDispatch>()
 
     const favorites = useSelector((state: RootState) => state.favorite.favorites);
+    const user = useSelector((state: RootState) => state.register.user);
 
 
     // Aad product to favorites
     const addToFavorites = async (e: React.SyntheticEvent, item: IProducts) => {
         e.preventDefault()
-        await dispatch(addProductToFavorites(item));
+        if (user) {
+            await dispatch(addProductToFavorites({ product: item, user }));
+            await dispatch(getAllFavoritesAsync())
+        }
     }
 
     // Remove from favorites
     const removeFromFavorites = async (e: React.SyntheticEvent, item: IProducts) => {
         e.preventDefault()
-        await dispatch(removeFromFavoritesAsync(item._id));
+        if (user) {
+            await dispatch(removeFromFavoritesAsync({ id: item._id, user }));
+            await dispatch(getAllFavoritesAsync())
+        }
     }
 
     // Check if the item is in the favorites
