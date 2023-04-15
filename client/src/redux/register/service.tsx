@@ -10,14 +10,14 @@ const wait = (ms: number) =>
 
 // REGISTER
 export const registerUserAsync = createAsyncThunk("register/registerUserAsync", async (user: IRegister) => {
-    const res = await axios.post(`http://localhost:5000/auth/register`, user);
+    const res = await axios.post(`https://e-commerce-g1b7.onrender.com/auth/register`, user);
     return await res.data;
 })
 
 // LOGIN
 export const loginUserAsync = createAsyncThunk("register/loginUserAsync", async (user: ILogin) => {
     try {
-        const res = await axios.post(`http://localhost:5000/auth/login`, user);
+        const res = await axios.post(`https://e-commerce-g1b7.onrender.com/auth/login`, user);
         return await res.data;
     } catch (error: unknown) {
         if (axios.isAxiosError(error)) {
@@ -40,6 +40,6 @@ export const loginUserAsync = createAsyncThunk("register/loginUserAsync", async 
 })
 
 export const getAllUserAsync = createAsyncThunk("register/getAllUserAsync", async () => {
-    const res = await axios.get(`http://localhost:5000/auth`);
+    const res = await axios.get(`https://e-commerce-g1b7.onrender.com/auth`);
     return await res.data;
 })
