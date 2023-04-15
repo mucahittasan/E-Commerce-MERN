@@ -9,6 +9,7 @@ import { IProducts } from '../../../@types/ProductTypes';
 import { addProductToBasketAsync, getAllBasketItemsAsync, removeFromBasketAsync } from '../../../redux/basket/service';
 // Components
 import CircleLoading from '../../features/circleLoading';
+import { toast } from 'react-toastify';
 
 export interface IAddToBasketProps {
     item: {
@@ -71,12 +72,17 @@ const AddToBasketButton: React.FC<IAddToBasketProps> = ({ item, myKey }) => {
     // Add to basket function
     const addToBasket = async (e: React.SyntheticEvent, item: IProducts) => {
         e.preventDefault();
-        loadingProcess(item);
 
-        if (user) {
-            await dispatch(addProductToBasketAsync({ product: item, count: 1, user: user }))
+        if (user === undefined || !user) {
+            toast.warn("Sepete ürün eklemek için giriş yapmalısınız!")
+        } else {
+            loadingProcess(item);
+
+            if (user) {
+                await dispatch(addProductToBasketAsync({ product: item, count: 1, user: user }))
+            }
+            await dispatch(getAllBasketItemsAsync())
         }
-        await dispatch(getAllBasketItemsAsync())
     }
 
     // Remove from basket function

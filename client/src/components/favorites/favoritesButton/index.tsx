@@ -8,6 +8,7 @@ import { AppDispatch, RootState } from '../../../redux/store';
 import { addProductToFavorites, getAllFavoritesAsync, removeFromFavoritesAsync } from '../../../redux/favorite/service';
 // Icons
 import { HiOutlineHeart } from 'react-icons/hi';
+import { toast } from 'react-toastify';
 
 type FavoriteButtonsProps = {
     item: IProducts
@@ -27,10 +28,15 @@ const FavoritesButton: React.FC<FavoriteButtonsProps> = ({ item }) => {
     // Aad product to favorites
     const addToFavorites = async (e: React.SyntheticEvent, item: IProducts) => {
         e.preventDefault()
-        if (user) {
-            await dispatch(addProductToFavorites({ product: item, user }));
-            await dispatch(getAllFavoritesAsync())
+        if (!user || user === undefined) {
+            toast.warn("Favorilerinize ürün eklemek için giriş yapmalısınız!")
+        } else {
+            if (user) {
+                await dispatch(addProductToFavorites({ product: item, user }));
+                await dispatch(getAllFavoritesAsync())
+            }
         }
+
     }
 
     // Remove from favorites
