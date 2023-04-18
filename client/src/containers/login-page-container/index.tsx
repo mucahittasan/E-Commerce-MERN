@@ -24,6 +24,7 @@ const LoginPageContainer = () => {
             if (localStorage.getItem("user")) {
                 toast.success("Giris yapildi!")
                 navigate("/")
+                window.location.reload();
             } else {
                 toast.warning("Gecersiz sifre veya e-posta!")
             }
