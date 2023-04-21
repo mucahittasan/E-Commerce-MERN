@@ -28,7 +28,8 @@
 - [React Router](https://reactrouter.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Formik](https://formik.org/)
-- [Axios](https://www.npmjs.com/package/axios)
+- [NodeJs](https://nodejs.org/en)
+- [MongoDB](https://www.mongodb.com/)
 
 <h2> 🔍 Setup</h2>
 
