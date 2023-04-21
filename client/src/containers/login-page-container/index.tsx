@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import { loginSchema } from "./validation";
 import { Link, useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../../redux/store";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../redux/store";
 import { getAllUserAsync, loginUserAsync } from "../../redux/register/service";
 import { toast } from "react-toastify";
 
@@ -12,8 +12,6 @@ const LoginPageContainer = () => {
     const dispatch = useDispatch<AppDispatch>()
 
     const navigate = useNavigate();
-
-    const error = useSelector((state: RootState) => state.register.error)
 
     const formik = useFormik({
         initialValues: {
