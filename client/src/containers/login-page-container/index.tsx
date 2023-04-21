@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import { loginSchema } from "./validation";
 import { Link, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { AppDispatch } from "../../redux/store";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../../redux/store";
 import { getAllUserAsync, loginUserAsync } from "../../redux/register/service";
 import { toast } from "react-toastify";
 
@@ -13,21 +13,26 @@ const LoginPageContainer = () => {
 
     const navigate = useNavigate();
 
+    const error = useSelector((state: RootState) => state.register.error)
+
     const formik = useFormik({
         initialValues: {
             email: '',
             password: "",
         },
         onSubmit: async (values, { resetForm }) => {
-            await dispatch(loginUserAsync(values));
+            const loginUser = await dispatch(loginUserAsync(values));
 
-            if (localStorage.getItem("user")) {
+            console.log()
+
+            if (loginUser.type === "register/loginUserAsync/rejected") {
+                toast.warn("Gecersiz sifre veya e-posta!")
+            } else {
                 toast.success("Giris yapildi!")
                 navigate("/")
                 window.location.reload();
-            } else {
-                toast.warning("Gecersiz sifre veya e-posta!")
             }
+
         },
         validationSchema: loginSchema
     });

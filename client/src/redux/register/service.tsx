@@ -1,4 +1,4 @@
-import axios, { AxiosError } from 'axios'
+import axios from 'axios'
 import { createAsyncThunk } from '@reduxjs/toolkit'
 import { ILogin, IRegister } from '../../@types/UserType';
 
@@ -19,23 +19,9 @@ export const loginUserAsync = createAsyncThunk("register/loginUserAsync", async 
     try {
         const res = await axios.post(`https://e-commerce-g1b7.onrender.com/auth/login`, user);
         return await res.data;
-    } catch (error: unknown) {
-        if (axios.isAxiosError(error)) {
-            if (error.response) {
-                const errorMessage = await error.response.data;
-                console.log(errorMessage)
-                throw new Error(errorMessage);
-            } else if (error.request) {
-                console.error(error.request);
-                throw new Error('Network error');
-            } else {
-                console.error(error.message);
-                throw new Error('Request error');
-            }
-        } else {
-            console.error(error);
-            throw new Error('Unknown error occurred');
-        }
+
+    } catch (error) {
+        throw new Error("Beklenmedik bir hata olustu!")
     }
 })
 
