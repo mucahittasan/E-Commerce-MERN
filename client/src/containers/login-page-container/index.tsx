@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useFormik } from "formik";
 import { loginSchema } from "./validation";
 import { Link, useNavigate } from "react-router-dom";

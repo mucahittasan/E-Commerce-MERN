@@ -21,6 +21,12 @@ const wait = (ms: number) =>
     setTimeout(() => resolve(), ms);
   });
 
+const user = JSON.parse(localStorage.getItem('user')!)
+
+const path = window.location.pathname
+
+const haveUserAndPathIsInRegisters = (user && path === "/login") || (user && path === "/register")
+
 
 export const router = createBrowserRouter([
   {
@@ -64,11 +70,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/login",
-        element: <LoginPage />,
+        element: haveUserAndPathIsInRegisters ? <HomePage /> : <LoginPage />,
       },
       {
         path: "/register",
-        element: <RegisterPage />,
+        element: haveUserAndPathIsInRegisters ? <HomePage /> : <RegisterPage />,
       }
     ],
   },

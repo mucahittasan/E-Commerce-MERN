@@ -23,7 +23,6 @@ const MainLayout = () => {
     }
   }, [])
 
-
   return (
     <div className="flex flex-col dark:bg-darkModeBg transition-all duration-200">
       <Header />
