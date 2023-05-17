@@ -4,8 +4,13 @@ import { ILogin, IRegister } from '../../@types/UserType';
 
 // REGISTER
 export const registerUserAsync = createAsyncThunk("register/registerUserAsync", async (user: IRegister) => {
-    const res = await axios.post(`https://e-commerce-g1b7.onrender.com/auth/register`, user);
-    return await res.data;
+    try {
+        const res = await axios.post(`https://e-commerce-g1b7.onrender.com/auth/register`, user);
+        return await res.data;
+    } catch (error) {
+        throw new Error("Something went wrong!")
+    }
+
 })
 
 // LOGIN

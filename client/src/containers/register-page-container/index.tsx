@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../redux/store";
 import { getAllUserAsync, registerUserAsync } from "../../redux/register/service";
+import { toast } from "react-toastify";
 
 const RegsiterPageContainer = () => {
 
@@ -19,9 +20,15 @@ const RegsiterPageContainer = () => {
             passwordConfirm: "",
         },
         onSubmit: async (values, { resetForm }) => {
-            await dispatch(registerUserAsync(values));
-            resetForm()
-            navlink("/login")
+            const response = await dispatch(registerUserAsync(values));
+
+            if (response.type === "register/registerUserAsync/rejected") {
+                toast.error("Var olan kulanici adi veya e-posta.")
+            } else {
+                toast.success("Kullanici olusturuldu!")
+                navlink("/login")
+
+            }
         },
         validationSchema: registerSchema
     });
