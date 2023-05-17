@@ -9,13 +9,13 @@ const wait = (ms: number) =>
 
 // GET ALL PRODUCTS
 export const getProductsAsync = createAsyncThunk("products/getProductsAsync", async () => {
-    const res = await axios.get(`https://e-commerce-g1b7.onrender.com/products`);
+    const res = await axios.get(`https://frail-frog-leather-jacket.cyclic.app/products`);
     await wait(1000)
     return await res.data;
 })
 
 // GET PRODUCT BY ID
 export const getProductByIdAsync = createAsyncThunk("products/getProductByIdAsync", async (id: string) => {
-    const res = await axios.get(`https://e-commerce-g1b7.onrender.com/products/${id}`);
+    const res = await axios.get(`https://frail-frog-leather-jacket.cyclic.app/products/${id}`);
     return await res.data;
 })
