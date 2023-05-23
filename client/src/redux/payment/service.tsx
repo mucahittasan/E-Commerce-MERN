@@ -19,6 +19,6 @@ interface OrderType {
 
 // ADD PERSON TO CONTACT
 export const addPaymentToOrdersAsync = createAsyncThunk("payment/addPaymentToOrdersAsync", async ({ order, user }: OrderType) => {
-    const res = await axios.post(`https://frail-frog-leather-jacket.cyclic.app/orders/${user._id}`, order);
+    const res = await axios.post(`https://e-commerce-g1b7.onrender.com/orders/${user._id}`, order);
     return await res.data;
 })

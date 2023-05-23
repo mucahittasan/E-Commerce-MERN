@@ -20,18 +20,18 @@ export const getAllFavoritesAsync = createAsyncThunk("favorites/getAllFavoritesA
     const user = localStorage.getItem('user')
         && JSON.parse(localStorage.getItem('user')!);
 
-    const res = await axios.get(`https://frail-frog-leather-jacket.cyclic.app/favorites/${user._id}`);
+    const res = await axios.get(`https://e-commerce-g1b7.onrender.com/favorites/${user._id}`);
     return res.data;
 })
 
 // ADD PRODUCT TO FAVORITES
 export const addProductToFavorites = createAsyncThunk("favorites/addProductToFavorites", async ({ product, user }: IAddProducttoFavorite) => {
-    const res = await axios.post(`https://frail-frog-leather-jacket.cyclic.app/favorites/${user._id}`, product);
+    const res = await axios.post(`https://e-commerce-g1b7.onrender.com/favorites/${user._id}`, product);
     return res.data;
 })
 
 // REMOVE FROM FAVORITES
 export const removeFromFavoritesAsync = createAsyncThunk("favorites/removeFromFavoritesAsync", async ({ user, id }: IRemoveProductFromFavorites) => {
-    await axios.delete(`https://frail-frog-leather-jacket.cyclic.app/favorites/${user._id}/${id}`);
+    await axios.delete(`https://e-commerce-g1b7.onrender.com/favorites/${user._id}/${id}`);
     return id;
 })
