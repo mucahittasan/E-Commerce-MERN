@@ -32,9 +32,9 @@ export const addProductToBasketAsync = createAsyncThunk("basket/addProductToBask
     await wait(1000)
 
     if (user) {
-        const res = await axios.post(`https://e-commerce-g1b7.onrender.com/basket/${user._id}`, product);
+        const res = await axios.post(`https://tired-slug-scrubs.cyclic.app/basket/${user._id}`, product);
 
-        await axios.put(`https://e-commerce-g1b7.onrender.com/basket/${user._id}`, {
+        await axios.put(`https://tired-slug-scrubs.cyclic.app/${user._id}`, {
             id: product.id,
             count: count
         });
@@ -46,7 +46,7 @@ export const addProductToBasketAsync = createAsyncThunk("basket/addProductToBask
 // DELETE FROM BASKET
 export const removeFromBasketAsync = createAsyncThunk("basket/removeFromBasketAsync", async ({ id, user }: IRemoveBasket) => {
     await wait(1000)
-    await axios.delete(`https://e-commerce-g1b7.onrender.com/basket/${user._id}/${id}`);
+    await axios.delete(`https://tired-slug-scrubs.cyclic.app/${user._id}/${id}`);
     return id;
 })
 
@@ -55,13 +55,13 @@ export const getAllBasketItemsAsync = createAsyncThunk("basket/getAllBasketItems
     const user = localStorage.getItem('user')
         && JSON.parse(localStorage.getItem('user')!);
 
-    const res = await axios.get(`https://e-commerce-g1b7.onrender.com/basket/${user._id}`);
+    const res = await axios.get(`https://tired-slug-scrubs.cyclic.app/${user._id}`);
     return res.data;
 })
 
 // UPDATE PRODUCT COUNT
 export const updateBasketItemCountAsync = createAsyncThunk("basket/updateBasketItemCountAsync", async ({ user, id, count }: IUpdateCount) => {
-    await axios.put(`https://e-commerce-g1b7.onrender.com/basket/${user._id}`, {
+    await axios.put(`https://tired-slug-scrubs.cyclic.app/basket/${user._id}`, {
         id,
         count: count
     });
@@ -69,5 +69,5 @@ export const updateBasketItemCountAsync = createAsyncThunk("basket/updateBasketI
 
 // DELETE ALL ITEMS IN ARRAY
 export const removeAllItemsInBasketAsync = createAsyncThunk("basket/removeAllItemsInBasketAsync", async (user: IUser) => {
-    await axios.delete(`https://e-commerce-g1b7.onrender.com/basket/${user._id}`);
+    await axios.delete(`https://tired-slug-scrubs.cyclic.app/basket/${user._id}`);
 })
