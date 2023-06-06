@@ -34,7 +34,7 @@ export const addProductToBasketAsync = createAsyncThunk("basket/addProductToBask
     if (user) {
         const res = await axios.post(`https://tired-slug-scrubs.cyclic.app/basket/${user._id}`, product);
 
-        await axios.put(`https://tired-slug-scrubs.cyclic.app/${user._id}`, {
+        await axios.put(`https://tired-slug-scrubs.cyclic.app/basket/${user._id}`, {
             id: product.id,
             count: count
         });
