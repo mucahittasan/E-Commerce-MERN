@@ -46,7 +46,7 @@ export const addProductToBasketAsync = createAsyncThunk("basket/addProductToBask
 // DELETE FROM BASKET
 export const removeFromBasketAsync = createAsyncThunk("basket/removeFromBasketAsync", async ({ id, user }: IRemoveBasket) => {
     await wait(1000)
-    await axios.delete(`https://tired-slug-scrubs.cyclic.app/${user._id}/${id}`);
+    await axios.delete(`https://tired-slug-scrubs.cyclic.app/basket/${user._id}/${id}`);
     return id;
 })
 
@@ -55,7 +55,7 @@ export const getAllBasketItemsAsync = createAsyncThunk("basket/getAllBasketItems
     const user = localStorage.getItem('user')
         && JSON.parse(localStorage.getItem('user')!);
 
-    const res = await axios.get(`https://tired-slug-scrubs.cyclic.app/${user._id}`);
+    const res = await axios.get(`https://tired-slug-scrubs.cyclic.app/basket/${user._id}`);
     return res.data;
 })
 
